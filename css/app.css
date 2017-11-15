@@ -1,0 +1,143 @@
+
+/*class to help us visualize the grid*/
+.boxHelper
+{
+	color: #fff;
+	background-color: #000;
+	text-align: center;
+}
+
+/*...................GENERAL STYLING....................*/
+
+.hidden{display: none;}
+
+/*TOP BAR*/
+#topBar{height: 22px;}
+
+/*MAIN PROMO*/
+#promoName{margin-top: 10px;}
+#promoPosition{margin-bottom: 10px;}
+
+/*SECTIONS*/
+.sectionBackground{padding: 32px 0px 32px 0px; background-color: #999999;}
+/*.sectionMobile{margin-bottom: 50px;}*/
+.sectionFooter{height: 12px; margin-bottom: 50px;}
+.sectionFooterLast{height: 12px; margin-bottom: 25px;}
+
+/*GALLERYS*/
+.galleryButton{font-size: 13px;}
+
+/*MEDIUM*/
+#footer{background-color: #000; margin: 38px 0px 0px 0px; padding: 31px 0px 31px 0px;}
+.socialIconFoot{background-color: #999999; height: 60px; border-radius: 30px;}
+
+/*medium adjustments*/
+@media screen and (min-width: 40em){
+.sectionBackground{padding: 38px 0px 38px 0px;}
+}
+
+/*......................HOME PAGE.......................*/
+
+/*ABOUT SECTION HOMEPAGE*/
+/*#aboutTitleHome{margin: 0px 1px 0px 1px;}*/
+#aboutImgHome{height: 160px; padding-right: 11px}
+#aboutInfoHome{height: 127px; padding-left: 11px}
+#aboutButtonHome{height: 23px; margin-top: 10px;}
+
+/*PORTFOLIO SECTION HOMEPAGE*/
+#videoHome{height: 160px;}
+#controlsHome{height: 41px;}
+#portfolioButtonHome{height: 23px; margin-top: 10px;}
+
+/*CONTACT SECTION HOMEPAGE*/
+#contactInfoHome{height: 64px;}
+#contactButtonHome{height: 23px; margin-top: 10px;}
+#socialInfoHome{height: 23px; margin: 10px 0px 10px 0px;}
+.socialIcon{height: 32px; width: 32px;border-radius: 20px;}
+
+/*MEDIUM*/
+#promo{margin-top: 38px;}
+#promoHome{height: 240px;}
+.socialIconPromo{height: 60px; border-radius: 30px; margin: 17px 0px 0px 0px;}
+.aboutButton{ height: 45px; margin: 8px 7px 7px 7px;}
+.portfolioHomeButtons{height: 65px;}
+
+/*Medium Adjustments*/
+@media screen and (min-width: 40em){
+	#promoName{color: #126979;}
+	#aboutTitleHome{margin-top: 38px;}
+	#aboutImgHome{height: 181px;}
+	#aboutInfoHome{height: 181px;}
+	#videoHome{height: 260px;}
+	#controlsHome{height: 46px;}
+	#portfolioTitleHome{margin-top: 38px;}
+	#contactTitleHome{margin-top: 38px;}
+	#contactButtonHome{height: 64px;}
+}
+
+/*LARGE*/	
+@media screen and (min-width: 64em){
+	#promoName{color: #D89402;}}
+	
+/*......................ABOUT PAGE.......................*/
+
+/*ABOUT*/
+#aboutImg{height: 109px;}
+
+/*OFFER*/
+.offerButton{font-size: 13px; margin: 5px 0px 5px 0px;}
+
+/*RESUME*/
+#resume{height: 428px;}
+#aboutContactFormInfo{margin: 10px 0px 10px 0px; height: 72px;}
+
+/*MEDIUM*/
+#chantelPromoImg{height: 232px;}
+#chantelPromoInfo{padding: 95px 0px 96px 0px;}
+#offerTitle{margin-top: 38px;}
+#resumeTitle{margin-top: 38px;}
+
+/*Medium Adjustments*/
+@media screen and (min-width: 40em){
+	#aboutTitle{margin-top: 38px;}
+}
+
+/*....................PORTFOLIO PAGE.....................*/
+
+.graphicButton{font-size: 13px; margin: 5px 0px 5px 0px; border-radius: 20px;}
+
+#poster{height: 432px;}
+
+#photo{height: 180px;}
+
+/*MEDIUM*/
+#brochure{height: 264px;}
+.adButton{height: 44px;}
+#brochureDescription{height: 70px;}
+
+/*Medium Adjustments*/
+@media screen and (min-width: 40em){
+	#videoTitle{margin-top: 38px;}
+	#adBrochureTitle{margin-top: 38px;}
+	#graphicTitle{margin-top: 38px;}
+	#posterTitle{margin-top: 38px;}
+	#photoTitle{margin-top: 38px;}
+}
+
+/*.....................CONTACT PAGE......................*/
+
+#contactForm{height: 419px; margin: 10px 0px 0px 0px;}
+
+/*MEDIUM*/
+
+/*Medium Adjustments*/
+@media screen and (min-width: 40em){
+	#contactTitle{margin-top: 38px;}
+}
+
+/*LARGE*/	
+@media screen and (min-width: 64em){
+	#contactPromoBanner{height: 452px; background-color: #000; margin-top: -24px}
+}
+
+	
