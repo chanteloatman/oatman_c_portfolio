@@ -17,10 +17,10 @@ $(document).foundation()
 	//FUNCTIONS
 	//......................Video Controls........................
 	function playVideo(){
-		playButton.playButton();
+		playButton.play();
 	}
 	function pauseVideo(){
-		pauseButton.pauseButton();
+		pauseButton.pause();
 	}
 	function fullScreen(){
 		//insert code for full screen function here
