@@ -9,51 +9,94 @@
 
 /*...................GENERAL STYLING....................*/
 
+/*colors
+#1a0d3c dark blue
+#512c75 accent purple
+#78599a light white
+#cac0d1 white
+
+gradient: #0f0e43 to #8f48a3*/
+
 .hidden{display: none;}
 
+p {font-family: 'Poppins', sans-serif, Arial; font-size: 15px; text-align: center;}
+
+.paraStyle{line-height: 18px; color: #848484;}
+.headStyle{font-size: 22px; color: #A858A5; text-align: center;}
+
+/*body {background-image: url(../images/background-mobile.jpg); background-repeat: repeat;}*/
+
+body{background-color: #a858a5;}
+
+.textBG{background-color: #ffffff; border: double 3px #78599a; color: #62367d;}
+
+/*buttons*/
+.buttons{background-color: #c79cce; padding: 5px 5px 5px 5px; text-align: center; border: 3px double #ffffff; color: #ffffff;}
+
 /*TOP BAR*/
-#topBar{height: 22px;}
+#topBar{height: 22px; background-color: #fff;}
+
+/*NAV*/
+#mainNav{color: #C9BFD0;}
 
 /*MAIN PROMO*/
-#promoName{margin-top: 10px;}
-#promoPosition{margin-bottom: 10px;}
+#promoName{margin-top: 30px; text-align: center; color: #ffffff; font-family: 'Poppins', sans-serif, Arial; font-weight: bold;}
+#promoPosition{margin-bottom: 10px; text-align: center; color: #ffffff; font-family: 'Poppins', sans-serif, Arial;}
 
 /*SECTIONS*/
-.sectionBackground{padding: 32px 0px 32px 0px; background-color: #999999;}
+.sectionBackground{padding: 32px 0px 32px 0px; background-color: #fff;}/*background: linear-gradient(#eedff0, #eee2f0)}*/ /*background: linear-gradient(#8f48a3, #0f0e43)*/
 /*.sectionMobile{margin-bottom: 50px;}*/
-.sectionFooter{height: 12px; margin-bottom: 50px;}
-.sectionFooterLast{height: 12px; margin-bottom: 25px;}
+.sectionFooter{height: 12px; margin-bottom: 50px; background-color: #1a0d3c; border: solid 1px #78599a;}
+.sectionFooterLast{height: 12px; margin-bottom: 25px; background-color: #1a0d3c; border: solid 1px #78599a;}
+.titleBar{background-color: #b073ba; padding: 3px 0px 3px 0px;border: solid 3px #ffffff; color: #ffffff; text-align: center; font-family: 'Poppins', sans-serif, Arial; font-weight: bold;}
 
 /*GALLERYS*/
 .galleryButton{font-size: 13px;}
 
 /*MEDIUM*/
-#footer{background-color: #000; margin: 38px 0px 0px 0px; padding: 31px 0px 31px 0px;}
+#footer{background-color: #1a0d3c; margin: 38px 0px 0px 0px; padding: 31px 0px 31px 0px;}
 .socialIconFoot{background-color: #999999; height: 60px; border-radius: 30px;}
 
 /*medium adjustments*/
 @media screen and (min-width: 40em){
 .sectionBackground{padding: 38px 0px 38px 0px;}
+/*body {background-image: url(../images/background-tablet.jpg); background-repeat: repeat;}*/
+	.buttons{box-shadow: 1px 2px 2px rgba(0, 0, 0, .4); border: solid 1px #B073BA;}
+}
+
+/*LARGE*/	
+@media screen and (min-width: 64em){
+	/*body {background-image: url(../images/background-desktop.jpg); background-repeat: repeat;}*/
 }
 
 /*......................HOME PAGE.......................*/
 
+/*PHOTOGRAPHY SERVICES HOMEPAGE*/
+.servicesButton{background-color: #b073ba; padding: 5px 5px 5px 5px; text-align: center; font-family: 'Poppins', sans-serif, Arial; color: #ffffff; border: 3px double #ffffff;}
+#photoServiceButton{margin-top: 15px;}
+
+#moreAboutButton{margin-top: 15px;}
+
 /*ABOUT SECTION HOMEPAGE*/
 /*#aboutTitleHome{margin: 0px 1px 0px 1px;}*/
-#aboutImgHome{height: 160px; padding-right: 11px}
-#aboutInfoHome{height: 127px; padding-left: 11px}
-#aboutButtonHome{height: 23px; margin-top: 10px;}
+#aboutImgHome{ width: 50%; box-sizing: border-box;}
+#aboutInfoHome p{color: #190C3D; margin-top: 10px; }
+#aboutInfoHome{text-align: center;}
+#aboutButtonHome{margin-top: 10px; background-color: #1a0d3c; border: solid 2px #78599a; border-radius: 10px 0px 10px 0px; clear: both;}
 
 /*PORTFOLIO SECTION HOMEPAGE*/
-#videoHome{height: 160px;}
-#controlsHome{height: 41px;}
-#portfolioButtonHome{height: 23px; margin-top: 10px;}
+#videoHome{height: 160px; border: double 3px #78599a;}
+#controlsHome{height: 41px; background-color: #1a0d3c;  border: double 3px #78599a;}
+#portfolioButtonHome{margin-top: 10px; background-color: #1a0d3c; border: solid 2px #78599a; border-radius: 10px 0px 10px 0px;}
+#viewPortfolioButton{margin-top: 15px;}
+#portfolioContentHome{margin-top: 2px;}
 
 /*CONTACT SECTION HOMEPAGE*/
-#contactInfoHome{height: 64px;}
-#contactButtonHome{height: 23px; margin-top: 10px;}
-#socialInfoHome{height: 23px; margin: 10px 0px 10px 0px;}
-.socialIcon{height: 32px; width: 32px;border-radius: 20px;}
+#contactInfoHome p {margin: 5px 0px 5px 0px;}
+#contactButtonHome{margin-top: 10px; clear: both;}
+/*#socialInfoHome{margin: 15px 0px 15px 0px; border: double 3px #b073ba; text-align: center; padding: 15px 0px 0px 0px;}
+.socialIcon{height: 32px; width: 32px;border-radius: 20px;}*/
+#contactContentHome{margin-top: -36px;}
 
 /*MEDIUM*/
 #promo{margin-top: 38px;}
@@ -77,38 +120,67 @@
 
 /*LARGE*/	
 @media screen and (min-width: 64em){
-	#promoName{color: #D89402;}}
+	#promoName{color: #D89402;}
+	.servicesBoxLarge{height: 330px; background-color: #A858A5;}
+	#photoImgBox{}
+	.subHeading{color: #A858A5; font-size: 18px;}
+	.bulletList{color: #848484; font-size: 18px;}
+	.homePortfolioButtons{margin: 10px 0px 10px 0px;}
+}
 	
 /*......................ABOUT PAGE.......................*/
 
 /*ABOUT*/
 #aboutImg{height: 109px;}
+.aboutButton{background-color: #1a0d3c; border: solid 2px #78599a; color: #cac0d1;}
+#aboutChantelImg{border: solid 2px #78599a; padding: 0px 0px 0px 0px; margin-bottom: 15px;}
+#aboutChantelInfo{height: 100%; padding: 15px 0px 5px 0px; margin-bottom: 15px;}
+#aboutChantelInfo p {text-align: left;}
+.aboutInfo p{ line-height: 18px; padding: 10px 10px 10px 10px;}
+
+/*#aboutContainer{height: 107px;}*/
 
 /*OFFER*/
-.offerButton{font-size: 13px; margin: 5px 0px 5px 0px;}
+.offerButton{font-size: 13px;}
 
 /*RESUME*/
-#resume{height: 428px;}
+#resume{height: 428px; background-color: #cac0d1; border: double 3px #78599a; color: #1a0d3c;}
 #aboutContactFormInfo{margin: 10px 0px 10px 0px; height: 72px;}
+#aboutContactFormButton{background-color: #1a0d3c; border: solid 2px #78599a; border-radius: 10px 0px 10px 0px;}
+#resumeButton{clear: both;}
 
 /*MEDIUM*/
 #chantelPromoImg{height: 232px;}
 #chantelPromoInfo{padding: 95px 0px 96px 0px;}
-#offerTitle{margin-top: 38px;}
-#resumeTitle{margin-top: 38px;}
+/*#offerTitle{margin-top: 38px;}*/
+/*#resumeTitle{margin-top: 38px;}*/
 
 /*Medium Adjustments*/
 @media screen and (min-width: 40em){
-	#aboutTitle{margin-top: 38px;}
+	/*#aboutTitle{margin-top: 38px;}*/
+/*	#aboutContainer{height: 168px;}*/
+	#aboutChantelInfo{height: 100%;}
+}
+@media screen and (min-width: 60em){
+	/*#aboutTitle{margin-top: 38px;}*/
+	
 }
 
 /*....................PORTFOLIO PAGE.....................*/
+#video{border: double 3px #78599a;}
+#videoControls{background-color: #190C3D; color: #cac0d1; border: double 3px #78599a;}
 
-.graphicButton{font-size: 13px; margin: 5px 0px 5px 0px; border-radius: 20px;}
+.adButton{border: double 3px #78599a;}
+
+#graphicInfo{text-align: center;}
+.graphicButton{font-size: 13px; margin: 5px 0px 5px 0px; border-radius: 20px; border: solid 2px #78599a;}
 
 #poster{height: 432px;}
 
-#photo{height: 180px;}
+#photo{height: 180px; border: double 3px #78599a;}
+.galleryButton{background-color: #512c75; border: double 3px #78599a;}
+
+#poster{border: double 3px #78599a;}
 
 /*MEDIUM*/
 #brochure{height: 264px;}
@@ -127,7 +199,10 @@
 /*.....................CONTACT PAGE......................*/
 
 #contactForm{height: 419px; margin: 10px 0px 0px 0px;}
+#contactFormInfo p{padding: 15px 10px 0px 10px;}
 
+label{font-family: 'Poppins', sans-serif, Arial; font-size: 15px; color: #62367d;}
+/*input{font-family: 'Poppins', sans-serif, Arial; font-size: 15px; color: #62367d;}*/
 /*MEDIUM*/
 
 /*Medium Adjustments*/
