@@ -17,16 +17,17 @@
    <div id="topBar" class="small-12 medium-12 large-12 columns boxHelper"></div>
    </section>
    
-   <menu><h2 class="hidden">Menu</h2>
+   
+   <div id="menuNav" class="sticky small-12 hide-for-medium"><h2 class="hidden">Menu</h2>
 	  <nav id="mainNav"><h2 class="hidden">Navigation</h2>
 	  <ul>
-		  <li id="homeNav">HOME</li>
-          <li id="aboutNav">ABOUT</li>
-          <li id="portfolioNav">PORTFOLIO</li>
-          <li id="contactNav">CONTACT ME</li>
+		  <li id="homeNav"><a href="index.html">Home</a></li>
+          <li id="aboutNav"><a href="about.html">About</a></li>
+          <li id="portfolioNav"><a href="portfolio.html">Portfolio</a></li>
+          <li id="contactNav"><a href="contact.html">Contact Me</a></li>
       </ul>
 	  </nav>
-   </menu>
+   </div>
    
    <!--SOCIAL MEDIA-->
    <section class="row socialIconsMain"><h2 class="hidden">Social Media</h2>
@@ -36,8 +37,6 @@
 	   </div> -->
    </section>
     
-   <!--MENU-->
-   <menu></menu>
    
    <!--PROMO NAME SECTION-->
    <section class="row"><h2 class="hidden">Promo Name Section</h2>
@@ -83,9 +82,15 @@
 	   
 	   <section id="PortfolioTitle" class="row"><h2 class="headStyle">My Portfolio</h2></section>
 	  
-	   <div id="viewGraphicsButton" class="small-offset-2 small-8 medium-offset-2 medium-8 columns portfolioHomeButtons boxHelper">GRAPHICS</div>
-	   <div id="viewPhotosButton" class="small-offset-2 small-8 medium-offset-2 medium-8 columns portfolioHomeButtons boxHelper">PHOTOGRAPHY</div>
-	    <div id="viewBrochuresButton" class="small-offset-2 small-8 medium-offset-2 medium-8 columns portfolioHomeButtons boxHelper">PROMOTIONAL</div>
+	   <div id="viewGraphicsButton" class="small-offset-2 small-8 hide-for-medium-only hide-for-large columns portfolioHomeButtons">
+	   	<img src="images/viewphotography-mobile.png" id="viewPhotoMobile" alt="view_graphics">
+	   </div>
+	   <div id="viewPhotosButton" class="small-offset-2 small-8 hide-for-medium-only hide-for-large columns portfolioHomeButtons">
+	   	<img src="images/viewgraphics-mobile.png" id="viewGraphicsMobile" alt="view_graphics">
+	   </div>
+	    <div id="viewBrochuresButton" class="small-offset-2 small-8 hide-for-medium-only hide-for-large columns portfolioHomeButtons">
+	    	<img src="images/viewbrand-mobile.png" id="viewBrandMobile" alt="view_branding">
+	    </div>
 	   
 	   <div id="viewPortfolioButton" class="small-pull-3 small-6 medium-offset-1 medium-4 columns buttons">See Full Portfolio</div>
    </section>
@@ -106,15 +111,21 @@
 		   <p class="paraStyle">Within my portfolio work, I offer a vast range of services within each of my speciality areas, check out what I have to offer below:</p>
 	   </div>
 	   <section class="row"><h2 class="hidden">My Services</h2>
-	   <div id="photoServiceHome" class="columns large-4  servicesBoxLarge"></div>
-	   <div id="graphicServiceHome" class="columns large-4  servicesBoxLarge"></div>
-	   <div id="brandServiceHome" class="columns large-4  servicesBoxLarge"></div>
+	   <div id="photoServiceHome" class="columns large-4">
+	   	<img src="images/viewphotography-large.png" id="viewPhotographyLarge" alt="view_photography">
+	   </div>
+	   <div id="graphicServiceHome" class="columns large-4">
+	   	<img src="images/viewgraphics-large.png" id="viewGraphicsLarge" alt="view_graphics">
+	   </div>
+	   <div id="brandServiceHome" class="columns large-4">
+	   	<img src="images/viewbrand-large.png" id="viewBrandLarge" alt="view_branding">
+	   </div>
 	   </section>
 	   
 	   <!--buttons here-->
 	   <div id="viewPhotoButton" class="hide-for-small-only hide-for-medium-only columns large-4 buttons homePortfolioButtons">View Portfolio</div>
-	   <div id="viewPhotoButton" class="hide-for-small-only hide-for-medium-only columns large-4 buttons homePortfolioButtons">View Graphics</div>
-	   <div id="viewPhotoButton" class="hide-for-small-only hide-for-medium-only columns large-4 buttons homePortfolioButtons">View Branding</div>
+	   <div id="viewGraphicButton" class="hide-for-small-only hide-for-medium-only columns large-4 buttons homePortfolioButtons">View Graphics</div>
+	   <div id="viewBrandButton" class="hide-for-small-only hide-for-medium-only columns large-4 buttons homePortfolioButtons">View Branding</div>
 	   
 	   <section class="row hide-for-small-only hide-for-medium-only"><h2 class="hidden">My Services Descriptions</h2>
 	   <div id="photoServiceDescHome" class="columns large-4">
@@ -134,7 +145,7 @@
 			   <li>Vectorized Images</li>
 			   <li>Icons</li>
 		   </ul>
-	   <div id="brandServiceDescHome" class="columns large-4 large-pull-1"></div>
+	   <div id="brandServiceDescHome" class="columns large-4 large-pull-2"></div>
 	    <h3 class="subHeading">My Branding Services Include:</h3>
 	   <ul class="bulletList">
 			   <li>Album Covers</li>
