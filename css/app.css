@@ -37,7 +37,13 @@ body{background-color: #a858a5;}
 #topBar{height: 22px; background-color: #fff;}
 
 /*NAV*/
-#mainNav{color: #C9BFD0;}
+#menuBar{background-color: #C79CCE; position: fixed; height: 20px;}
+#menuNav{background-color:#EEDBF4; position: fixed;}
+#mainNav{color: #C9BFD0; text-align: center;}
+#mainNav ul {list-style-type: none;}
+#mainNav ul li {display: block;}
+#mainNav ul li a {text-decoration: none; font-family: 'Poppins', sans-serif, Arial; color: #A858A5;}
+#mainNav ul li a:hover {text-decoration: none; font-family: 'Poppins', sans-serif, Arial; color: #C79CCE;}
 
 /*MAIN PROMO*/
 #promoName{margin-top: 30px; text-align: center; color: #ffffff; font-family: 'Poppins', sans-serif, Arial; font-weight: bold;}
@@ -47,11 +53,14 @@ body{background-color: #a858a5;}
 .sectionBackground{padding: 32px 0px 32px 0px; background-color: #fff;}/*background: linear-gradient(#eedff0, #eee2f0)}*/ /*background: linear-gradient(#8f48a3, #0f0e43)*/
 /*.sectionMobile{margin-bottom: 50px;}*/
 .sectionFooter{height: 12px; margin-bottom: 50px; background-color: #1a0d3c; border: solid 1px #78599a;}
-.sectionFooterLast{height: 12px; margin-bottom: 25px; background-color: #1a0d3c; border: solid 1px #78599a;}
-.titleBar{background-color: #b073ba; padding: 3px 0px 3px 0px;border: solid 3px #ffffff; color: #ffffff; text-align: center; font-family: 'Poppins', sans-serif, Arial; font-weight: bold;}
+.sectionFooterLast{height: 12px; margin-bottom: 25px; background-color: #1a0d3c; border: solid 1px #78599a;} /*background-color: #b073ba;*/
+.titleBar{ padding: 3px 0px 3px 0px;border: solid 3px #ffffff; color: #ffffff; text-align: center; font-family: 'Poppins', sans-serif, Arial; font-weight: bold;}
 
 /*GALLERYS*/
 .galleryButton{font-size: 13px;}
+.photoGalleryButton{position: absolute;}
+/*#leftPhotoGallery{float: left;}
+#rightPhotoGallery{float: right; margin-left: 93%;}*/
 
 /*MEDIUM*/
 #footer{background-color: #1a0d3c; margin: 38px 0px 0px 0px; padding: 31px 0px 31px 0px;}
