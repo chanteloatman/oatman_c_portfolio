@@ -12,24 +12,28 @@
   <body>
    <!--width is 12 columns therefore, small must add to 12 and large must also add to 12 per row, you can also use offset-NUMBER OF BLANK SPACE COLUMS to stand in for columns/invisible colums, still must add to 12 per row though -->
    
-   <!--TOP BAR-->
+    <!--TOP BAR-->
    <section class="row"><h2 class="hidden">Top Bar</h2>
-   <div id="topBar" class="small-12 medium-12 large-12 columns"></div>
+   <div id="topBar" class="small-12 hide-for-medium hide-for-large columns boxHelper"></div>
    </section>
+    
    
-   <nav id="mainNav" class="data-sticky-container" ><h2 class="hidden">Navigation</h2>
+    <!--MENU SMALL-->
+   <nav id="mainNav" class="data-sticky-container hide-for-medium hide-for-large"><h2 class="hidden">Navigation</h2>
          <div class="title-bar small-12" data-responsive-toggle="menuNav" data-hide-for="large">
 		<button class="menu-icon float-right" type="button" data-toggle></button>
 	    </div>
    <div id="menuNav" class="small-12 hide-for-medium"><h2 class="hidden">Menu</h2>
 	  <ul>
-		  <li id="homeNav"><a href="index.html">Home</a></li>
+		  <li id="homeNav"><a href="#">Home</a></li>
           <li id="aboutNav"><a href="about.html">About</a></li>
           <li id="portfolioNav"><a href="portfolio.html">Portfolio</a></li>
           <li id="contactNav"><a href="contact.html">Contact Me</a></li>
       </ul>
    </div>
     </nav>
+    
+    <section id="topBarLarge" class="hide-for-small-only"><h2 class="hidden">Top Bar</h2></section>
    
    <!--SOCIAL MEDIA-->
    <section class="row socialIconsMain"><h2 class="hidden">Social Media</h2>
@@ -45,6 +49,22 @@
 	   <div id="promoName" class="small-12 medium-12 large-12 columns"><h2>Chantel Oatman</h2></div>
 	   <div id="promoPosition" class="small-12 medium-12 large-12 columns"><p>Digital Marketing & Design</p></div>
    </section>
+   
+   <!--MENU MEDIUM/LARGE-->
+   <div id="logo">
+   	<img src="images/logo-medium.png" alt="logo" class="hide-for-small-only hide-for-large" id="logoMedium">
+   	<img src="images/logo-large.png" alt="logo" class="hide-for-small-only hide-for-medium-only" id="logoLarge">
+   </div>
+   <div id="menuLarge" class="row hide-for-small-only">
+   	<nav id="largeNavigation" class=" medium-12 large-12 columns">
+   	   <ul>
+   	      <li id="homeNavLarge"><a href="#">Home</a></li>
+          <li id="aboutNavLarge"><a href="about.html">About</a></li>
+          <li id="portfolioNavLarge"><a href="portfolio.html">Portfolio</a></li>
+          <li id="contactNavLarge"><a href="contact.html">Contact Me</a></li>
+       </ul>
+    </nav>
+   </div>
    
   
  <!--SERVICES-->
@@ -63,7 +83,7 @@
 	   <div id="graphicServiceButton" class="small-offset-2 small-8 medium-8 large-pull-1 large-10 columns servicesButton">Graphic & Design Services</div>
 	   <div id="PromoServiceButton" class="small-offset-2 small-8 medium-8 large-pull-1 large-10 columns servicesButton">Promotional Services</div>
     <div id="aboutButton" class="row">
-	   <div id="moreAboutButton" class="small-6 small-offset-3 medium-6 large-pull-2 columns large-8 buttons">About Chantel</div>
+		<a href="about.html"><div id="moreAboutButton" class="small-6 small-offset-3 medium-6 large-pull-2 columns large-8 buttons">About Chantel</div></a>
 	</div>
    </section>
 </section>
@@ -74,12 +94,7 @@
    
    <!--PORTFOLIO SECTION HOME-->
    <section class="row sectionMobile hide-for-large-only"><h2 class="hidden">Portfolio Section HomePage</h2>
-    <!--Portfolio Title-->
-  <!-- <section id="portfolioTitleHome" class="row"><h2 class="hidden">Portfolio Title</h2>
-   	   <div id="portfolioTitleBarHome" class="titleBar small-12 large-12 columns">PORTFOLIO</div>
-<!--	   <div id="portfolioTitleImgHome" class="titleImg small-3 large-2 columns boxHelper">IMG</div>-->
-<!--   </section>-->
-
+    
    <!--Portfolio Content-->
    
    <section id="portfolioContentHome" class="row sectionBackground hide-for-large"><h2 class="hidden">Portfolio Content</h2>
@@ -96,7 +111,7 @@
 	    	<img src="images/viewbrand-mobile.png" id="viewBrandMobile" alt="view_branding">
 	    </div>
 	   <div id="toPortfolio" class="row">
-	   <div id="viewPortfolioButton" class="small-offset-3 small-6 medium-offset-1 medium-4 columns buttons">See Full Portfolio</div>
+		   <a href="portfolio.html"><div id="viewPortfolioButton" class="small-offset-3 small-6 medium-offset-5 medium-2 columns buttons">See Full Portfolio</div></a>
 	   </div>
    </section>
    </section>
@@ -177,25 +192,29 @@
 	   <div id="contactInfoHome" class="small-12 medium-offset-2 medium-8 columns ">
 		   <p class="paraStyle">If you would like to hire me for your photography, graphic, branding, or site design needs, please fill out the contact information form to get in touch with me:</p>
 	   </div>
-	   <div id="contactButtonHome" class="small-6 small-pull-3 medium-2 medium-pull-5 columns buttons">Contact Form</div>
-	   <!--<div id="socialInfoHome" class="small-12 hide-for-medium columns textBG">
-		   <p>For news and updates, check out my social media:</p>
-	   </div>-->
-	  <!-- <div class="row socialIcons">
-		   <div id="facebookHome" class="small-3 columns socialIcon boxHelper"></div>
-		   <div id="twitterHome" class="small-3 columns socialIcon boxHelper"></div>
-		   <div id="linkedinHome" class="small-3 columns socialIcon boxHelper"></div>	
-	   </div>-->
+	   <a href="contact.html"> <div id="contactButton" class="small-6 small-offset-3 medium-2 medium-offset-5 columns buttons">Contact Form</div></a>
+	  
 	   </section>
    </section>
  </section>
    
-   <section id="footer" class="row"><h2 class="hidden">Footer</h2>
-   <div class="columns">
-	   <a href="https://www.linkedin.com/in/chantel-oatman-40b177156/"><div id="facebookFooter" class="small-4 small-push-9 medium-offset-10 medium-1 columns socialIcon"><img src="images/social-linkedin.png" id="likedin" alt="linkedin"></div></a>
-	   <a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><div id="linkedinFooter" class="small-4 small-push-3  medium-1 columns socialIcon"><img src="images/social-facebook.png" id="facebook" alt="facebook"></div></a>
+    <section id="footer" class="row hide-for-medium hide-for-large"><h2 class="hidden">Footer</h2>
+   <div id="footerContent" class="row">
+	   <p id="nameBottom" class="columns small-6">chanteloatman.com</p>
+	   <a href="https://www.linkedin.com/in/chantel-oatman-40b177156/"><div id="facebookFooter" class="small-3 small-push-1 columns socialIcon"><img src="images/social-linkedin.png" id="likedin" alt="linkedin"></div></a>
+	   <a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><div id="linkedinFooter" class="small-3 columns socialIcon"><img src="images/social-facebook.png" id="facebook" alt="facebook"></div></a>
    </div>
    </section>
+   
+     <section id="footerLarge" class="row hide-for-small-only"><h2 class="hidden">Footer</h2>
+	 <p class="hide-for-small-only medium-3 columns" id="nameBottomLarge">Chantel Oatman</p>
+	    <div id="socialIconsLarge" class=" hide-for-small-only">
+		<div class="columns medium-2 medium-push-5 large-push-6" id="linkedinDivLarge"><a href="https://www.linkedin.com/in/chantel-oatman-40b177156/"><img src="images/social-linkedin-large.png" id="linkedinLarge" alt="linkedin"></a></div>
+		<div class="columns medium-2" id="facebookDivLarge"><a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><img src="images/social-facebook-large.png" id="facebookLarge" alt="facebook"></a></div>
+	  </div>
+  </section>
+  	
+  <section id="bottomBar" class="hide-for-small-only"><h2 class="hidden">Bottom Bar</h2></section>
    	
 
     <script src="js/vendor/jquery.js"></script>
