@@ -37,17 +37,19 @@ body{background-color: #a858a5;}
 #topBar{height: 22px; background-color: #fff;}
 
 /*NAV*/
-#menuBar{background-color: #C79CCE; position: fixed; height: 20px;}
-#menuNav{background-color:#EEDBF4; position: fixed;}
-#mainNav{color: #C9BFD0; text-align: center;}
+.title-bar{background: linear-gradient(#A858A5, #ffffff);}
+#menuBar{background-color: #C79CCE; height: 20px;}
+#menuNav{background-color:#EEDBF4;}
+#mainNav{color: #C9BFD0; text-align: center; position: fixed; width: 100%;}
 #mainNav ul {list-style-type: none;}
-#mainNav ul li {display: block;}
-#mainNav ul li a {text-decoration: none; font-family: 'Poppins', sans-serif, Arial; color: #A858A5;}
+#mainNav ul li {display: block; border: solid 1px #fff;}
+#mainNav ul li a {text-decoration: none; font-family: 'Poppins', sans-serif, Arial; color: #A858A5; padding: 0px 45px 0px 45px;}
 #mainNav ul li a:hover {text-decoration: none; font-family: 'Poppins', sans-serif, Arial; color: #C79CCE;}
 
 /*MAIN PROMO*/
 #promoName{margin-top: 30px; text-align: center; color: #ffffff; font-family: 'Poppins', sans-serif, Arial; font-weight: bold;}
 #promoPosition{margin-bottom: 10px; text-align: center; color: #ffffff; font-family: 'Poppins', sans-serif, Arial;}
+#promoSection{margin-top: 30px;}
 
 /*SECTIONS*/
 .sectionBackground{padding: 32px 0px 32px 0px; background-color: #fff;}/*background: linear-gradient(#eedff0, #eee2f0)}*/ /*background: linear-gradient(#8f48a3, #0f0e43)*/
@@ -63,9 +65,7 @@ body{background-color: #a858a5;}
 #rightPhotoGallery{float: right; margin-left: 93%;}*/
 
 /*MEDIUM*/
-#footer{background-color: #1a0d3c; margin: 38px 0px 0px 0px; padding: 31px 0px 31px 0px;}
-.socialIconFoot{background-color: #999999; height: 60px; border-radius: 30px;}
-
+#footer{margin: 30px 0px 0px 0px; padding: 0px 0px 22px 0px;}
 /*medium adjustments*/
 @media screen and (min-width: 40em){
 .sectionBackground{padding: 38px 0px 38px 0px;}
@@ -82,6 +82,8 @@ body{background-color: #a858a5;}
 
 /*PHOTOGRAPHY SERVICES HOMEPAGE*/
 .servicesButton{background-color: #b073ba; padding: 5px 5px 5px 5px; text-align: center; font-family: 'Poppins', sans-serif, Arial; color: #ffffff; border: 3px double #ffffff;}
+#servicesInfo{padding: 0px 20px 0px 20px;}
+
 #photoServiceButton{margin-top: 15px;}
 
 #moreAboutButton{margin-top: 15px;}
@@ -97,15 +99,15 @@ body{background-color: #a858a5;}
 #videoHome{height: 160px; border: double 3px #78599a;}
 #controlsHome{height: 41px; background-color: #1a0d3c;  border: double 3px #78599a;}
 #portfolioButtonHome{margin-top: 10px; background-color: #1a0d3c; border: solid 2px #78599a; border-radius: 10px 0px 10px 0px;}
-#viewPortfolioButton{margin-top: 15px;}
+#viewPortfolioButton{margin-top: 22px;}
 #portfolioContentHome{margin-top: 2px;}
 
 /*CONTACT SECTION HOMEPAGE*/
-#contactInfoHome p {margin: 5px 0px 5px 0px;}
+#contactInfoHome p {margin: 5px 20px 5px 20px;}
 #contactButtonHome{margin-top: 10px; clear: both;}
 /*#socialInfoHome{margin: 15px 0px 15px 0px; border: double 3px #b073ba; text-align: center; padding: 15px 0px 0px 0px;}
 .socialIcon{height: 32px; width: 32px;border-radius: 20px;}*/
-#contactContentHome{margin-top: -36px;}
+#contactContentHome{margin-top: 2px;}
 
 /*MEDIUM*/
 #promo{margin-top: 38px;}
