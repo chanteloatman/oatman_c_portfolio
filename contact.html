@@ -11,22 +11,13 @@
   <body>
    <!--width is 12 columns therefore, small must add to 12 and large must also add to 12 per row, you can also use offset-NUMBER OF BLANK SPACE COLUMS to stand in for columns/invisible colums, still must add to 12 per row though -->
    
-   <!--TOP BAR-->
+  <!--TOP BAR-->
    <section class="row"><h2 class="hidden">Top Bar</h2>
-   <div id="topBar" class="small-12 medium-12 large-12 columns boxHelper"></div>
-   </section>
-   
-   <!--SOCIAL MEDIA-->
-   <section class="row socialIconsMain"><h2 class="hidden">Social Media</h2>
-	  <!-- <div id="facebookHome" class="small-3 columns socialIcon boxHelper"></div>
-		   <div id="twitterHome" class="small-3 columns socialIcon boxHelper"></div>
-		   <div id="linkedinHome" class="small-3 columns socialIcon boxHelper"></div>	
-	   </div> -->
+   <div id="topBar" class="small-12 hide-for-medium hide-for-large columns boxHelper"></div>
    </section>
     
-   <!--MENU-->
- 
-   <nav id="mainNav" class="data-sticky-container" ><h2 class="hidden">Navigation</h2>
+   <!--MENU SMALL-->
+   <nav id="mainNav" class="data-sticky-container hide-for-medium hide-for-large"><h2 class="hidden">Navigation</h2>
          <div class="title-bar small-12" data-responsive-toggle="menuNav" data-hide-for="large">
 		<button class="menu-icon float-right" type="button" data-toggle></button>
 	    </div>
@@ -35,26 +26,43 @@
 		  <li id="homeNav"><a href="index.html">Home</a></li>
           <li id="aboutNav"><a href="about.html">About</a></li>
           <li id="portfolioNav"><a href="portfolio.html">Portfolio</a></li>
-          <li id="contactNav"><a href="contact.html">Contact Me</a></li>
+          <li id="contactNav"><a href="#">Contact Me</a></li>
       </ul>
    </div>
     </nav>
+    
+    <section id="topBarLarge" class="hide-for-small-only"><h2 class="hidden">Top Bar</h2></section>
    
    <!--PROMO NAME SECTION-->
    <section class="row" id="promoSection"><h2 class="hidden">Promo Name Section</h2>
 	   <div id="promoName" class="small-12 medium-12 large-12 columns"><h2>Chantel Oatman</h2></div>
 	   <div id="promoPosition" class="small-12 medium-12 large-12 columns"><p>Digital Marketing & Design</p></div>
    </section>
+   
+      <!--MENU MEDIUM/LARGE-->
+   <a href="index.html"><div id="logo">
+   	<img src="images/logo-medium.png" alt="logo" class="hide-for-small-only hide-for-large" id="logoMedium">
+   	<img src="images/logo-large.png" alt="logo" class="hide-for-small-only hide-for-medium-only" id="logoLarge">
+    </div></a>
+   <div id="menuLarge" class="row hide-for-small-only">
+   	<nav id="largeNavigation" class=" medium-12 large-12 columns">
+   	   <ul>
+   	      <li id="homeNavLarge"><a href="index.html">Home</a></li>
+          <li id="aboutNavLarge"><a href="about.html">About</a></li>
+          <li id="portfolioNavLarge"><a href="portfolio.html">Portfolio</a></li>
+          <li id="contactNavLarge"><a href="#">Contact Me</a></li>
+       </ul>
+    </nav>
+   </div>
     
    <!--CONTACT SECTION-->
    <section class="row"><h2 class="hidden">Contact Section</h2>
-   <!--Contact Title-->
-   <section id="contactTitle" class="row"><h2 class="hidden">Contact Title</h2>
-   	   <div id="contactTitleBar" class="titleBar small-12 large-12 columns boxHelper">CONTACT ME</div>
-	  <!-- <div id="contactTitleImg" class="titleImg small-3 large-2 columns boxHelper">IMG</div>-->
-   </section>
    <!--Contact Content-->
    <section id="contactContent" class="row sectionBackground"><h2 class="hidden">Contact Content</h2>
+   <section id="contactTitle" class="row"><h2 class="hidden">Contact Title</h2>
+   	   <div id="contactTitleBar" class="headStyle small-12 large-12 columns">Contact Me</div>
+	  <!-- <div id="contactTitleImg" class="titleImg small-3 large-2 columns boxHelper">IMG</div>-->
+   </section>
 	   <div id="contactFormInfo" class="small-12 large-push-1 large-7 columns textBG">
 		   <p>To request a quote to hire me for your marketing and/or design needs, or if you would like to leave a comment about some of my work, please fill out the contact information form to get in touch with me.</p>
 	   </div>
@@ -83,18 +91,28 @@
 		   <div id="linkedinHome" class="small-3 columns socialIcon boxHelper"></div>-->
    </section>
    <!--Contact Footer-->
-   <section class="row hide-for-medium"><h2 class="hidden">Contact Footer</h2>
-	   <div class="small-12 columns sectionFooterLast boxHelper"></div>
+   <section class="row"><h2 class="hidden">Contact Footer</h2>
+	   <div class="small-12 columns sectionFooterLast"></div>
    </section>
    </section>
    
-   <section id="footer" class="row hide-for-small-only"><h2 class="hidden">Footer</h2>
-   <div class="hide-for-small-only columns">
-	   	<div id="facebookFooter" class="hide-for-small-only medium-offset-1 medium-1 columns socialIconFoot boxHelper"></div>
-	   <div id="twitterFooter" class="hide-for-small-only medium-1 columns socialIconFoot boxHelper"></div>
-	   <div id="linkedinFooter" class="hide-for-small-only medium-1 medium-pull-8 columns socialIconFoot boxHelper"></div>
+     <section id="footer" class="row hide-for-medium hide-for-large"><h2 class="hidden">Footer</h2>
+   <div id="footerContent" class="row">
+	   <p id="nameBottom" class="columns small-6">chanteloatman.com</p>
+	   <a href="https://www.linkedin.com/in/chantel-oatman-40b177156/"><div id="facebookFooter" class="small-3 small-push-1 columns socialIcon"><img src="images/social-linkedin.png" id="likedin" alt="linkedin"></div></a>
+	   <a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><div id="linkedinFooter" class="small-3 columns socialIcon"><img src="images/social-facebook.png" id="facebook" alt="facebook"></div></a>
    </div>
    </section>
+   
+     <section id="footerLarge" class="row hide-for-small-only"><h2 class="hidden">Footer</h2>
+	 <p class="hide-for-small-only medium-3 columns" id="nameBottomLarge">Chantel Oatman</p>
+	    <div id="socialIconsLarge" class=" hide-for-small-only">
+		<div class="columns medium-2 medium-push-5 large-push-6" id="linkedinDivLarge"><a href="https://www.linkedin.com/in/chantel-oatman-40b177156/"><img src="images/social-linkedin-large.png" id="linkedinLarge" alt="linkedin"></a></div>
+		<div class="columns medium-2" id="facebookDivLarge"><a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><img src="images/social-facebook-large.png" id="facebookLarge" alt="facebook"></a></div>
+	  </div>
+  </section>
+   
+   <section id="bottomBar" class="hide-for-small-only"><h2 class="hidden">Bottom Bar</h2></section>
    	
 
     <script src="js/vendor/jquery.js"></script>

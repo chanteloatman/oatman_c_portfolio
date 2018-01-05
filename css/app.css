@@ -69,6 +69,15 @@ body{background-color: #a858a5;}
 #footerContent{margin: 8px 0px 8px 0px;}
 
 /*MEDIUM/LARGE GENERAL*/
+#topBarLarge{height: 19px; background: linear-gradient(#A858A5, #ffffff);}
+#logoMedium{position: absolute; margin: -28px 0px 0px 25px;}
+#logoLarge{position: absolute; margin: -45px 0px 0px 20px;}
+#menuLarge{background: linear-gradient(#A858A5, #ffffff); width: 100%; border: solid 1px #c79cce;} 
+#largeNavigation{margin-bottom: -20px; padding: 10px 0px 10px;}
+#largeNavigation ul{list-style-type: none; text-align: right;} /*removes bullets*/
+#largeNavigation ul li{display: inline; padding: 30px;} /*puts the nav list items side by side*/
+#largeNavigation ul li a{padding: 14px 15px 8px 15px; color: #ffffff;} 
+#largeNavigation ul li a:hover{color: #A858A5; background-color: #ffffff; padding: 14px 15px 8px 15px;}
 /*#footer{margin: 30px 0px 0px 0px; padding: 0px 0px 22px 0px;}*/
 #bottomBar{height: 19px; background: linear-gradient(#A858A5, #ffffff);}
 #socialIconsLarge{margin: 10px 0px 10px;}
@@ -86,6 +95,7 @@ body{background-color: #a858a5;}
 @media screen and (min-width: 64em){
 	#bottomBar{height: 30px;}
 	#copyrightLarge{margin: 0px;}
+	#promoPosition{margin-bottom: 40px;}
 	/*body {background-image: url(../images/background-desktop.jpg); background-repeat: repeat;}*/
 }
 
@@ -129,7 +139,6 @@ body{background-color: #a858a5;}
 
 /*Medium Adjustments*/
 @media screen and (min-width: 40em){
-	#promoName{color: #126979;}
 	#aboutTitleHome{margin-top: 38px;}
 	#aboutImgHome{height: 181px;}
 	#aboutInfoHome{height: 181px;}
@@ -142,7 +151,6 @@ body{background-color: #a858a5;}
 
 /*LARGE*/	
 @media screen and (min-width: 64em){
-	#promoName{color: #D89402;}
 	.servicesBoxLarge{height: 330px; background-color: #A858A5;}
 	#photoImgBox{}
 	.subHeading{color: #A858A5; font-size: 18px;}
@@ -188,9 +196,11 @@ body{background-color: #a858a5;}
 @media screen and (min-width: 40em){
 	/*#aboutTitle{margin-top: 38px;}*/
 /*	#aboutContainer{height: 168px;}*/
-	#aboutChantelInfo{height: 100%;}
+	#aboutChantelInfo{height: 100%; margin-right: 20px;}
+	#aboutChantelImg{margin: 0px 25px 0px 40px;}
 }
 @media screen and (min-width: 60em){
+	#aboutChantelImg{margin-left: 35px;}
 	/*#aboutTitle{margin-top: 38px;}*/
 	
 }
