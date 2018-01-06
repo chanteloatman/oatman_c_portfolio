@@ -223,17 +223,47 @@ body{background-color: #a858a5;}
 #video{border: double 3px #78599a;}
 #videoControls{background-color: #190C3D; color: #cac0d1; border: double 3px #78599a;}
 
-.adButton{border: double 3px #78599a;}
+/*Original Photography*/
+#galleryArea{height: 140px;}
+#photographyTitle{margin-bottom: 20px;}
+#photo{height: 193px; border: double 3px #78599a;}
+.galleryButton{background-color: #512c75; border: double 3px #78599a;}
 
+/*Graphic Work*/
+#graphicContent{margin-top: 2px;}
+#graphicsTitle{margin-bottom: 20px;}
 #graphicInfo{text-align: center;}
 .graphicButton{font-size: 13px; margin: 5px 0px 5px 0px; border-radius: 20px; border: solid 2px #78599a;}
 
+/*Branding Style Guides*/
+#brandContent{margin-top: 2px;}
+#brandTitle{margin-bottom: 20px;}
+.brandViewButton{padding: 20px 0px 20px 0px; box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);}
+.brandDesc h3{margin-top: -4px; font-size: 15px; font-weight: 500;}
+.brandDesc p{text-align: left; padding-right: 8px;}
+#brandViewButtonChantel{background-color: #a858a5;}
+#brandDescChantel{}
+#brandFlash{margin-top: 12px;}
+#brandViewButtonFlash{background-color: #bf924a;}
+#brandDescFlash{}
+#brandViewButtonJeff{background-color: #23327f;}
+#brandDescJeff{}
+
+
+
+/*Earlier Design Styling*/
+/*.adButton{border: double 3px #78599a;}
 #poster{height: 432px;}
+#poster{border: double 3px #78599a;}*/
 
-#photo{height: 180px; border: double 3px #78599a;}
-.galleryButton{background-color: #512c75; border: double 3px #78599a;}
+/*Small Iphone 5 adjustments*/
+@media screen and (min-width: 20.75em){
+	#brandFlash{margin-top: 0px;}
+}
+@media screen and (min-width: 20.875em){
+	#brandFlash{margin-top: 12px;}
+}
 
-#poster{border: double 3px #78599a;}
 
 /*MEDIUM*/
 #brochure{height: 264px;}
@@ -241,6 +271,9 @@ body{background-color: #a858a5;}
 #brochureDescription{height: 70px;}
 
 /*Medium Adjustments*/
+@media screen and (min-width: 30.375em){
+	#brandViewButtonJeff{margin-top: 12px;}
+}
 @media screen and (min-width: 40em){
 	#videoTitle{margin-top: 38px;}
 	#adBrochureTitle{margin-top: 38px;}
