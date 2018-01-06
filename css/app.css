@@ -105,10 +105,12 @@ body{background-color: #a858a5;}
 /*PHOTOGRAPHY SERVICES HOMEPAGE*/
 .servicesButton{background-color: #b073ba; padding: 5px 5px 5px 5px; text-align: center; font-family: 'Poppins', sans-serif, Arial; color: #ffffff; border: 3px double #ffffff;}
 #servicesInfo{padding: 0px 20px 0px 20px;}
-
 #photoServiceButton{margin-top: 15px;}
-
-#moreAboutButton{margin-top: 15px;}
+#photoServicesDescS{margin-top: 18px;}
+#graphicServicesDescS{margin-top: 18px;}
+#brandServicesDescS{margin-top: 18px;}
+#photoServiceDescHome{padding-left: 35px;}
+#moreAboutButton{margin-top: 14px;}
 
 /*ABOUT SECTION HOMEPAGE*/
 /*#aboutTitleHome{margin: 0px 1px 0px 1px;}*/
