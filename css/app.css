@@ -8,7 +8,7 @@
 }
 
 /*...................GENERAL STYLING....................*/
-
+.hideReadButton{display: none;}
 /*colors
 #1a0d3c dark blue
 #512c75 accent purple
@@ -180,6 +180,8 @@ body{background-color: #a858a5;}
 #aboutChantelInfo{height: 100%; padding: 15px 0px 5px 0px; margin-bottom: 15px;}
 #aboutChantelInfo p {text-align: left;}
 .aboutInfo p{ line-height: 18px; padding: 10px 10px 10px 10px;}
+
+.hiddenPara{display: none;}
 
 /*#aboutContainer{height: 107px;}*/
 
