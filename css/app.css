@@ -37,6 +37,7 @@ body{background-color: #a858a5;}
 #topBar{height: 22px; background-color: #fff;}
 
 /*NAV*/
+#logoSmall{position: absolute;  margin: -5px 0px 0px 0px; margin-left: -47%;}
 .title-bar{background: linear-gradient(#A858A5, #ffffff);}
 #menuBar{background-color: #C79CCE; height: 20px;}
 #menuNav{background-color:#EEDBF4;}
@@ -224,10 +225,12 @@ body{background-color: #a858a5;}
 #videoControls{background-color: #190C3D; color: #cac0d1; border: double 3px #78599a;}
 
 /*Original Photography*/
-#galleryArea{height: 140px;}
+#galleryArea{width: 100%;}
 #photographyTitle{margin-bottom: 20px;}
-#photo{height: 193px; border: double 3px #78599a;}
-.galleryButton{background-color: #512c75; border: double 3px #78599a;}
+.photoGalleryButton{margin-top: 23%}
+.gallerySubHead{margin-top: 20px;}
+.galleryDesc{text-align: left; margin-top: 5px;}
+.photoHidden{display: none;}
 
 /*Graphic Work*/ 
 #graphicContent{margin-top: 2px; padding: 0px 15px 10px 15px;}
@@ -267,9 +270,14 @@ body{background-color: #a858a5;}
 @media screen and (min-width: 20.75em){
 	#brandFlash{margin-top: 0px;}
 }
+@media screen and (min-width: 20.375em){
+	#photoRoseS{display: none;}
+	.photoHidden{display:block;}
+}
 @media screen and (min-width: 20.875em){
 	#brandFlash{margin-top: 12px;}
 }
+
 
 
 /*MEDIUM*/
