@@ -37,6 +37,7 @@ body{background-color: #a858a5;}
 #topBar{height: 22px; background-color: #fff;}
 
 /*NAV*/
+#logoSmall{position: absolute;  margin: -5px 0px 0px 0px; margin-left: -47%;}
 .title-bar{background: linear-gradient(#A858A5, #ffffff);}
 #menuBar{background-color: #C79CCE; height: 20px;}
 #menuNav{background-color:#EEDBF4;}
@@ -54,8 +55,7 @@ body{background-color: #a858a5;}
 /*SECTIONS*/
 .sectionBackground{padding: 32px 0px 32px 0px; background-color: #fff;}/*background: linear-gradient(#eedff0, #eee2f0)}*/ /*background: linear-gradient(#8f48a3, #0f0e43)*/
 /*.sectionMobile{margin-bottom: 50px;}*/
-.sectionFooter{height: 12px; margin-bottom: 50px; background-color: #1a0d3c; border: solid 1px #78599a;}
-.sectionFooterLast{height: 12px; margin-bottom: 25px; background-color: #1a0d3c; border: solid 1px #78599a;} /*background-color: #b073ba;*/
+
 .titleBar{ padding: 3px 0px 3px 0px;border: solid 3px #ffffff; color: #ffffff; text-align: center; font-family: 'Poppins', sans-serif, Arial; font-weight: bold;}
 
 /*GALLERYS*/
@@ -90,10 +90,15 @@ body{background-color: #a858a5;}
 /*body {background-image: url(../images/background-tablet.jpg); background-repeat: repeat;}*/
 	.buttons{box-shadow: 1px 2px 2px rgba(0, 0, 0, .4); border: solid 1px #B073BA;}
 	#promoPosition{margin-bottom: 45px;}
+	#largeNavigation ul li{margin: 1px; padding: 1px 9px 1px 9px;}
 }
 
 /*LARGE*/	
 @media screen and (min-width: 64em){
+	#largeNavigation ul li a{padding: 14px 15px 8px 15px;} 
+	#largeNavigation ul li a:hover{padding: 14px 15px 8px 15px;}
+	#largeNavigation{margin-bottom: -20px; padding: 10px 0px 10px;}
+	#largeNavigation ul li{display: inline; padding: 30px;} /*puts the nav list items side by side*/
 	#bottomBar{height: 30px;}
 	#copyrightLarge{margin: 0px;}
 	#promoPosition{margin-bottom: 40px;}
@@ -224,10 +229,12 @@ body{background-color: #a858a5;}
 #videoControls{background-color: #190C3D; color: #cac0d1; border: double 3px #78599a;}
 
 /*Original Photography*/
-#galleryArea{height: 140px;}
+#galleryArea{width: 100%;}
 #photographyTitle{margin-bottom: 20px;}
-#photo{height: 193px; border: double 3px #78599a;}
-.galleryButton{background-color: #512c75; border: double 3px #78599a;}
+.photoGalleryButton{margin-top: 23%}
+.gallerySubHead{margin-top: 20px;}
+.galleryDesc{text-align: left; margin-top: 5px;}
+.photoHidden{display: none;}
 
 /*Graphic Work*/ 
 #graphicContent{margin-top: 2px; padding: 0px 15px 10px 15px;}
@@ -267,9 +274,14 @@ body{background-color: #a858a5;}
 @media screen and (min-width: 20.75em){
 	#brandFlash{margin-top: 0px;}
 }
+@media screen and (min-width: 20.375em){
+	#photoRoseS{display: none;}
+	.photoHidden{display:block;}
+}
 @media screen and (min-width: 20.875em){
 	#brandFlash{margin-top: 12px;}
 }
+
 
 
 /*MEDIUM*/
@@ -301,21 +313,31 @@ body{background-color: #a858a5;}
 
 /*.....................CONTACT PAGE......................*/
 
-#contactForm{height: 419px; margin: 10px 0px 0px 0px;}
+#contactForm{ margin: 0px 0px 0px 0px; padding: 15px 15px 15px 15px; border-top: solid 8px #c79cce; border-bottom: solid 8px #c79cce;}
 #contactFormInfo p{padding: 15px 10px 0px 10px;}
 
 label{font-family: 'Poppins', sans-serif, Arial; font-size: 15px; color: #62367d;}
+
+#comment{height: 70px;}
 /*input{font-family: 'Poppins', sans-serif, Arial; font-size: 15px; color: #62367d;}*/
 /*MEDIUM*/
 
 /*Medium Adjustments*/
 @media screen and (min-width: 40em){
 	#contactTitle{margin-top: 38px;}
+	.labelname{margin-left: 5%;}
+	.inputarea{width: 90%; margin-left: 5%;}
 }
 
 /*LARGE*/	
 @media screen and (min-width: 64em){
-	#contactPromoBanner{height: 452px; background-color: #000; margin-top: -24px}
+	.labelname{margin-left: 15%;}
+	.inputarea{width: 90%; margin-left: 15%;}
+	#firstname{width: 64%;}
+	#lastname{width: 64%;}
+	#email{width: 62%;}
+	.street{margin-left: 15%;}
+	#comment{width: 60%; height: 90px;}
 }
 
 	

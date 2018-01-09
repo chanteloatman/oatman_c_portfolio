@@ -18,6 +18,7 @@
     
    <!--MENU SMALL-->
    <nav id="mainNav" class="data-sticky-container hide-for-medium hide-for-large"><h2 class="hidden">Navigation</h2>
+        <a href="index.html"><img src="images/logo-small.png" alt="logo" class="hide-for-medium-only hide-for-large" id="logoSmall"></a>
          <div class="title-bar small-12" data-responsive-toggle="menuNav" data-hide-for="large">
 		<button class="menu-icon float-right" type="button" data-toggle></button>
 	    </div>
@@ -63,32 +64,30 @@
    	   <div id="contactTitleBar" class="headStyle small-12 large-12 columns">Contact Me</div>
 	  <!-- <div id="contactTitleImg" class="titleImg small-3 large-2 columns boxHelper">IMG</div>-->
    </section>
-	   <div id="contactFormInfo" class="small-12 large-push-1 large-7 columns textBG">
+	   <div id="contactFormInfo" class="small-12 large-push-2 large-7 columns textBG">
 		   <p>To request a quote to hire me for your marketing and/or design needs, or if you would like to leave a comment about some of my work, please fill out the contact information form to get in touch with me.</p>
 	   </div>
-	   <div id="contactForm" class="small-12 large-push-1 large-7 columns textBG">CONTACT FORM
-	   <form>
+	   <div id="contactForm" class="small-12 large-12 columns textBG">CONTACT FORM
+	   <form method="post"><!--DO WE NEED METHOD POST THIS HERE???-->
 	   
-	   <label for="firstname">First Name</label>
-	   <input type="text" id="firstname" name="firstname" placeholder="first name">
+	   <label for="firstname" class="labelname">First Name</label>
+	   <input type="text" id="firstname" class="inputarea" name="firstname" placeholder="first name">
 	   
-	   <label for="lastname">Last Name</label>
-	   <input type="text" id="lastname" name="lastname" placeholder="last name">
+	   <label for="lastname" class="labelname">Last Name</label>
+	   <input type="text" id="lastname" class="inputarea" name="lastname" placeholder="last name">
 	   
-	   <label for="email">Email</label>
-	   <input type="text" id="email" name="email" placeholder="your email">
+	   <label for="email" class="labelname">Email</label>
+	   <input type="text" id="email" class="inputarea" name="email" placeholder="your email">
 	   
-	   <label for="comment">Comment</label>
-	   <input type="text" id="comment" name="comment">
+		   <label for="street" class="labelname">Street</label><input class="street" name="street" >
+	   
+	   <label for="comment" class="labelname">Comment</label>
+	   <input type="text" id="comment" class="inputarea" name="comment">
 	   
 	   </form>
 	   
 	   </div>
-	   <div id="contactPromoBanner" class="hide-for-small-only large-push-2 large-2 columns BoxHelper"></div>
-	    <div id="contactSocialInfo" class="small-12 hide-for-medium columns boxHelper">INFO</div>
-	  <!-- <div id="facebookHome" class="small-3 columns socialIcon boxHelper"></div>
-		   <div id="twitterHome" class="small-3 columns socialIcon boxHelper"></div>
-		   <div id="linkedinHome" class="small-3 columns socialIcon boxHelper"></div>-->
+	   
    </section>
    <!--Contact Footer-->
    <section class="row"><h2 class="hidden">Contact Footer</h2>
