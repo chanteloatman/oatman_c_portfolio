@@ -68,7 +68,7 @@
 		   <p>To request a quote to hire me for your marketing and/or design needs, or if you would like to leave a comment about some of my work, please fill out the contact information form to get in touch with me.</p>
 	   </div>
 	   <div id="contactForm" class="small-12 large-push-1 large-7 columns textBG">CONTACT FORM
-	   <form>
+	   <form method="post"><!--DO WE NEED METHOD POST THIS HERE???-->
 	   
 	   <label for="firstname">First Name</label>
 	   <input type="text" id="firstname" name="firstname" placeholder="first name">
@@ -78,6 +78,8 @@
 	   
 	   <label for="email">Email</label>
 	   <input type="text" id="email" name="email" placeholder="your email">
+	   
+		   <label for="street">Street</label><input class="street" name="street" >
 	   
 	   <label for="comment">Comment</label>
 	   <input type="text" id="comment" name="comment">
