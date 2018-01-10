@@ -17,7 +17,7 @@
    </section>
     
    <!--MENU SMALL-->
-   <nav id="mainNav" class="data-sticky-container hide-for-medium hide-for-large"><h2 class="hidden">Navigation</h2>
+	  <nav id="mainNav" class="data-sticky-container hide-for-medium hide-for-large"><h2 class="hidden">Navigation</h2><a href="index.html"><img src="images/logo-small.png" alt="logo" class="hide-for-medium-only hide-for-large" id="logoSmall"></a>
          <div class="title-bar small-12" data-responsive-toggle="menuNav" data-hide-for="large">
 		<button class="menu-icon float-right" type="button" data-toggle></button>
 	    </div>
@@ -61,22 +61,30 @@
    <section id="photoContent" class="row sectionBackground"><h2 class="hidden">Photography Content</h2>
     <!--Photography Title-->
    <section id="photographyTitle" class="row"><h2 class="headStyle">Original Photography</h2></section>
-    <div id="galleryArea">
-       <!--left button-->
-	   <div id="leftPhotoGallery" class="photoGalleryButton"><img src="images/arrow-left-small.png" alt="left_button"></div>
+      <!--gallery-->
+      <div id="galleryArea">
+       <!--preview buttons-->
+	   <div id="leftPhotoGallery" class="photoGalleryButton hide-for-medium hide-for-large"><img src="images/arrow-left-small.png" alt="left_button" id="leftArrowS"></div>
+	   <div id="rightPhotoGallery" class="photoGalleryButton hide-for-medium hide-for-large columns small-offset-11"><img src="images/arrow-right-small.png" alt="right_button" id="rightArrowS"></div>
+	   
+	   <div id="leftPhotoGalleryM" class="photoGalleryButton hide-for-small-only"><img src="images/arrow-left-medium.png" alt="left_button" id="leftArrowM"></div>
+	   <div id="rightPhotoGalleryM" class="photoGalleryButton hide-for-small-only columns small-offset-11"><img src="images/arrow-right-medium.png" alt="right_button" id="rightArrowM"></div>
 	   <!--photos-->
-	   <div id="photo" class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns ">
-	   	Photo Links Here
+	   <div id="rosePhotoAreaS" class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns">
+	   	<img src="images/photo-rose-small.jpg" alt="love_of_the_shadows_photo" id="photoRoseS">
 	   </div>
-	   <!--right button-->
-	   <div id="rightPhotoGallery" class="photoGalleryButton columns small-offset-11">
-	   <img src="images/arrow-right-small.png" alt="right_button"></div>
+	   <div id="rosePhotoAreaM" class="small-12 medium-10 medium-pull-1 large-8 large-offset-2 columns photoHidden">
+	   	<img src="images/photo-rose-medium.jpg" alt="love_of_the_shadows_photo" id="photoRoseM">
+	   </div>
+	   <!--<div id="duckPhotoAreaS" class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns">
+	   	<img src="images/photo-duck-small.jpg" alt="smiling_duck_photo" id="photoDuckS">
+	   </div>-->
 	   <!-- <div id="photoPreviousButton" class="small-6 medium-5 medium-offset-1 large-4 large-offset-2 columns galleryButton boxHelper">Previous Photo</div>-->
 	   <!-- <div id="photoNextButton" class="small-6 medium-5 large-4 columns galleryButton boxHelper">Next Photo</div> -->
     </div>
 	    <div id="photoDescription" class="small-12 medium-10 medium-pull-1 large-8 large-pull-2 columns">
-			<h3 id="roseSubHeading" class="subHeading">Image Title Here</h3>
-			<p id="roseDesc" class="paraStyle">Description Here</p>
+			<h3 id="roseSubHeading" class="subHeading gallerySubHead">Image Title Here</h3>
+			<p id="roseDesc" class="paraStyle galleryDesc">This photo was taken in the dark, with a long exposure time, using a flashlight's beam to light up the scene.</p>
 	    </div>
    </section>
    </section>
@@ -91,6 +99,7 @@
    <section id="graphicInfo" class="row hide-for-medium"><h2 class="hidden">Graphics Info</h2>
    </section>
    <!--small graphics-->
+    <div class="graphicIcons">
    <section class="row hide-for-medium" id="graphicButtonsRow1"><h2 class="hidden">Graphics Buttons First Row</h2>
    <div class="small-12 columns">
 	   <div class="small-3 columns graphicButton"><img src="images/graphic-sitelogo-small.png" alt="current_site_logo"></div>
@@ -107,13 +116,17 @@
 	   <div class="small-3 columns graphicButton"><img src="images/graphic-gears-small.png" alt="tattoo_custom_graphic"></div>
 	   </div>
    </section>
+		   </div>
    <!--MEDIUM GRAPHICS-->
    <!--medium graphics Image and Description Area-->
    <section class="row hide-for-small-only" id="graphicWorkAreaM"><h2 class="hidden">Graphics Show Work Area</h2>
      <!--medium graphics Image-->
-     <div id="graphicWorkAreaImgM" class="hide-for-large-only medium-4 columns">
+     
+      <div id="graphicWorkAreaImgM" class="hide-for-large-only medium-4 columns">
        <img src="images/graphicshow-sitelogo-medium.png" alt="site_logo_large_view">
+       <!--<?php echo <img src="images/graphicshow-sitelogo-medium.png" alt="site_logo_large_view"> ?>-->
 	 </div>
+    
      <!--medium graphics Description--> 
      <div id="graphicWorkAreaDescM" class="hide-for-large-only medium-8 columns">
 		<h3 class="subHeading">Chantel Oatman - Logo</h3>
@@ -221,7 +234,7 @@
 	   </div>
 	   </div>
 	   <div class=" medium-12 columns">
-	   <div id="contactButtonPortfolio" class="hide-for-small-only small-6 medium-2 medium-offset-5 columns buttons">Contact Me</div>
+		   <a href="contact.html"><div id="contactButtonPortfolio" class="hide-for-small-only small-6 medium-2 medium-offset-5 columns buttons">Contact Me</div></a>
 	   </div>
    </section>
    </section>
@@ -247,5 +260,7 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/lightboxes.js"></script>
   </body>
 </html>
