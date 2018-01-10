@@ -88,7 +88,7 @@ body{background-color: #a858a5;}
 @media screen and (min-width: 40em){
 .sectionBackground{padding: 38px 0px 38px 0px;}
 /*body {background-image: url(../images/background-tablet.jpg); background-repeat: repeat;}*/
-	.buttons{box-shadow: 1px 2px 2px rgba(0, 0, 0, .4); border: solid 1px #B073BA;}
+	/*.buttons{box-shadow: 1px 2px 2px rgba(0, 0, 0, .4); border: solid 1px #B073BA;}*/
 	#promoPosition{margin-bottom: 45px;}
 	#largeNavigation ul li{margin: 1px; padding: 1px 9px 1px 9px;}
 }
@@ -184,6 +184,8 @@ body{background-color: #a858a5;}
 #programLink{color: #A858A5; text-decoration: underline; font-weight: 500;}
 .aboutButton{background-color: #1a0d3c; border: solid 2px #78599a; color: #cac0d1;}
 #aboutChantelImg{border: solid 2px #78599a; padding: 0px 0px 0px 0px; margin: 0px 10px 15px 20px;}
+/*#aboutChantelImgM{border: solid 2px #78599a; padding: 0px 0px 0px 0px; margin: 0px 10px 15px 20px;}*/
+/*#aboutChantelImgL{border: solid 2px #78599a; padding: 0px 0px 0px 0px; margin: 0px 10px 15px 20px;}*/
 #aboutChantelInfo{height: 100%; padding: 15px 0px 5px 0px; margin-bottom: 15px;}
 #aboutChantelInfo p {text-align: left;}
 .aboutInfo p{ line-height: 18px; padding: 10px 10px 10px 10px;}
@@ -232,6 +234,7 @@ body{background-color: #a858a5;}
 #galleryArea{width: 100%;}
 #photographyTitle{margin-bottom: 20px;}
 .photoGalleryButton{margin-top: 23%}
+#photoRoseS{width: 100%;}
 .gallerySubHead{margin-top: 20px;}
 .galleryDesc{text-align: left; margin-top: 5px;}
 .photoHidden{display: none;}
@@ -264,19 +267,31 @@ body{background-color: #a858a5;}
 #brandFlash{margin-top: 12px;}
 
 
+/*Lightbox Styling*/
+.lightbox{
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.7); /*background-color: #a858a5;*/ color: #494949;
+	z-index: 500;
+	
+}
+.lightboxImg{
+	
+}
+.lightbox p{
+	
+}
 
-/*Earlier Design Styling*/
-/*.adButton{border: double 3px #78599a;}
-#poster{height: 432px;}
-#poster{border: double 3px #78599a;}*/
 
 /*Small Iphone 5 adjustments*/
 @media screen and (min-width: 20.75em){
 	#brandFlash{margin-top: 0px;}
 }
 @media screen and (min-width: 20.375em){
-	#photoRoseS{display: none;}
-	.photoHidden{display:block;}
+	/*#photoRoseS{display: none;}*/
+	/*.photoHidden{display:block;}*/
 }
 @media screen and (min-width: 20.875em){
 	#brandFlash{margin-top: 12px;}
