@@ -31,7 +31,7 @@
 	  <ul>
 		  <li id="homeNav"><a href="index.php">Home</a></li>
           <li id="aboutNav"><a href="#">About</a></li>
-          <li id="portfolioNav"><a href="portfolio.html">Portfolio</a></li>
+          <li id="portfolioNav"><a href="portfolio.php">Portfolio</a></li>
           <li id="contactNav"><a href="contact.html">Contact Me</a></li>
       </ul>
    </div>
@@ -53,10 +53,10 @@
    <div id="menuLarge" class="row hide-for-small-only">
    	<nav id="largeNavigation" class=" medium-12 large-12 columns">
    	   <ul>
-   	      <li id="homeNavLarge"><a href="index.html">Home</a></li>
+   	      <li id="homeNavLarge"><a href="index.php">Home</a></li>
           <li id="aboutNavLarge"><a href="#">About</a></li>
-          <li id="portfolioNavLarge"><a href="portfolio.html">Portfolio</a></li>
-          <li id="contactNavLarge"><a href="contact.html">Contact Me</a></li>
+          <li id="portfolioNavLarge"><a href="portfolio.php">Portfolio</a></li>
+          <li id="contactNavLarge"><a href="contact.php">Contact Me</a></li>
        </ul>
     </nav>
    </div>
@@ -104,14 +104,7 @@
 	  <div id="resumeInfo" class="paraStyle hide-for-small-only medium-8 medium-offset-2 large-8 large-offset-2 columns"><?php echo "<p>{$resumeInfoPara}</p>"; ?></div><!--To learn more about my skills and experience in my field, please check out my resume by clicking the "See Resume" button below:-->
   </div>
   <!--See Resume Button-->
-  <div id="resumeButton" class="hide-for-small-only medium-offset-5 medium-2 buttons">See Resume</div>
-  <!--Resume-->
-  <div id="resumeSection" class="row">
-	  <div id="resume" class="small-12 hide-for-medium hide-for-large medium-10 medium-offset-1 columns">
-	  	<img src="images/<?php echo $chantelResume ?>" id="chantelResumeFile" alt="chantel_oatman_resume">
-	  </div>
-  </div>
-  </section>
+  <div id="resumeButton" class=" small-offset-1 small-2 medium-offset-5 medium-2 buttons"><a href="images/myresume.jpg">See Resume</a></div>
 
    <section id="footer" class="row hide-for-medium hide-for-large"><h2 class="hidden">Footer</h2>
    <div id="footerContent" class="row">

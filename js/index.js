@@ -3,6 +3,7 @@
 (function(){
 	"use strict";
 	
+//For Hiding and Showing Services Mobile	
 	//Variables
 	var photoServ = document.querySelector("#photoServicesDescS");
 	var photoServButton = document.querySelector("#photoServiceButton");

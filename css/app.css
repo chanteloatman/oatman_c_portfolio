@@ -155,10 +155,10 @@ body{background-color: #a858a5;}
 
 /*Medium Adjustments*/
 @media screen and (min-width: 40em){
+	#servicesContentHome{margin-top: 2px;}
 	#aboutTitleHome{margin-top: 38px;}
 	#aboutImgHome{height: 181px;}
 	#aboutInfoHome{height: 181px;}
-	#videoHome{height: 260px;}
 	#controlsHome{height: 46px;}
 	#portfolioTitleHome{margin-top: 38px;}
 	#contactTitleHome{margin-top: 38px;}
@@ -227,8 +227,11 @@ body{background-color: #a858a5;}
 }
 
 /*....................PORTFOLIO PAGE.....................*/
-#video{border: double 3px #78599a;}
+/*#video{border: double 3px #78599a;}
 #videoControls{background-color: #190C3D; color: #cac0d1; border: double 3px #78599a;}
+*/
+
+.descHide{display: none;}
 
 /*Original Photography*/
 #galleryArea{width: 100%;}
@@ -238,6 +241,8 @@ body{background-color: #a858a5;}
 .gallerySubHead{margin-top: 20px;}
 .galleryDesc{text-align: left; margin-top: 5px;}
 .photoHidden{display: none;}
+.hiddenGalleryImgS{display:none;}
+#leftArrowS{margin-left: 25px;}
 
 /*Graphic Work*/ 
 #graphicContent{margin-top: 2px; padding: 0px 15px 10px 15px;}

@@ -42,7 +42,7 @@ $text = "error report";
 	  <ul>
 		  <li id="homeNav"><a href="#">Home</a></li>
           <li id="aboutNav"><a href="about.php">About</a></li>
-          <li id="portfolioNav"><a href="portfolio.html">Portfolio</a></li>
+          <li id="portfolioNav"><a href="portfolio.php">Portfolio</a></li>
           <li id="contactNav"><a href="contact.html">Contact Me</a></li>
       </ul>
    </div>
@@ -52,8 +52,8 @@ $text = "error report";
    
    <!--PROMO NAME SECTION-->
    <section class="row" id="promoSection"><h2 class="hidden">Promo Name Section</h2>
-	   <div id="promoName" class="small-12 medium-12 large-12 columns"><h2></h2></div><!--Chantel Oatman, title-->
-	   <div id="promoPosition" class="small-12 medium-12 large-12 columns"><p></p></div><!--Digital Marketing & Design, title-->
+	   <div id="promoName" class="small-12 medium-12 large-12 columns"><h2>Chantel Oatman</h2></div>
+	   <div id="promoPosition" class="small-12 medium-12 large-12 columns"><p>Digital Visuals & Design</p></div>
    </section>
    
    <!--MENU MEDIUM/LARGE-->
@@ -66,7 +66,7 @@ $text = "error report";
    	   <ul>
    	      <li id="homeNavLarge"><a href="#">Home</a></li>
           <li id="aboutNavLarge"><a href="about.php">About</a></li>
-          <li id="portfolioNavLarge"><a href="portfolio.html">Portfolio</a></li>
+          <li id="portfolioNavLarge"><a href="portfolio.php">Portfolio</a></li>
           <li id="contactNavLarge"><a href="contact.html">Contact Me</a></li>
        </ul>
     </nav>
@@ -78,7 +78,7 @@ $text = "error report";
     <!--Services Content-->
 	<section id="servicesContent" class="row sectionBackground hide-for-large hide-for-medium-only"><h2 class="hidden">Services Content</h2>
     <!--Services Info-->
-		<section id="servicesTitle" class="row"><h2 class="headStyle">My Services</h2></section><!--My Services, title-->
+		<section id="servicesTitle" class="row"><h2 class="headStyle">My Services</h2></section>
 	<div id="servicesInfo" class="small-12 columns"><div class="paraStyle"><?php echo "<p>{$aboutServicesInfo}</p>"; ?></p></div><!--tbl_paragraphs, paragraph_id=1, paragraph_text="Within my work, I offer a vast range of services within each of my specialty areas, check out what I have to offer below:"-->
 	   <!--Services Buttons-->
 	   <div id="photoServiceButton" class="small-offset-2 small-8 hide-for-medium large-pull-1 large-10 columns servicesButton">Photography Services</div>
@@ -136,13 +136,13 @@ $text = "error report";
 	   <section id="PortfolioTitle" class="row"><h2 class="headStyle">My Portfolio</h2></section><!--My Portfolio, tbl_paragraph, paragraph_id=22-->
 	  
 	   <div id="viewGraphicsButton" class="small-offset-2 small-8 hide-for-medium-only hide-for-large columns portfolioHomeButtons">
-		   <a href="portfolio.html#portfolioPhotography"><img src="images/<?php echo $photoViewPhotoSmall ?>" id="viewPhotoMobile" alt="view_graphics"></a><!--viewphotography-mobile.png-->
+		   <a href="portfolio.php#portfolioPhotography"><img src="images/<?php echo $photoViewPhotoSmall ?>" id="viewPhotoMobile" alt="view_graphics"></a><!--viewphotography-mobile.png-->
 	   </div>
 	   <div id="viewPhotosButton" class="small-offset-2 small-8 hide-for-medium-only hide-for-large columns portfolioHomeButtons">
-		   <a href="portfolio.html#portfolioGraphics"><img src="images/<?php echo $photoViewGraphicsSmall ?>" id="viewGraphicsMobile" alt="view_graphics"></a><!--viewgraphics-mobile.png-->
+		   <a href="portfolio.php#portfolioGraphics"><img src="images/<?php echo $photoViewGraphicsSmall ?>" id="viewGraphicsMobile" alt="view_graphics"></a><!--viewgraphics-mobile.png-->
 	   </div>
 	    <div id="viewBrochuresButton" class="small-offset-2 small-8 hide-for-medium-only hide-for-large columns portfolioHomeButtons">
-			<a href="portfolio.html#portfolioBranding"><img src="images/<?php echo $photoViewBrandSmall ?>" id="viewBrandMobile" alt="view_branding"></a><!--viewbrand-mobile.png-->
+			<a href="portfolio.php#portfolioBranding"><img src="images/<?php echo $photoViewBrandSmall ?>" id="viewBrandMobile" alt="view_branding"></a><!--viewbrand-mobile.png-->
 	    </div>
 	   <div id="toPortfolio" class="row">
 		   <a href="portfolio.html"><div id="viewPortfolioButton" class="small-offset-3 small-6 medium-offset-5 medium-2 columns buttons">See Full Portfolio</div></a>
@@ -164,7 +164,7 @@ $text = "error report";
 		  <!--Photography Services-->
 		  <div id="photoServicesMedium" class="row">
 		   <div id="photoServicesImgM" class="medium-4 medium-offset-2 columns">
-			   <a href="portfolio.html#portfolioPhotography"><img src="images/<?php echo $photoViewPhotoMedium ?>" alt="view_photography"></a><!--viewphotography-medium.png-->
+			   <a href="portfolio.php#portfolioPhotography"><img src="images/<?php echo $photoViewPhotoMedium ?>" alt="view_photography"></a><!--viewphotography-medium.png-->
 		   </div>
 		   <div id="photoServicesDescM" class="columns medium-6 medium-pull-1 ">
 		   	<div class="subHeading"><?php echo "<p>{$servicePhotoSubtitleML}</p>"; ?></div><!--My Photography Services Include:-->
@@ -183,7 +183,7 @@ $text = "error report";
 		  <!--Graphic Services-->
 		  <div id="graphicServicesMedium" class="row">
 		   <div id="graphicServicesImgM" class="medium-4 medium-offset-2 columns">
-			   <a href="portfolio.html#portfolioGraphics"><img src="images/<?php echo $photoViewGraphicsMedium ?>" alt="view_graphics"></a><!--viewgraphics-medium.png-->
+			   <a href="portfolio.php#portfolioGraphics"><img src="images/<?php echo $photoViewGraphicsMedium ?>" alt="view_graphics"></a><!--viewgraphics-medium.png-->
 		   </div>
 		   <div id="graphicServicesDescM" class="columns medium-6 medium-pull-1 ">
 		   	<div class="subHeading"><?php echo "<p>{$serviceGraphicsSubtitleML}</p>"; ?></div><!--My Graphic Services Include:-->
@@ -202,7 +202,7 @@ $text = "error report";
 		   <!--Graphic Services-->
 		  <div id="brandServicesMedium" class="row">
 		   <div id="brandServicesImgM" class="medium-4 medium-offset-2 columns">
-			   <a href="portfolio.html#portfolioBranding"><img src="images/<?php echo $photoViewBrandMedium ?>" alt="view_branding"></a><!--viewbrand-medium.png-->
+			   <a href="portfolio.php#portfolioBranding"><img src="images/<?php echo $photoViewBrandMedium ?>" alt="view_branding"></a><!--viewbrand-medium.png-->
 		   </div>
 		   <div id="brandServicesDescM" class="columns medium-6 medium-pull-1 ">
 		   	<div class="subHeading"><?php echo "<p>{$serviceBrandSubtitleML}</p>"; ?></div><!--My Branding Services Include:-->
@@ -229,20 +229,15 @@ $text = "error report";
 	   <!--services large images-->
 	   <section class="row hide-for-medium-only sectionBackground"><h2 class="hidden">My Services</h2>
 	   <div id="photoServiceHome" class="columns large-4">
-		  <a href="portfolio.html#portfolioPhotography"><img src="images/<?php echo $photoViewPhotoLarge ?>" id="viewPhotographyLarge" alt="view_photography"></a><!--viewphotography-large.png-->
+		  <a href="portfolio.php#portfolioPhotography"><img src="images/<?php echo $photoViewPhotoLarge ?>" id="viewPhotographyLarge" alt="view_photography"></a><!--viewphotography-large.png-->
 	   </div>
 	   <div id="graphicServiceHome" class="columns large-4">
-		   <a href="portfolio.html#portfolioGraphics"><img src="images/<?php echo $photoViewGraphicsLarge ?>" id="viewGraphicsLarge" alt="view_graphics"></a><!--viewgraphics-large.png-->
+		   <a href="portfolio.php#portfolioGraphics"><img src="images/<?php echo $photoViewGraphicsLarge ?>" id="viewGraphicsLarge" alt="view_graphics"></a><!--viewgraphics-large.png-->
 	   </div>
 	   <div id="brandServiceHome" class="columns large-4">
-		   <a href="portfolio.html#portfolioBranding"><img src="images/<?php echo $photoViewBrandLarge ?>" id="viewBrandLarge" alt="view_branding"></a><!--viewbrand-large.png-->
+		   <a href="portfolio.php#portfolioBranding"><img src="images/<?php echo $photoViewBrandLarge ?>" id="viewBrandLarge" alt="view_branding"></a><!--viewbrand-large.png-->
 	   </div>
-	   <div id="webServicesMedium" class="row">
-		  <div id="webServices" class="medium-8 medium-offset-2 columns">
-		  	<div class="subHeading"><?php echo "<p>{$serviceWebSubtitleML}</p>"; ?></div><!--My Web Design Services Include:-->
-		    <div class="paraStyle"><?php echo "<p>{$serviceWebInfoML}</p>"; ?></div><!--Creating websites like the one you are currently on, designed and coded by Chantel Oatman:-->
-		  </div>
-		  </div>
+	   
 	   </section>
 	   <!--Services Large Buttons-->
 	   <a href="portfolio.html#photoContent"><div id="viewPhotoButton" class="hide-for-small-only hide-for-medium-only columns large-4 buttons homePortfolioButtons">View Portfolio</div></a>
@@ -289,8 +284,15 @@ $text = "error report";
 		    </ul>-->
 		   </div>
 		 </div>
+		 <div id="webServicesMedium" class="row">
+		  <div id="webServices" class="medium-8 medium-offset-2 columns">
+		  	<div class="subHeading"><?php echo "<p>{$serviceWebSubtitleML}</p>"; ?></div><!--My Web Design Services Include:-->
+		    <div class="paraStyle"><?php echo "<p>{$serviceWebInfoML}</p>"; ?></div><!--Creating websites like the one you are currently on, designed and coded by Chantel Oatman:-->
+		  </div>
+		  </div>
 	   </section>
 	   </section>
+	  
    </section>
    
    
@@ -298,7 +300,7 @@ $text = "error report";
    <section class="row"><h2 class="hidden">Contact Section HomePage</h2>
    <!--Contact Content-->
    <section id="contactContentHome" class="row sectionBackground"><h2 class="hidden">Contact Content</h2>
-   <section id="ContactTitle" class="row"><h2 class="headStyle">Contact Me</h2></section><!--Contact Me, title-->
+   <section id="ContactTitle" class="row"><h2 class="headStyle">Contact Me</h2></section>
 	   <div id="contactInfoHome" class="small-12 medium-offset-2 medium-8 columns ">
 		   <div class="paraStyle"><?php echo "<p>{$contactInfo}</p>"; ?></div><!--If you would like to hire me for your photography, graphic, branding, or site design needs, please fill out the contact information form to get in touch with me:-->
 	   </div>

@@ -13,8 +13,8 @@ $(document).foundation();
 		//debugger;
 		
 		//takes away the ability to scroll on the page
-		window.ScrollTo(0, 0);
-		docment.body.style.overflow - "hidden";
+		window.scrollTo(0, 0);
+		document.body.style.overflow = "hidden";
 		
 		//the lightbox
 		let lightbox = document.querySelector('.lightbox');
@@ -25,11 +25,20 @@ $(document).foundation();
 		let lightboxDesc = lightbox.querySelector('p');
 		
 		//the two lines below, change to pulling from the database on the getcontent page
-		lightboxImg.src = "images/" + currentObject.images[currentIndex];
-		lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
+		//lightboxImg.src = "images/" + currentObject.images[currentIndex];
+		//lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
+		lightboxImg.src="images/graphicshow-sitelogo-small.png";
 		
 		lightboxClose.addEventListener('click', closeLightbox, false);
 	}
+	
+	//display images
+	/*function{
+		var unhide = document.querySelector("#g")
+		
+	}*/
+	
+	var graphicButton = document.querySelector(".graphicButton");
 	
 	//Turn off the Lightbox, and make scroll work again
 	function closeLightbox(){
@@ -42,12 +51,12 @@ $(document).foundation();
 		let lightboxImg = lightbox.querySelector('img');
 		lightbox.Img.src = ''; //source will go away
 		//close the lightboxDesc
-		let lightboxDesc - lightbox.querySelector('p');
+		let lightboxDesc = lightbox.querySelector('p');
 		lightboxDesc.innerHTML = ''; //the source will go away
 	}
 	
 	//don't think would need this line below
 	//changeElements.call(document.querySelector('#imgMain').click();
-	
+	graphicButton.addEventListener('click', lightboxOn, false);
 	
 })();

@@ -73,9 +73,25 @@ while($row = mysqli_fetch_array($result)){
 	elseif($row['images_size'] == 2){ $aboutHeadshotMedium = $row['images_photo'];} //medium headshot 
 	elseif($row['images_size'] == 3){ $aboutHeadshotLarge = $row['images_photo'];} //large headshot
 	}
+
+//...........PORTFOLIO GLLERY ARROW BUTTONS...........
+$sql = "SELECT portfoliowork_img, portfoliowork_size FROM tbl_portfoliowork WHERE portfoliowork_type='left-gallery-button'"; //here we want all the left arrow buttons
+$result = mysqli_query($link, $sql); //the result: the images
+while($row = mysqli_fetch_array($result)){ 
+	if($row['portfoliowork_size'] == 1){ $leftArrowGallerySmall = $row['portfoliowork_img'];} //small arrow
+	elseif($row['portfoliowork_size'] == 2){ $leftArrowGalleryMedium = $row['portfoliowork_img'];} //medium arrow
+	elseif($row['portfoliowork_size'] == 3){ $leftArrowGalleryLarge = $row['portfoliowork_img'];} //large arrow
+	}
+$sql = "SELECT portfoliowork_img, portfoliowork_size FROM tbl_portfoliowork WHERE portfoliowork_type='right-gallery-button'"; //here we want all the right arrow buttons
+$result = mysqli_query($link, $sql); //the result: the images
+while($row = mysqli_fetch_array($result)){ 
+	if($row['portfoliowork_size'] == 1){ $rightArrowGallerySmall = $row['portfoliowork_img'];} //small arrow
+	elseif($row['portfoliowork_size'] == 2){ $rightArrowGalleryMedium = $row['portfoliowork_img'];} //medium arrow
+	elseif($row['portfoliowork_size'] == 3){ $rightArrowGalleryLarge = $row['portfoliowork_img'];} //large arrow
+	}
 //...........PORTFOLIO GALLERY IMAGES...........
 //Selecting all the small images that are photographs, then each image by their title (to specifiy what small image to use), and then make specific variables to access content
-$sql = "SELECT * FROM tbl_portfoliowork WHERE portfoliowork_size=1 AND portfolio_type = 'photograph'";
+$sql = "SELECT * FROM tbl_portfoliowork WHERE portfoliowork_size=1 AND portfoliowork_type = 'photograph'";
 $result = mysqli_query($link, $sql); //the result: images, titles, descs, urls, notes
 while($row = mysqli_fetch_array($result)){
 	if($row['portfoliowork_title'] == 'Love of the Shadows'){ //if title is love of shadows
@@ -109,7 +125,7 @@ while($row = mysqli_fetch_array($result)){
 		$gallerySquirrelSmallDesc = $row['portfoliowork_desc']; //show small squirrel of dreams desc
 		$gallerySquirrelSmallNote = $row['portfoliowork_note']; //show small squirrel of dreams note
 	}
-	elseif($row['portfoliowork_title'] == 'Beaneath the Makeup'){ //if title is beneath the makeup
+	elseif($row['portfoliowork_title'] == 'Beneath the Makeup'){ //if title is beneath the makeup
 		$galleryMakeupSmallImg = $row['portfoliowork_img']; //show small beneath the makeup image
 		$galleryMakeupSmallTitle = $row['portfoliowork_title']; //show small beneath the makeup title
 		$galleryMakeupSmallDesc = $row['portfoliowork_desc']; //show small beneath the makeup desc
@@ -118,7 +134,7 @@ while($row = mysqli_fetch_array($result)){
 	}
 }
 //Selecting all the medium images that are photographs, then each image by their title (to specifiy what small image to use)
-$sql = "SELECT * FROM tbl_portfoliowork WHERE portfoliowork_size=2 AND portfolio_type = 'photograph'";
+$sql = "SELECT * FROM tbl_portfoliowork WHERE portfoliowork_size=2 AND portfoliowork_type = 'photograph'";
 $result = mysqli_query($link, $sql); //the result: images, titles, descs, urls, notes
 while($row = mysqli_fetch_array($result)){
 	if($row['portfoliowork_title'] == 'Love of the Shadows'){ //if the title of portfoliowork is love of shadows
@@ -152,7 +168,7 @@ while($row = mysqli_fetch_array($result)){
 		$gallerySquirrelMediumDesc = $row['portfoliowork_desc']; //show medium squirrel of dreams desc
 		$gallerySquirrelMediumNote = $row['portfoliowork_note']; //show medium squirrel of dreams note
 	}
-	elseif($row['portfoliowork_title'] == 'Beaneath the Makeup'){ //if title is beneath the makeup
+	elseif($row['portfoliowork_title'] == 'Beneath the Makeup'){ //if title is beneath the makeup
 		$galleryMakeupMediumImg = $row['portfoliowork_img']; //show medium beneath the makeup image
 		$galleryMakeupMediumTitle = $row['portfoliowork_title']; //show small beneath the makeup title
 		$galleryMakeupMediumDesc = $row['portfoliowork_desc']; //show small beneath the makeup desc
@@ -162,7 +178,7 @@ while($row = mysqli_fetch_array($result)){
 }
 
 //Selecting all the large images that are photographs, then each image by their title (to specifiy what small image to use)
-$sql = "SELECT * FROM tbl_portfoliowork WHERE portfoliowork_size=3 AND portfolio_type = 'photograph'";
+$sql = "SELECT * FROM tbl_portfoliowork WHERE portfoliowork_size=3 AND portfoliowork_type = 'photograph'";
 $result = mysqli_query($link, $sql); //the result: images, titles, descs, urls, notes
 while($row = mysqli_fetch_array($result)){
 	if($row['portfoliowork_title'] == 'Love of the Shadows'){ //if title is love of shadows
@@ -196,7 +212,7 @@ while($row = mysqli_fetch_array($result)){
 		$gallerySquirrelLargeDesc = $row['portfoliowork_desc']; //show large squirrel of dreams desc
 		$gallerySquirrelLargeNote = $row['portfoliowork_note']; //show large squirrel of dreams note
 	}
-	elseif($row['portfoliowork_title'] == 'Beaneath the Makeup'){ //if title is beneath the makeup
+	elseif($row['portfoliowork_title'] == 'Beneath the Makeup'){ //if title is beneath the makeup
 		$galleryMakeupLargeImg = $row['portfoliowork_img']; //show large beneath the makeup image
 		$galleryMakeupLargeTitle = $row['portfoliowork_title']; //show large beneath the makeup title
 		$galleryMakeupLargeDesc = $row['portfoliowork_desc']; //show large beneath the makeup desc
@@ -462,12 +478,7 @@ while($row = mysqli_fetch_array($result)){
 }
 
 
-//.......................TEXT FROM DATABASE............................
-//..........INDEX SERVICES (TEXT)..........
-//Index Services Info
-//$sql = "SELECT paragraph_text FROM tbl_paragraph WHERE paragraph_id='1'";
-//$result = mysqli_query($link, $sql);
-//while($row = mysqli_fetch_array($result, $servicesInfo));
+//...............................TEXT FROM DATABASE....................................
 
 //.........ABOUT SERVICES INFO TEXT.........
 $sql = "SELECT paragraph_text FROM tbl_paragraph WHERE paragraph_type='About Info'";
@@ -549,31 +560,7 @@ while($row = mysqli_fetch_array($result)){
 	$chantelResume= $row['images_photo'];
 }
 
-
-
-//.............
-	//attempting database link for 
-	//$graphicSiteShow = "SELECT * FROM tbl_portfoliowork WHERE portfoliowork_type="graphic-image" AND portfoliowork_id=50";
-	//$result = mysqli_query('$result');
-//mysqli_close($link);
-
-//attempting database link for the graphic icons click
-//if(isset($GET{'filter'})){
-	//$filter = $_GET['filter'];
-	//$filterQuery = "SELECT p.portfoliowork_id, p.portfoliowork_img, p.portfoliowork_title, portfolio_desc
-	//FROM tbl_portfoliowork p"
-	//$filterQueryIcons = "SELECT * FROM tbl_portfoliowork WHERE portfoliowork_type="graphic-icons""
-	
-	
-	//$getIcons = mysqli_query($link, $filterQueryIcons);
-	
-//}elseif(isset($_GET['id'])){
-	//for one graphic icon 
-	//$id = $_GET['id'];
-	//$querySingleIcon = "SELECT * FROM tbl_portfoliowork WHERE portfoliowork_id={$id}";
-	//$getIcons = mysqli($link, $querySingleIcon);
-//}
-  
+//......json ....... 
 
 $sql = "SELECT * FROM tbl_portfoliowork WHERE portfoliowork_type='photograph'";
 $result = mysqli_query($link, $sql); //the result: the image from database query
