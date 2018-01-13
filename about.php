@@ -23,7 +23,7 @@
     
    <!--MENU SMALL-->
    <nav id="mainNav" class="data-sticky-container hide-for-medium hide-for-large"><h2 class="hidden">Navigation</h2>
-        <a href="index.php"><img src="images/<?php echo $sitelogoSmall ?>" alt="logo" class="hide-for-medium-only hide-for-large" id="logoSmall"><!--</a>-->
+        <a href="index.php"><img src="images/<?php echo $sitelogoSmall ?>" alt="logo" class="hide-for-medium-only hide-for-large" id="logoSmall"></a>
          <div class="title-bar small-12" data-responsive-toggle="menuNav" data-hide-for="large">
 		<button class="menu-icon float-right" type="button" data-toggle></button>
 	    </div>
@@ -79,11 +79,11 @@
 		<!--About Paragraphs-->
 		   <div id="aboutPara1" class="paraStyle"><?php echo "<p>{$aboutPara1}</p>"; ?></div><!--My name is Chantel Oatman, and I am a current second year student in the <a href="https://www.fanshawec.ca/programs-and-courses/program/idp3-interactive-media-design/next-year" id="programLink">Interactive Media Design</a> program at Fashawe College. -->
 		   <div id="aboutPara2" class="aboutPara paraStyle"><?php echo "<p>{$aboutPara2}</p>"; ?></div><!--I am involved in many areas of the Arts, including: Digital, Performing, and Fine Arts. I am always looking for ways to expand my knowlege and share my creativity.-->
-		   <div id="aboutPara3" class="aboutPara paraStyle hiddenPara"><?php echo "<p>{$aboutPara3}</p>"; ?></div><!--I have 8 years of experience in the promotional photography, and 2 years experience in designing with the Adobe Creative Suite, including: Photoshop and Illustrator. -->
-		   <div id="aboutPara3L" class="aboutPara paraStyle hide-for-small-only"><?php echo "<p>{$aboutPara4}</p>"; ?></div><!--I have 8 years of experience in the promotional photography, and 2 years experience in designing with the Adobe Creative Suite, including: Photoshop and Illustrator.-->
-		   <div id="aboutPara4" class="aboutPara paraStyle hiddenPara"><?php echo "<p>{$aboutPara5}</div>"; ?></p><!--Through my program at Fanshawe, I have gained many valuable communication, design, and software skills, as well as management experience in being Project Manager for some of our major team projects. -->
-		     <p id="aboutPara4L" class="aboutPara paraStyle hide-for-small-only"></p><!--Through my program at Fanshawe, I have gained many valuable communication, design, and software skills, as well as management experience in being Project Manager for some of our major team projects.-->
-		   <p id="aboutPara5" class="aboutPara paraStyle hiddenPara hide-for-medium hide-for-large"></p><!--To learn more about my skills and experience, please check out my resume below.-->
+		   <div id="aboutPara3" class="aboutPara paraStyle hiddenPara hide-for-medium-only hide-for-large"><?php echo "<p>{$aboutPara3}</p>"; ?></div><!--I have 8 years of experience in the promotional photography, and 2 years experience in designing with the Adobe Creative Suite, including: Photoshop and Illustrator. -->
+		   <div id="aboutPara3L" class="aboutPara paraStyle hide-for-small-only"><?php echo "<p>{$aboutPara3}</p>"; ?></div><!--I have 8 years of experience in the promotional photography, and 2 years experience in designing with the Adobe Creative Suite, including: Photoshop and Illustrator.-->
+		   <div id="aboutPara4" class="aboutPara paraStyle hiddenPara hide-for-medium-only hide-for-large"><?php echo "<p>{$aboutPara5}</p>"; ?></div><!--Through my program at Fanshawe, I have gained many valuable communication, design, and software skills, as well as management experience in being Project Manager for some of our major team projects. -->
+		     <div id="aboutPara4L" class="aboutPara paraStyle hide-for-small-only"><?php echo "<p>{$aboutPara4}</p>"; ?></div><!--Through my program at Fanshawe, I have gained many valuable communication, design, and software skills, as well as management experience in being Project Manager for some of our major team projects.-->
+		   <div id="aboutPara5" class="aboutPara paraStyle hiddenPara hide-for-medium-only hide-for-large"></div><!--To learn more about my skills and experience, please check out my resume below.-->
 	   </div>
 	   <!--Read More/Less Button-->
 	   <div id="readMoreLess" class="row">
@@ -91,6 +91,7 @@
 	      <div id="readLess" class="small-4 small-offset-4 buttons hideReadButton hide-for-medium hide-for-large columns">Read Less</div>
 	  </div>
     </div>
+	   </div>
    </section>
  </section>
   
@@ -104,28 +105,32 @@
 	  <div id="resumeInfo" class="paraStyle hide-for-small-only medium-8 medium-offset-2 large-8 large-offset-2 columns"><?php echo "<p>{$resumeInfoPara}</p>"; ?></div><!--To learn more about my skills and experience in my field, please check out my resume by clicking the "See Resume" button below:-->
   </div>
   <!--See Resume Button-->
-  <div id="resumeButton" class=" small-offset-1 small-2 medium-offset-5 medium-2 buttons"><a href="images/myresume.jpg">See Resume</a></div>
+  <div id="resumeButton" class=" small-offset-3 small-6 medium-offset-5 medium-2 buttons"><a href="images/myresume.jpg">View Resume</a></div>
 
-   <section id="footer" class="row hide-for-medium hide-for-large"><h2 class="hidden">Footer</h2>
+   
+</section>
+    <section id="footer" class="row hide-for-medium hide-for-large"><h2 class="hidden">Footer</h2>
    <div id="footerContent" class="row">
-   <!--Small-->	
-	   <p id="nameBottom" class="columns small-6"></p><!--chanteloatman.com-->
-	   <a href="https://www.linkedin.com/in/chantel-oatman-40b177156/"><div id="linkedinFooter" class="small-3 small-push-1 columns socialIcon"><img src="images/<?php echo $socialLinkedinSmall ?>" id="likedin" alt="linkedin"></div></a><!--social-linkedin.png-->
-	   <a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><div id="facebookFooter" class="small-3 columns socialIcon"><img src="images/<?php echo $socialFacebookSmall ?>" id="facebook" alt="facebook"></div></a><!--social-facebook.png-->
+	   <p id="nameBottom" class="columns small-6">chanteloatman.com</p><!--chanteloatman.com-->
+	   <a href="https://www.linkedin.com/in/chantel-oatman-40b177156/"><div id="facebookFooter" class="small-3 small-push-1 columns socialIcon"><img src="images/<?php echo $socialLinkedinSmall ?>" id="likedin" alt="linkedin"></div></a><!--social-linkedin.png-->
+	   <a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><div id="linkedinFooter" class="small-3 columns socialIcon"><img src="images/<?php echo $socialFacebookSmall ?>" id="facebook" alt="facebook"></div></a><!--social-facebook.png-->
    </div>
    </section>
-   
+    
+    
      <section id="footerLarge" class="row hide-for-small-only"><h2 class="hidden">Footer</h2>
-	 <p class="hide-for-small-only medium-3 columns" id="nameBottomLarge"></p><!--chanteloatman.com-->
+	 <p class="hide-for-small-only medium-3 columns" id="nameBottomLarge">chanteloatman.com</p>
 	    <div id="socialIconsLarge" class=" hide-for-small-only">
- <!--Medium-->		
+		
 		<div class="columns medium-2 medium-push-5 hide-for-large" id="linkedinDivM"><a href="https://www.linkedin.com/in/chantel-oatman-40b177156/"><img src="images/<?php echo $socialLinkedinMedium ?>" id="linkedinMedium" alt="linkedin"></a></div><!--social-linkedin-medium.png-->
-		<div class="columns medium-2 hide-for-large" id="facebookDivM"><a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><img src="images/<?php echo $socialFacebookMedium ?>" id="facebookMedium" alt="facebook"></a></div><!--social-facebook-medium.png-->
- <!--Large-->
+		<div class="columns medium-2 medium-push-5 hide-for-large" id="facebookDivM"><a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><img src="images/<?php echo $socialFacebookMedium ?>" id="facebookMedium" alt="facebook"></a></div><!--social-facebook-medium.png-->
+		
+		 <!--Large-->
 		<div class="columns hide-for-medium-only large-push-6 large-2 columns" id="linkedinDivLarge"><a href="https://www.linkedin.com/in/chantel-oatman-40b177156/"><img src="images/<?php echo $socialLinkedinLarge ?>" id="linkedinLarge" alt="linkedin"></a></div><!--social-linkedin-large.png-->
 		<div class="columns hide-for-medium-only large-2 columns" id="facebookDivLarge"><a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><img src="images/<?php echo $socialFacebookLarge ?>" id="facebookLarge" alt="facebook"></a></div><!--social-facebook-large.png-->
 	  </div>
   </section>
+	  
   	
   <section id="bottomBar" class="hide-for-small-only"><h2 class="hidden">Bottom Bar</h2></section>
    	

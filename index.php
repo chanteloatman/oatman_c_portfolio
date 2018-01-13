@@ -82,7 +82,7 @@ $text = "error report";
 	<div id="servicesInfo" class="small-12 columns"><div class="paraStyle"><?php echo "<p>{$aboutServicesInfo}</p>"; ?></p></div><!--tbl_paragraphs, paragraph_id=1, paragraph_text="Within my work, I offer a vast range of services within each of my specialty areas, check out what I have to offer below:"-->
 	   <!--Services Buttons-->
 	   <div id="photoServiceButton" class="small-offset-2 small-8 hide-for-medium large-pull-1 large-10 columns servicesButton">Photography Services</div>
-	    <div id="photoServicesDescS" class="columns small-8 small-offset-3 hidden">
+	    <div id="photoServicesDescS" class="columns small-8 small-offset-3 .servicesDescS hidden">
 		   	<div class="bulletList">
 		   	<?php echo "<p>{$servicePhotoInfoSmall}</p>"; ?>
 		   	<!--tbl_paragraph, paragraph_id=2
@@ -95,7 +95,7 @@ $text = "error report";
 			</div>
 		   </div>
 	   <div id="graphicServiceButton" class="small-offset-2 small-8 hide-for-medium large-pull-1 large-10 columns servicesButton">Graphic & Design Services</div>
-	   <div id="graphicServicesDescS" class="columns small-8 small-offset-3 hidden">
+	   <div id="graphicServicesDescS" class="columns small-8 small-offset-3 servicesDescS hidden">
 		   	<div class="bulletList">
 		   	<?php echo "<p>{$serviceGraphicsInfoSmall}</p>"; ?>
 		   	<!--tbl_paragraph, paragraph_id=3
@@ -108,7 +108,7 @@ $text = "error report";
 		   </div>
         </div>
 	   <div id="brandServiceButton" class="small-offset-2 small-8 hide-for-medium large-pull-1 large-10 columns servicesButton">Branding Services</div>
-	   <div id="brandServicesDescS" class="columns small-8 small-offset-3 hidden">
+	   <div id="brandServicesDescS" class="columns small-8 small-offset-3 servicesDescS hidden">
 		  <div class="bulletList">
 	   	<?php echo "<p>{$serviceBrandInfoSmall}</p>"; ?>
 		   	<!--tbl_paragraph, paragraph_id=4
@@ -145,7 +145,7 @@ $text = "error report";
 			<a href="portfolio.php#portfolioBranding"><img src="images/<?php echo $photoViewBrandSmall ?>" id="viewBrandMobile" alt="view_branding"></a><!--viewbrand-mobile.png-->
 	    </div>
 	   <div id="toPortfolio" class="row">
-		   <a href="portfolio.html"><div id="viewPortfolioButton" class="small-offset-3 small-6 medium-offset-5 medium-2 columns buttons">See Full Portfolio</div></a>
+		   <a href="portfolio.php"><div id="viewPortfolioButton" class="small-offset-3 small-6 medium-offset-5 medium-2 columns buttons">View Portfolio</div></a>
 	   </div>
    </section>
    </section>
@@ -219,11 +219,14 @@ $text = "error report";
 		   </div>
 		  </div>
 		  <div id="webServicesMedium" class="row">
-		  <div id="webServices" class="medium-8 medium-offset-2 columns">
+		  <div id="webServices" class="medium-9 medium-offset-2 hide-for-large columns">
 		  	<div class="subHeading"><?php echo "<p>{$serviceWebSubtitleML}</p>"; ?></div><!--My Web Design Services Include:-->
 		    <div class="paraStyle"><?php echo "<p>{$serviceWebInfoML}</p>"; ?></div><!--Creating websites like the one you are currently on, designed and coded by Chantel Oatman:-->
 		  </div>
 		  </div>
+		  <div id="aboutButtonM" class="row">
+		<a href="about.php"><div id="moreAboutButton" class="hide-for-small-only medium-2 medium-offset-5 buttons hide-for-large">About Chantel</div></a>
+	</div>
 	   </section>
 	   
 	   <!--services large images-->
@@ -247,7 +250,7 @@ $text = "error report";
 	   <section class="row hide-for-small-only hide-for-medium-only sectionBackground"><h2 class="hidden">My Services Descriptions</h2>
 	   <div id="photoServiceDescHome" class="columns large-4">
 		   <div class="subHeading"><?php echo "<p>{$servicePhotoSubtitleML}</p>"; ?></div><!--My Photography Services Include:-->
-		   <div class="bulletList">
+		   <div class="bulletList bulletListStyleL">
 		   <?php echo "<p>{$servicePhotoInfoML}</p>"; ?>
 		   	<!--tbl_paragraph, paragraph_id=3
 		   	<ul>
@@ -260,7 +263,7 @@ $text = "error report";
 	   </div>
 	   <div id="graphicServiceDescHome" class="columns large-4">
 	    <div class="subHeading"><?php echo "<p>{$serviceGraphicsSubtitleML}</p>"; ?></div><!--My Graphic Services Include:-->
-		   <div class="bulletList">
+		   <div class="bulletList bulletListStyleL bulletListGraphicL">
 		   <?php echo "<p>{$serviceGraphicsInfoML}</p>"; ?>
 		   	<!--tbl_paragraph, paragraph_id=3
 		   	<ul>
@@ -273,7 +276,7 @@ $text = "error report";
 	   </div>
 	   <div id="brandServiceDescHome" class="columns large-4">
 	    <div class="subHeading"><?php echo "<p>{$serviceBrandSubtitleML}</p>"; ?></div><!--My Branding Services Include:-->
-	   <div class="bulletList">
+	   <div class="bulletList bulletListStyleL bulletListBrandL">
 		   <?php echo "<p>{$serviceBrandInfoML}</p>"; ?>
 	   	  <!--tbl_paragraph, paragraph_id=4
 		   	  <ul class="bulletList">
@@ -284,12 +287,15 @@ $text = "error report";
 		    </ul>-->
 		   </div>
 		 </div>
-		 <div id="webServicesMedium" class="row">
-		  <div id="webServices" class="medium-8 medium-offset-2 columns">
+		 <div id="webServicesLarge" class="row">
+		  <div id="webServicesL" class="hide-for-medium-only large-8 columns">
 		  	<div class="subHeading"><?php echo "<p>{$serviceWebSubtitleML}</p>"; ?></div><!--My Web Design Services Include:-->
 		    <div class="paraStyle"><?php echo "<p>{$serviceWebInfoML}</p>"; ?></div><!--Creating websites like the one you are currently on, designed and coded by Chantel Oatman:-->
 		  </div>
 		  </div>
+		  <div id="aboutButtonL" class="row">
+		 <a href="about.php"><div id="moreAboutButton" class="hide-for-small-only hide-for-medium-only large-2 large-offset-1 buttons">About Chantel</div></a>
+	     </div>
 	   </section>
 	   </section>
 	  
@@ -308,11 +314,11 @@ $text = "error report";
 	  
 	   </section>
    </section>
- </section>
+</section>
    
     <section id="footer" class="row hide-for-medium hide-for-large"><h2 class="hidden">Footer</h2>
    <div id="footerContent" class="row">
-	   <p id="nameBottom" class="columns small-6"></p><!--chanteloatman.com-->
+	   <p id="nameBottom" class="columns small-6">chanteloatman.com</p><!--chanteloatman.com-->
 	   <a href="https://www.linkedin.com/in/chantel-oatman-40b177156/"><div id="facebookFooter" class="small-3 small-push-1 columns socialIcon"><img src="images/<?php echo $socialLinkedinSmall ?>" id="likedin" alt="linkedin"></div></a><!--social-linkedin.png-->
 	   <a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><div id="linkedinFooter" class="small-3 columns socialIcon"><img src="images/<?php echo $socialFacebookSmall ?>" id="facebook" alt="facebook"></div></a><!--social-facebook.png-->
    </div>

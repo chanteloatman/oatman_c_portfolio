@@ -74,10 +74,10 @@
 	   <div id="rightPhotoGallery" class="photoGalleryButton hide-for-medium hide-for-large columns small-offset-11"><img src="images/<?php echo $rightArrowGallerySmall ?>" alt="right_button" id="rightArrowS"></div><!--arrow-right-small.png-->
 	   <!--......Medium Arrows......-->
 	   <div id="leftPhotoGalleryM" class="photoGalleryButton hide-for-small-only hide-for-large"><img src="images/<?php echo $leftArrowGalleryMedium ?>" alt="left_button" id="leftArrowM"></div><!--arrow-left-medium.png-->
-	   <div id="rightPhotoGalleryM" class="photoGalleryButton hide-for-small-only medium-offset-10 hide-for-large columns "><img src="images/<?php echo $rightArrowGalleryMedium ?>" alt="right_button" id="rightArrowM"></div><!--arrow-right-medium.png-->
+	   <div id="rightPhotoGalleryM" class="photoGalleryButton hide-for-small-only medium-offset-11 hide-for-large columns "><img src="images/<?php echo $rightArrowGalleryMedium ?>" alt="right_button" id="rightArrowM"></div><!--arrow-right-medium.png-->
 	   <!--......Large Arrows......-->
-	   <div id="leftPhotoGalleryL" class="photoGalleryButton hide-for-small-only hide-for-medium-only"><img src="images/<?php echo $leftArrowGalleryLarge ?>" alt="left_button" id="leftArrowL"></div><!--arrow-left-large.png-->
-	   <div id="rightPhotoGalleryL" class="photoGalleryButton hide-for-small-only  large-offset-10 hide-for-medium-only columns "><img src="images/<?php echo $rightArrowGalleryLarge ?>" alt="right_button" id="rightArrowL"></div><!--arrow-right-large.png-->
+	   <div id="leftPhotoGalleryL" class="photoGalleryButton hide-for-small-only large-offset-1 hide-for-medium-only"><img src="images/<?php echo $leftArrowGalleryLarge ?>" alt="left_button" id="leftArrowL"></div><!--arrow-left-large.png-->
+	   <div id="rightPhotoGalleryL" class="photoGalleryButton hide-for-small-only  large-offset-11 hide-for-medium-only columns "><img src="images/<?php echo $rightArrowGalleryLarge ?>" alt="right_button" id="rightArrowL"></div><!--arrow-right-large.png-->
 <!--GALLERY PHOTOS-->
 	   <!--......photos small......-->
 	   <div id="rosePhotoAreaS" class="small-12 hide-for-medium-only hide-for-large columns">
@@ -137,7 +137,7 @@
 		   <div id="makeupNoteS" class="paraStyle galleryDesc notes sgNote descHide"><?php echo "<p>{$galleryMakeupSmallNote}</p>"; ?></div> 
     </div>
     <!--Gallery Descriptions Medium-->
-	    <div id="photoDescriptionM" class="hide-for-small-only medium-10 medium-pull-1 hide-for-large columns">
+	    <div id="photoDescriptionM" class="hide-for-small-only medium-10 medium-offset-1 hide-for-large columns">
 			<div id="roseSubHeadingM" class="subHeading gallerySubHead mgsubheading"><?php echo "<p>{$galleryRoseMediumTitle}</p>"; ?></div>
 		   <div id="roseDescM" class="paraStyle mgDesc galleryDesc"><?php echo "<p>{$galleryRoseMediumDesc}</p>"; ?></div>
 		    <div id="roseNoteM" class="paraStyle notes mgNote  galleryDesc"><?php echo "<p>{$galleryRoseMediumNote}</p>"; ?></div> 
@@ -204,7 +204,7 @@
    </section>
    
    <!--.........LIGHTBOX.........-->
-   <section class="lightbox row hide-for-medium-only hide-for-large">
+   <section class="lightbox row hide-for-medium-only hide-for-large" id="lightbox">
 	   <i class="lightboxClose"></i> <!--close graphicLightbox-->
 	   <!--the image-->
 	   <img src="images/" alt="view_image" class="lightboxImg">
@@ -216,7 +216,7 @@
     <div class="graphicIcons">
    <section class="row hide-for-medium" id="graphicButtonsRow1"><h2 class="hidden">Graphics Buttons First Row</h2>
    <div class="small-12 columns">
-	   <div class="small-3 columns graphicButton id="sitelogoIcon""><img src="images/<?php echo $graphicIconSitelogoSmall ?>" alt="current_site_logo"></div><!--graphic-sitelogo-small.png-->
+	   <div class="small-3 columns graphicButton" id="sitelogoIcon"><img src="images/<?php echo $graphicIconSitelogoSmall ?>" alt="current_site_logo"></div><!--graphic-sitelogo-small.png-->
 	   <div class="small-3 columns graphicButton" id="artsIcon"><img src="images/<?php echo $graphicIconArtsSmall ?>" alt="my_arts_site_logo"></div><!--graphic-arts-small.png-->
 	   <div class="small-3 columns graphicButton" id="graffitiIcon"><img src="images/<?php echo $graphicIconGraffitiSmall ?>" alt="graffiti_graphic"></div><!--graphic-graffiti-small.png-->
 	   <div class="small-3 columns graphicButton" id="vhsIcon"><img src="images/<?php echo $graphicIconVhsSmall ?>" alt="vhs_icon"></div><!--graphic-vhs-small.png-->
@@ -243,7 +243,7 @@
    <img src="images/<?php echo $graphicImgGearsSmall ?>" alt="love_of_the_shadows_photo" id="graphicImgGearsS" class="photoHidden"> 
     </div>
    <!--graphic medium images-->
-   <div class="hide-for-small-only hide-for-large">
+   <div class="hide-for-small-only hide-for-large" medium-3 columns>
    <img src="images/<?php echo $graphicImgSitelogoMedium ?>" alt="love_of_the_shadows_photo" id="graphicImgSitelogoM"> 
     <img src="images/<?php echo $graphicImgArtsSmall ?>" alt="love_of_the_shadows_photo" id="graphicImgArtsM" class="photoHidden"> 
 	<img src="images/<?php echo $graphicImgGraffitiMedium ?>" alt="love_of_the_shadows_photo" id="graphicImgGraffitiM" class="photoHidden"> 
