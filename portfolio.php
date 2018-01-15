@@ -41,7 +41,7 @@
    <!--PROMO NAME SECTION-->
    <section class="row" id="promoSection"><h2 class="hidden">Promo Name Section</h2>
 	   <div id="promoName" class="small-12 medium-12 large-12 columns"><h2>Chantel Oatman</h2></div>
-	   <div id="promoPosition" class="small-12 medium-12 large-12 columns"><p>Digital Services</p></div>
+	   <div id="promoPosition" class="small-12 medium-12 large-12 columns"><p>Digital Visuals & Design</p></div>
    </section>
    
    <!--MENU MEDIUM/LARGE-->
@@ -77,7 +77,7 @@
 	   <div id="rightPhotoGalleryM" class="photoGalleryButton hide-for-small-only medium-offset-11 hide-for-large columns "><img src="images/<?php echo $rightArrowGalleryMedium ?>" alt="right_button" id="rightArrowM"></div><!--arrow-right-medium.png-->
 	   <!--......Large Arrows......-->
 	   <div id="leftPhotoGalleryL" class="photoGalleryButton hide-for-small-only large-offset-1 hide-for-medium-only"><img src="images/<?php echo $leftArrowGalleryLarge ?>" alt="left_button" id="leftArrowL"></div><!--arrow-left-large.png-->
-	   <div id="rightPhotoGalleryL" class="photoGalleryButton hide-for-small-only  large-offset-11 hide-for-medium-only columns "><img src="images/<?php echo $rightArrowGalleryLarge ?>" alt="right_button" id="rightArrowL"></div><!--arrow-right-large.png-->
+	   <div id="rightPhotoGalleryL" class="photoGalleryButton hide-for-small-only  large-offset-10 hide-for-medium-only columns "><img src="images/<?php echo $rightArrowGalleryLarge ?>" alt="right_button" id="rightArrowL"></div><!--arrow-right-large.png-->
 <!--GALLERY PHOTOS-->
 	   <!--......photos small......-->
 	   <div id="rosePhotoAreaS" class="small-12 hide-for-medium-only hide-for-large columns">
@@ -193,6 +193,24 @@
    </section>
    </section>
    
+   
+   <!--.........LIGHTBOX.........-->
+   <section class="lightbox row hide-for-medium-only hide-for-large" id="lightbox">
+	   <div id="lightboxContentBG">
+	   <div class="small-2 small-offset-10 columns"><i class="lightboxClose">X</i></div> <!--close graphicLightbox--> 
+	   <!--the image-->
+	   <div class="columns small-12">
+	   <img src="images/graphicshow-sitelogo-small.png" alt="view_image" class="lightboxImg small-6 small-offset-3 columns">
+	   </div>
+	   <!--the image description-->
+	   <div class="columns small-12 lightboxDescS">
+	    <p class="lightboxTitle" id="pTitleS">Title</p>
+	   <p class="lightboxDesc" id="pDescS">Description</p>
+	   <p class="lightboxNote" id="pNoteS">Note</p>
+	   </div>
+	   </div>
+   </section>
+   
    <!--GRAPHICS SECTION-->
    <section class="row" id="portfolioGraphics"><h2 class="hidden">Graphics Section</h2>
 
@@ -201,15 +219,6 @@
 	   <!--Graphics Title-->
 	    <section id="graphicsTitle" class="row"><h2 class="headStyle">Graphic Work</h2></section>
    <section id="graphicInfo" class="row hide-for-medium"><h2 class="hidden">Graphics Info</h2>
-   </section>
-   
-   <!--.........LIGHTBOX.........-->
-   <section class="lightbox row hide-for-medium-only hide-for-large" id="lightbox">
-	   <i class="lightboxClose"></i> <!--close graphicLightbox-->
-	   <!--the image-->
-	   <img src="images/" alt="view_image" class="lightboxImg">
-	   <!--the image description-->
-	   <p class="lightboxDesc">placeholder</p>
    </section>
    
    <!--small graphics icons-->
@@ -224,47 +233,26 @@
    </section>
    <section class="row hide-for-medium" id="graphicButtonsRow2"><h2 class="hidden">Graphics Buttons Second Row</h2>
    <div class="small-12 columns">
-	   <div class="small-3 columns graphicButton"><img src="images/<?php echo $graphicIconDuckSmall?>" alt="duck_vector" id="duckIcon"></div><!--graphic-duck-small.png-->
-	   <div class="small-3 columns graphicButton"><img src="images/<?php echo $graphicIconTattooSmall?>" alt="tattoo_custom_graphic" id="tattookIcon"></div><!--graphic-tattoo-small.png-->
-	   <div class="small-3 columns graphicButton"><img src="images/<?php echo $graphicIconCatSmall?>" alt="curious_cat_logo"></div><!--graphic-curiouscat-small.png-->
-	   <div class="small-3 columns graphicButton" id="gearsIcon"><img src="images/<?php echo $graphicIconGearsSmall?>" alt="tattoo_custom_graphic"></div><!--graphic-gears-small.png-->
+	   <div class="small-3 columns graphicButton"><img src="images/<?php echo $graphicIconDuckSmall ?>" alt="duck_vector" id="duckIcon"></div><!--graphic-duck-small.png-->
+	   <div class="small-3 columns graphicButton"><img src="images/<?php echo $graphicIconTattooSmall ?>" alt="tattoo_custom_graphic" id="tattooIcon"></div><!--graphic-tattoo-small.png-->
+	   <div class="small-3 columns graphicButton" id="catIcon"><img src="images/<?php echo $graphicIconCatSmall ?>" alt="curious_cat_logo"></div><!--graphic-curiouscat-small.png-->
+	   <div class="small-3 columns graphicButton" id="gearsIcon"><img src="images/<?php echo $graphicIconGearsSmall ?>" alt="tattoo_custom_graphic"></div><!--graphic-gears-small.png-->
 	   </div>
    </section>
 		   </div>
-	<!--graphic small images-->	  
+	<!--small graphics images-->	  
 	<div class="hide-for-medium-only hide-for-large">
-	<img src="images/<?php echo $graphicImgSitelogoSmall ?>" alt="love_of_the_shadows_photo" id="graphicImgSitelogoS" class="photoHidden"> 
-    <img src="images/<?php echo $graphicImgArtsSmall ?>" alt="love_of_the_shadows_photo" id="graphicImgArtsS" class="photoHidden"> 
-	<img src="images/<?php echo $graphicImgGraffitiSmall ?>" alt="love_of_the_shadows_photo" id="graphicImgGraffitiS" class="photoHidden"> 
-   <img src="images/<?php echo $graphicImgVhsSmall ?>" alt="love_of_the_shadows_photo" id="graphicImgVhsS" class="photoHidden"> 
-   <img src="images/<?php echo $graphicImgDuckSmall ?>" alt="love_of_the_shadows_photo" id="graphicImgDuckS" class="photoHidden"> 
-   <img src="images/<?php echo $graphicImgTattooSmall ?>" alt="love_of_the_shadows_photo" id="graphicImgTattooS" class="photoHidden"> 
-   <img src="images/<?php echo $graphicImgCatSmall ?>" alt="love_of_the_shadows_photo" id="graphicImgCatS" class="photoHidden"> 
-   <img src="images/<?php echo $graphicImgGearsSmall ?>" alt="love_of_the_shadows_photo" id="graphicImgGearsS" class="photoHidden"> 
+   <img src="images/<?php echo $graphicImgSitelogoSmall ?>" alt="site_logo" id="graphicImgSitelogoS" class="photoHidden"> 
+   <img src="images/<?php echo $graphicImgArtsSmall ?>" alt="arts_logo_vector" id="graphicImgArtsS" class="photoHidden"> 
+   <img src="images/<?php echo $graphicImgGraffitiSmall ?>" alt="graffiti_custom" id="graphicImgGraffitiS" class="photoHidden"> 
+   <img src="images/<?php echo $graphicImgVhsSmall ?>" alt="flashback_movies_icon" id="graphicImgVhsS" class="photoHidden"> 
+   <img src="images/<?php echo $graphicImgDuckSmall ?>" alt="duck_vector" id="graphicImgDuckS" class="photoHidden"> 
+   <img src="images/<?php echo $graphicImgTattooSmall ?>" alt="tattoo_custom" id="graphicImgTattooS" class="photoHidden"> 
+   <img src="images/<?php echo $graphicImgCatSmall ?>" alt="curious_cat_logo" id="graphicImgCatS" class="photoHidden"> 
+   <img src="images/<?php echo $graphicImgGearsSmall ?>" alt="chantel_gears_custom" id="graphicImgGearsS" class="photoHidden "> 
     </div>
-   <!--graphic medium images-->
-   <div class="hide-for-small-only hide-for-large" medium-3 columns>
-   <img src="images/<?php echo $graphicImgSitelogoMedium ?>" alt="love_of_the_shadows_photo" id="graphicImgSitelogoM"> 
-    <img src="images/<?php echo $graphicImgArtsSmall ?>" alt="love_of_the_shadows_photo" id="graphicImgArtsM" class="photoHidden"> 
-	<img src="images/<?php echo $graphicImgGraffitiMedium ?>" alt="love_of_the_shadows_photo" id="graphicImgGraffitiM" class="photoHidden"> 
-   <img src="images/<?php echo $graphicImgVhsMedium ?>" alt="love_of_the_shadows_photo" id="graphicImgVhsM" class="photoHidden"> 
-   <img src="images/<?php echo $graphicImgDuckMedium ?>" alt="love_of_the_shadows_photo" id="graphicImgDuckM" class="photoHidden"> 
-   <img src="images/<?php echo $graphicImgTattooMedium ?>" alt="love_of_the_shadows_photo" id="graphicImgTattooM" class="photoHidden"> 
-   <img src="images/<?php echo $graphicImgCatMedium ?>" alt="love_of_the_shadows_photo" id="graphicImgCatM" class="photoHidden"> 
-   <img src="images/<?php echo $graphicImgGearsMedium ?>" alt="love_of_the_shadows_photo" id="graphicImgGearsM" class="photoHidden"> 
-  </div>
-   <!--graphic large images-->
-   <div class="hide-for-small-only hide-for-large">
-   <img src="images/<?php echo $graphicImgSitelogoLarge ?>" alt="love_of_the_shadows_photo" id="graphicImgSitelogoL"> 
-    <img src="images/<?php echo $graphicImgArtsSmall ?>" alt="love_of_the_shadows_photo" id="graphicImgArtsL" class="photoHidden"> 
-	<img src="images/<?php echo $graphicImgGraffitiLarge ?>" alt="love_of_the_shadows_photo" id="graphicImgGraffitiL" class="photoHidden"> 
-   <img src="images/<?php echo $graphicImgVhsLarge ?>" alt="love_of_the_shadows_photo" id="graphicImgVhsL" class="photoHidden"> 
-   <img src="images/<?php echo $graphicImgDuckLarge ?>" alt="love_of_the_shadows_photo" id="graphicImgDuckL" class="photoHidden"> 
-   <img src="images/<?php echo $graphicImgTattooLarge ?>" alt="love_of_the_shadows_photo" id="graphicImgTattooL" class="photoHidden"> 
-   <img src="images/<?php echo $graphicImgCatLarge ?>" alt="love_of_the_shadows_photo" id="graphicImgCatL" class="photoHidden"> 
-   <img src="images/<?php echo $graphicImgGearsLarge ?>" alt="love_of_the_shadows_photo" id="graphicImgGearsL" class="photoHidden"> 
-  </div>
-<!--graphic small descriptions-->
+  
+<!--small graphics descriptions-->
    <div class="graphicDescShowS">  
 		   <!--sitelogo-->
            <div id="graphicTitleSitelogoS" class="subHeading gallerySubHead descHide"><?php echo "<p>{$graphicTitleSitelogoSmall}</p>"; ?></div>
@@ -278,6 +266,10 @@
            <div id="graphicTitleGraffitiS" class="subHeading gallerySubHead descHide"><?php echo "<p>{$graphicTitleGraffitiSmall}</p>"; ?></div>
 		   <div id="graphicDescGraffitiS" class="paraStyle galleryDesc descHide"><?php echo "<p>{$graphicDescGraffitiSmall}</p>"; ?></div>
 		   <div id="graphicNoteGraffitiS" class="paraStyle galleryDesc descHide"><?php echo "<p>{$graphicNoteGraffitiSmall}</p>"; ?></div>
+		     <!--vhs-->
+           <div id="graphicTitleVhsS" class="subHeading gallerySubHead descHide"><?php echo "<p>{$graphicTitleVhsSmall}</p>"; ?></div>
+		   <div id="graphicDescVhsS" class="paraStyle galleryDesc descHide"><?php echo "<p>{$graphicDescVhsSmall}</p>"; ?></div>
+		   <div id="graphicNoteVhsS" class="paraStyle galleryDesc descHide"><?php echo "<p>{$graphicNoteVhsSmall}</p>"; ?></div>
 		   <!--duck-->
            <div id="graphicTitleDuckS" class="subHeading gallerySubHead descHide"><?php echo "<p>{$graphicTitleDuckSmall}</p>"; ?></div>
 		   <div id="graphicDescDuckS" class="paraStyle galleryDesc descHide"><?php echo "<p>{$graphicDescDuckSmall}</p>"; ?></div>
@@ -291,53 +283,150 @@
 		   <div id="graphicDescCatS" class="paraStyle galleryDesc descHide"><?php echo "<p>{$graphicDescCatSmall}</p>"; ?></div>
 		   <div id="graphicNoteCatS" class="paraStyle galleryDesc descHide"><?php echo "<p>{$graphicNoteCatSmall}</p>"; ?></div>
 		    <!--gears-->
-           <div id="graphicTitleGearsS" class="subHeading gallerySubHead descHide"><?php echo "<p>{$graphicTitleGearsmall}</p>"; ?></div>
+           <div id="graphicTitleGearsS" class="subHeading gallerySubHead descHide"><?php echo "<p>{$graphicTitleGearsSmall}</p>"; ?></div>
 		   <div id="graphicDescGearsS" class="paraStyle galleryDesc descHide"><?php echo "<p>{$graphicDescGearsSmall}</p>"; ?></div>
-		   <div id="graphicGearsCatS" class="paraStyle galleryDesc descHide"><?php echo "<p>{$graphicNoteGearsSmall}</p>"; ?></div>
+		   <div id="graphicNoteGearsS" class="paraStyle galleryDesc descHide"><?php echo "<p>{$graphicNoteGearsSmall}</p>"; ?></div>
    </div> 
    <!--MEDIUM GRAPHICS-->
    <!--medium graphics Image and Description Area-->
    <section class="row hide-for-small-only" id="graphicWorkAreaM"><h2 class="hidden">Graphics Show Work Area</h2>
-     <!--medium graphics Image-->
-     
-      <div id="graphicWorkAreaImgM" class="hide-for-large-only">
-      <!--the image <img src="images/graphicshow-sitelogo-medium.png" alt="site_logo_large_view">-->
-       <?php echo '<img src="images/graphicshow-sitelogo-medium.png" alt="site_logo_large_view">' ?> 
+   <!--medium graphics Images-->
+      <div id="graphicWorkAreaImgM" class="hide-for-small-only medium-4 hide-for-large columns">
+       <!--sitelogoM--><img src="images/<?php echo $graphicImgSitelogoMedium ?>" alt="site_logo" id="graphicImgSitelogoM" class="graphicImgM sitelogoShowM"> 
+       <!--artsM--><img src="images/<?php echo $graphicImgArtsSmall ?>" alt="chantel_arts_logo_vector" id="graphicImgArtsM" class="photoHidden graphicImgM artsShowM"> 
+       <!--graffitiM--><img src="images/<?php echo $graphicImgGraffitiMedium ?>" alt="graffiti_custom" id="graphicImgGraffitiM" class="photoHidden graphicImgM graffitiShowM"> 
+       <!--vhsM--><img src="images/<?php echo $graphicImgVhsMedium ?>" alt="falshback_movies_icon" id="graphicImgVhsM" class="photoHidden graphicImgM vhsShowM"> 
+       <!--duckM--><img src="images/<?php echo $graphicImgDuckMedium ?>" alt="duck_vector" id="graphicImgDuckM" class="photoHidden graphicImgM duckShowM"> 
+       <!--tattooM--><img src="images/<?php echo $graphicImgTattooMedium ?>" alt="tattoo_custom" id="graphicImgTattooM" class="photoHidden graphicImgM tattooShowM"> 
+       <!--catM--><img src="images/<?php echo $graphicImgCatMedium ?>" alt="curious_cat_logo" id="graphicImgCatM" class="photoHidden graphicImgM catShowM"> 
+       <!--gearsM--><img src="images/<?php echo $graphicImgGearsMedium ?>" alt="chantel_gears_custom" id="graphicImgGearsM" class="photoHidden graphicImgM gearsShowM"> 
 	 </div>
-    
-     <!--medium graphics Description--> 
-     <div id="graphicWorkAreaDescM" class="hide-for-large-only medium-8 columns">
-		<h3 class="subHeading">Chantel Oatman - Logo</h3>
-		<p class="paraStyle">This is the logo I created for the wevsite that you are currently on. I wanted to convey both who I am and what I do within this logo, and I did this by using my initials, and the visual of a speech buble, to signify communicating your company's brand digitally.</p>
-		<p class="paraStyle">This logo was created using Illustrator.</p>
+   <!--medium graphics Descriptions--> 
+     <div id="graphicWorkAreaDescM" class="hide-for-small-only hide-for-large medium-8 columns">
+	   <!--site logo desc M-->
+	   <div class="subHeading mgrTitle sitelogoShowM graphicImgM" id="graphicTitleSitelogoM"><?php echo "<p>$graphicTitleSitelogoMedium<p>" ?></div>
+	   <div class="paraStyle mgrDesc graphicImgM sitelogoShowM" id="graphicDescSitelogoM"><?php echo "<p>$graphicDescSitelogoMedium<p>" ?></div>
+	   <div class="paraStyle mgrNote graphicImgM sitelogoShowM" id="graphicNoteSitelogoM"><?php echo "<p>$graphicNoteSitelogoMedium<p>" ?></div>
+	   <!--arts desc M-->
+	   <div class="subHeading mgrTitle graphicImgM artsShowM descHide" id="graphicTitleArtsM"><?php echo "<p>$graphicTitleArtsMedium<p>" ?></div>
+	   <div class="paraStyle mgrDesc graphicImgM artsShowM descHide" id="graphicDescArtsM"><?php echo "<p>$graphicDescArtsMedium<p>" ?></div>
+	   <div class="paraStyle mgrNote artsShowM graphicImgM descHide" id="graphicNoteArtsM"><?php echo "<p>$graphicNoteArtsMedium<p>" ?></div>
+	   <!--graffiti desc M-->
+	   <div class="subHeading mgrTitle graphicImgM graffitiShowM descHide" id="graphicTitleGraffitiM"><?php echo "<p>$graphicTitleGraffitiMedium<p>" ?></div>
+	   <div class="paraStyle mgrDesc graphicImgM graffitiShowM descHide" id="graphicDescGraffitiM"><?php echo "<p>$graphicDescGraffitiMedium<p>" ?></div>
+	   <div class="paraStyle mgrNote graphicImgM graffitiShowM descHide" id="graphicNoteGraffitiM"><?php echo "<p>$graphicNoteGraffitiMedium<p>" ?></div>
+	   <!--Vhs desc M-->
+	   <div class="subHeading mgrTitle graphicImgM vhsShowM descHide" id="graphicTitleVhsM"><?php echo "<p>$graphicTitleVhsMedium<p>" ?></div>
+	   <div class="paraStyle mgrDesc graphicImgM vhsShowM descHide" id="graphicDescVhsM"><?php echo "<p>$graphicDescVhsMedium<p>" ?></div>
+	   <div class="paraStyle mgrNote graphicImgM vhsShowM descHide" id="graphicNoteVhsM"><?php echo "<p>$graphicNoteVhsMedium<p>" ?></div>
+	   <!--duck desc M-->
+	   <div class="subHeading mgrTitle graphicImgM duckShowM descHide" id="graphicTitleDuckM"><?php echo "<p>$graphicTitleDuckMedium<p>" ?></div>
+	   <div class="paraStyle mgrDesc graphicImgM duckShowM descHide" id="graphicDescDuckM"><?php echo "<p>$graphicDescDuckMedium<p>" ?></div>
+	   <div class="paraStyle mgrNote graphicImgM duckShowM descHide" id="graphicNoteDuckM"><?php echo "<p>$graphicNoteDuckMedium<p>" ?></div>
+	    <!--tattoo desc M-->
+	   <div class="subHeading mgrTitle graphicImgM tattooShowM descHide" id="graphicTitleTattooM"><?php echo "<p>$graphicTitleTattooMedium<p>" ?></div>
+	   <div class="paraStyle mgrDesc graphicImgM tattooShowM descHide" id="graphicDescTattooM"><?php echo "<p>$graphicDescTattooMedium<p>" ?></div>
+	   <div class="paraStyle mgrNote graphicImgM tattooShowM descHide" id="graphicNoteTattooM"><?php echo "<p>$graphicNoteTattooMedium<p>" ?></div>
+	    <!--cat desc M-->
+	   <div class="subHeading mgrTitle graphicImgM catShowM descHide" id="graphicTitleCatM"><?php echo "<p>$graphicTitleCatMedium<p>" ?></div>
+	   <div class="paraStyle mgrDesc graphicImgM catShowM descHide" id="graphicDescCatM"><?php echo "<p>$graphicDescCatMedium<p>" ?></div>
+	   <div class="paraStyle mgrNote graphicImgM catShowM descHide" id="graphicNoteCatM"><?php echo "<p>$graphicNoteCatMedium<p>" ?></div>
+	    <!--gears desc M-->
+	   <div class="subHeading mgrTitle graphicImgM gearsShowM descHide" id="graphicTitleGearsM"><?php echo "<p>$graphicTitleGearsMedium<p>" ?></div>
+	   <div class="paraStyle mgrDesc graphicImgM gearsShowM  descHide" id="graphicDescGearsM"><?php echo "<p>$graphicDescGearsMedium<p>" ?></div>
+	   <div class="paraStyle mgrNote graphicImgM gearsShowM  descHide" id="graphicNoteGearsM"><?php echo "<p>$graphicNoteGearsMedium<p>" ?></div>
 	 </div>
    </section>
-   <!--medium/large graphics-->
+   <!--LARGE GRAPHICS-->
+   <!--large graphics Image and Description Area-->
+   <section class="row hide-for-small-only" id="graphicWorkAreaM"><h2 class="hidden">Graphics Show Work Area</h2>
+   <!--large graphics Images-->
+      <div id="graphicWorkAreaImgL" class="hide-for-small-only large-4 large-offset-2 hide-for-medium-only columns">
+       <!--sitelogoL--><img src="images/<?php echo $graphicImgSitelogoLarge ?>" alt="site_logo" id="graphicImgSitelogoL" class="graphicImgL sitelogoShowL"> 
+       <!--artsL--><img src="images/<?php echo $graphicImgArtsLarge ?>" alt="chantel_arts_logo_vector" id="graphicImgArtsL" class="photoHidden graphicImgL artsShowL"> 
+       <!--graffitiL--><img src="images/<?php echo $graphicImgGraffitiLarge ?>" alt="chantel_arts_logo_vector" id="graphicImgGraffitiL" class="photoHidden graphicImgL graffitiShowL"> 
+       <!--vhsL--><img src="images/<?php echo $graphicImgVhsLarge ?>" alt="graffiti_custom" id="graphicImgVhsM" class="photoHidden graphicImgL vhsShowL"> 
+       <!--duckL--><img src="images/<?php echo $graphicImgDuckLarge ?>" alt="duck_vector" id="graphicImgDuckL" class="photoHidden graphicImgL duckShowL"> 
+       <!--tattooL--><img src="images/<?php echo $graphicImgTattooLarge ?>" alt="tattoo_custom" id="graphicImgTattooL" class="photoHidden graphicImgL tattooShowL"> 
+       <!--catL--><img src="images/<?php echo $graphicImgCatLarge ?>" alt="curious_cat_logo" id="graphicImgCatL" class="photoHidden graphicImgL catShowL"> 
+       <!--gearsL--><img src="images/<?php echo $graphicImgGearsLarge ?>" alt="chantel_gears_custom" id="graphicImgGearsL" class="photoHidden graphicImgL gearsShowL"> 
+	 </div>
+   <!--large graphics Descriptions--> 
+     <div id="graphicWorkAreaDescL" class="hide-for-small-only hide-for-medium-only large-5 large-pull-1 columns">
+	   <!--site logo desc L-->
+	   <div class="subHeading graphicImgL sitelogoShowL" id="graphicTitleSitelogoL"><?php echo "<p>$graphicTitleSitelogoLarge<p>" ?></div>
+	   <div class="paraStyle graphicImgL sitelogoShowL" id="graphicDescSitelogoL"><?php echo "<p>$graphicDescSitelogoLarge<p>" ?></div>
+	   <div class="paraStyle graphicImgL sitelogoShowL" id="graphicNoteSitelogoL"><?php echo "<p>$graphicNoteSitelogoLarge<p>" ?></div>
+	   <!--arts desc L-->
+	   <div class="subHeading graphicImgL artsShowL descHide" id="graphicTitleArtsL"><?php echo "<p>$graphicTitleArtsLarge<p>" ?></div>
+	   <div class="paraStyle graphicImgL artsShowL descHide" id="graphicDescArtsL"><?php echo "<p>$graphicDescArtsLarge<p>" ?></div>
+	   <div class="paraStyle graphicImgL artsShowL descHide" id="graphicNoteArtsL"><?php echo "<p>$graphicNoteArtsLarge<p>" ?></div>
+	   <!--graffiti desc L-->
+	   <div class="subHeading graphicImgL graffitiShowL descHide" id="graphicTitleGraffitiL"><?php echo "<p>$graphicTitleGraffitiLarge<p>" ?></div>
+	   <div class="paraStyle graphicImgL graffitiShowL descHide" id="graphicDescGraffitiL"><?php echo "<p>$graphicDescGraffitiLarge<p>" ?></div>
+	   <div class="paraStyle graphicImgL graffitiShowL descHide" id="graphicNoteGraffitiL"><?php echo "<p>$graphicNoteGraffitiLarge<p>" ?></div>
+	   <!--Vhs desc L-->
+	   <div class="subHeading graphicImgL vhsShowL descHide" id="graphicTitleVhsL"><?php echo "<p>$graphicTitleVhsLarge<p>" ?></div>
+	   <div class="paraStyle graphicImgL vhsShowL descHide" id="graphicDescVhsL"><?php echo "<p>$graphicDescVhsLarge<p>" ?></div>
+	   <div class="paraStyle graphicImgL vhsShowL descHide" id="graphicNoteVhsL"><?php echo "<p>$graphicNoteVhsLarge<p>" ?></div>
+	   <!--duck desc L-->
+	   <div class="subHeading graphicImgL duckShowL descHide" id="graphicTitleDuckL"><?php echo "<p>$graphicTitleDuckLarge<p>" ?></div>
+	   <div class="paraStyle graphicImgL duckShowL descHide" id="graphicDescDuckL"><?php echo "<p>$graphicDescDuckLarge<p>" ?></div>
+	   <div class="paraStyle graphicImgL duckShowL descHide" id="graphicNoteDuckL"><?php echo "<p>$graphicNoteDuckLarge<p>" ?></div>
+	    <!--tattoo desc L-->
+	   <div class="subHeading graphicImgL tattooShowL descHide" id="graphicTitleTattooL"><?php echo "<p>$graphicTitleTattooLarge<p>" ?></div>
+	   <div class="paraStyle graphicImgL tattooShowL descHide" id="graphicDescTattooL"><?php echo "<p>$graphicDescTattooLarge<p>" ?></div>
+	   <div class="paraStyle graphicImgL tattooShowL descHide" id="graphicNoteTattooL"><?php echo "<p>$graphicNoteTattooLarge<p>" ?></div>
+	    <!--cat desc L-->
+	   <div class="subHeading graphicImgL catShowL descHide" id="graphicTitleCatL"><?php echo "<p>$graphicTitleCatLarge<p>" ?></div>
+	   <div class="paraStyle graphicImgL catShowL descHide" id="graphicDescCatL"><?php echo "<p>$graphicDescCatLarge<p>" ?></div>
+	   <div class="paraStyle graphicImgL catShowL descHide" id="graphicNoteCatL"><?php echo "<p>$graphicNoteCatLarge<p>" ?></div>
+	    <!--gears desc L-->
+	   <div class="subHeading graphicImgL gearsShowL descHide" id="graphicTitleGearsL"><?php echo "<p>$graphicTitleGearsLarge<p>" ?></div>
+	   <div class="paraStyle graphicImgL gearsShowL descHide" id="graphicDescGearsL"><?php echo "<p>$graphicDescGearsLarge<p>" ?></div>
+	   <div class="paraStyle graphicImgL gearsShowL descHide" id="graphicNoteGearsL"><?php echo "<p>$graphicNoteGearsLarge<p>" ?></div>
+	 </div>
+   </section>
+   
+   <!--Medium & Large Graphics Icons-->
    <section class="row hide-for-small-only"><h2 class="hidden">Graphics Buttons</h2>
-	 <div class="hide-for-small-only medium-12 columns" id="graphicButtonRowL">
+   <!--Medium Graphics Icons-->
+	 <div class="hide-for-small-only medium-12 hide-for-large columns" id="graphicButtonRowM">
 	   <div class="graphicButtonM medium-1 columns">
-	   	<img src="images/graphic-sitelogo-medium.png" alt="site_logo">
+	   	<img src="images/<?php echo $graphicIconSitelogoMedium ?>" alt="site_logo" id="sitelogoIconM">
 	   </div>
-	   <div class="graphicButtonM medium-1 columns"><img src="images/graphic-arts-medium.png" alt="my_arts_site_logo"></div>
-	   <div class="graphicButtonM medium-1 columns"><img src="images/graphic-graffiti-medium.png" alt="graffiti_custom_graphic"></div>
-	   <div class="graphicButtonM medium-1 columns"><img src="images/graphic-vhs-medium.png" alt="vhs_icon"></div>
-	   <div class="graphicButtonM medium-1   columns"><img src="images/graphic-duck-medium.png" alt="duck_logo_vector"></div>
-	   <div class="graphicButtonM medium-1  columns"><img src="images/graphic-tattoo-medium.png" alt="tatto_custom_graphic"></div>
-	   <div class="graphicButtonM medium-1 columns"><img src="images/graphic-curiouscat-medium.png" alt="curious_cat_logo"></div>
-	   <div class="graphicButtonM medium-1 columns" ><img src="images/graphic-gears-medium.png" alt="gears_custom_graphic"></div>
+	   <div class="graphicButtonM medium-1 columns" id="artsIconM"><img src="images/<?php echo $graphicIconArtsMedium ?>"></div>
+	   <div class="graphicButtonM medium-1 columns" id="graffitiIconM"><img src="images/<?php echo $graphicIconGraffitiMedium ?>"></div>
+	   <div class="graphicButtonM medium-1 columns" id="vhsIconM"><img src="images/<?php echo $graphicIconVhsMedium ?>"></div>
+	   <div class="graphicButtonM medium-1 columns" id="duckIconM"><img src="images/<?php echo $graphicIconDuckMedium ?>"></div>
+	   <div class="graphicButtonM medium-1  columns" id="tattooIconM"><img src="images/<?php echo $graphicIconTattooMedium ?>" alt="tatto_custom_graphic"></div>
+	   <div class="graphicButtonM medium-1 columns" id="catIconM"><img src="images/<?php echo $graphicIconCatMedium ?>" alt="curious_cat_logo"></div>
+	   <div class="graphicButtonM medium-1 columns" id="gearsIconM"><img src="images/<?php echo $graphicIconGearsMedium ?>" alt="gears_custom_graphic"></div>
+	   </div>
+	  <!--Large Graphics Icons--> 
+	   <div class="hide-for-small-only hide-for-medium-only large-12 columns" id="graphicButtonRowL">
+	   <div class="graphicButtonL large-1 large-offset-2 columns">
+	   <img src="images/<?php echo $graphicIconSitelogoLarge ?>" alt="site_logo" id="sitelogoIconL">
+	   </div>
+	   <div class="graphicButtonL large-1 columns" id="artsIconL"><img src="images/<?php echo $graphicIconArtsLarge ?>"></div>
+	   <div class="graphicButtonL large-1 columns" id="graffitiIconL"><img src="images/<?php echo $graphicIconGraffitiLarge ?>"></div>
+	   <div class="graphicButtonL large-1 columns" id="vhsIconL"><img src="images/<?php echo $graphicIconVhsLarge ?>"></div>
+	   <div class="graphicButtonL large-1   columns" id="duckIconL"><img src="images/<?php echo $graphicIconDuckLarge ?>"></div>
+	   <div class="graphicButtonL large-1  columns" id="tattooIconL"><img src="images/<?php echo $graphicIconTattooLarge ?>" alt="tatto_custom_graphic"></div>
+	   <div class="graphicButtonL large-1 columns" id="catIconL"><img src="images/<?php echo $graphicIconCatLarge ?>" alt="curious_cat_logo"></div>
+	   <div class="graphicButtonL large-1 large-pull-2 columns" id="gearsIconL"><img src="images/<?php echo $graphicIconGearsLarge ?>" alt="gears_custom_graphic"></div>
 	   </div>
   </section>
    </section>
    </section>
    
-   <!--BRAND SECTION-->
+ <!--BRAND SECTION-->
    <section class="row" id="portfolioBranding"><h2 class="hidden">Brand Section</h2>
     
-   <!--Brand Content-->
+ <!--Brand Content-->
    <section id="brandContent" class="row sectionBackground"><h2 class="hidden">Ads Brochure Content</h2>
-   <!--Brand Title-->
-	    <section id="brandTitle" class="row"><h2 class="headStyle">Branding Style Guides</h2></section>
-   <!--Brand Mobile-->
+   <section id="brandTitle" class="row"><h2 class="headStyle">Branding Style Guides</h2></section><!--Brand Title-->
+   <!--Chantel Branding Small-->
    <section class="row"><h2 class="hidden">Graphic Buttons</h2>
 	 <div class="columns small-12" id="brandChantel"> 
 		 <a href="images/styleguide-chantel.pdf" alt="style_guide_for_current_site"><div id="brandViewButtonChantel" class="small-2 small-push-1 hide-for-medium columns brandViewButton brandChantel">View</div></a>
@@ -346,6 +435,7 @@
 		   <p class="paraStyle">For my site you are currently on.</p>
 	   </div>
      </div>
+     <!--Flash Branding Small-->
      <div class="columns small-12" id="brandFlash">
 		 <a href="images/styleguide-flashback.pdf" alt="styleguide_flashback"> <div id="brandViewButtonFlash" class="small-2 small-push-1  hide-for-medium columns brandViewButton brandFlash">View</div></a>
 	   <div id="brandDescFlash" class="small-9 hide-for-medium columns brandDesc">
@@ -353,6 +443,7 @@
 		   <p class="paraStyle">For a flashback, child-friendly multi-media site.</p>
 	   </div>
 	 </div>
+    <!--Jeff Branding Small-->
      <div class="columns small-12" id="brandJeff">
 		 <a href="images/styleguide-jeffdesigns.pdf" alt="styleguide_jeff_designs"><div id="brandViewButtonJeff" class="small-2 small-push-1 hide-for-medium columns brandViewButton brandJeff">View</div></a>
 	   <div id="brandDescJeff" class="small-9 hide-for-medium columns brandDesc">
@@ -360,21 +451,22 @@
 		  <p class="paraStyle">Created around a person's style & hobbies.</p>
 	   </div>
 	 </div>
+   <!--Chantel Branding M/L-->
 	   <section class="row hide-for-small-only"><h2 class="hidden">View Branding Section</h2>
-  <div id="viewbrandButtonsM" class="medium-10 medium-offset-1 large-offset-0 large-pull-1 columns">
+  <a href="images/styleguide-chantel.pdf" alt="style_guide_for_current_site"><div id="viewbrandButtonsM" class="medium-10 medium-offset-1 large-offset-0 large-pull-1 columns"></a>
 	   <div id="brandDescChantelM" class="medium-3 large-4 columns brandDesc">
    	   <div class="brandViewButton brandChantel">View</div>
 	   	  <h3 class="subHeading">Chantel - StyleGuide</h3>
 		  <p class="paraStyle">For my site you are currently on.</p>
 	   </div>
-	   
-	   <div id="brandDescFlashM" class="medium-3 large-4 columns brandDesc">
+	<!--Flash Branding M/L-->   
+	    <a href="images/styleguide-flashback.pdf" alt="styleguide_flashback"><div id="brandDescFlashM" class="medium-3 large-4 columns brandDesc"></a>
    	   <div class="brandViewButton brandFlash">View</div>
 	   	  <h3 class="subHeading">Flashback - StyleGuide</h3>
 		  <p class="paraStyle">For a flashback, child-friendly multi-media site.</p>
 	   </div>
-	   
-	   <div id="brandDescJeffM" class="medium-3 medium-pull-3 large-4 large-pull-0 columns brandDesc">
+    <!--Jeff Branding M/L--> 
+	    <a href="images/styleguide-jeffdesigns.pdf" alt="styleguide_jeff_designs"><div id="brandDescJeffM" class="medium-3 medium-pull-3 large-4 large-pull-0 columns brandDesc"></a>
    	      <div class="brandViewButton brandJeff">View</div>
 	   	  <h3 class="subHeading">Jeff Designs - StyleGuide</h3>
 		  <p class="paraStyle">Created around a person's style & hobbies.</p>
@@ -382,19 +474,6 @@
 	   </div>
 	   
   </section>
- <!-- <section class="row hide-for-small-only"><h2 class="hidden">View Branding Section</h2>
-      <div id="brandDescChantelM" class="medium-3 medium-push-2 columns brandDesc">
-	   	  <h3 class="subHeading">Jeff Designs - StyleGuide</h3>
-		  <p class="paraStyle">Created around a person's style & hobbies.</p>
-	   </div>
-      <div id="brandDescFlashM" class="medium-3 medium-push-1 columns brandDesc">
-	   	  <h3 class="subHeading">Jeff Designs - StyleGuide</h3>
-		  <p class="paraStyle">Created around a person's style & hobbies.</p>
-	   </div>
-        <div id="brandDescJeffM" class="medium-3 medium-pull-2 columns brandDesc">
-	   	  <h3 class="subHeading">Jeff Designs - StyleGuide</h3>
-		  <p class="paraStyle">Created around a person's style & hobbies.</p>
-	   </div>-->
   </section>
   
    </section>
@@ -416,6 +495,7 @@
 	   </div>
    </section>
    </section>
+    <!--small footer-->
      <section id="footer" class="row hide-for-medium hide-for-large"><h2 class="hidden">Footer</h2>
    <div id="footerContent" class="row">
 	   <p id="nameBottom" class="columns small-6">chanteloatman.com</p>
@@ -423,7 +503,7 @@
 	   <a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><div id="linkedinFooter" class="small-3 columns socialIcon"><img src="images/social-facebook.png" id="facebook" alt="facebook"></div></a>
    </div>
    </section>
-   
+    <!--medium/large footer-->
      <section id="footerLarge" class="row hide-for-small-only"><h2 class="hidden">Footer</h2>
 	 <p class="hide-for-small-only medium-3 columns" id="nameBottomLarge">Chantel Oatman</p>
 	    <div id="socialIconsLarge" class=" hide-for-small-only">
@@ -434,16 +514,14 @@
   	
   <section id="bottomBar" class="hide-for-small-only"><h2 class="hidden">Bottom Bar</h2></section>
    	
-   <!--	<script>
-	var gallerySmall = <?php //echo $grpResult ?>;
-	
-	var galleryMedium
-    </script>-->
    
+   
+   <!--foundation-->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <!--js for portfolio functionality-->
     <script src="js/portfolio.js"></script>
     <script src="js/lightboxes.js"></script>
   

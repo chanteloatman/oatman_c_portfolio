@@ -1,5 +1,5 @@
 // JavaScript Document
-$(document).foundation();
+//$(document).foundation();
 (function(){
 	"use strict";
 	//console.log("SEAF Fired");
@@ -14,7 +14,7 @@ var showHide = document.querySelector(".hiddenPara");
 //Functions
 //Hide Show the About Text
 function hideShowAbout(){
-	console.log("hide show working");
+	//console.log("hide show working");
 	if(showHide.style.display === 'block'){
 	//if text is visiable, hide it
 	for (i = 0;i < showHideParas.length; i++){

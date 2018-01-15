@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-   <!--width is 12 columns therefore, small must add to 12 and large must also add to 12 per row, you can also use offset-NUMBER OF BLANK SPACE COLUMS to stand in for columns/invisible colums, still must add to 12 per row though -->
    
    <!--TOP BAR-->
    <section class="row"><h2 class="hidden">Top Bar</h2>
@@ -41,8 +40,8 @@
    
    <!--PROMO NAME SECTION-->
    <section class="row" id="promoSection"><h2 class="hidden">Promo Name Section</h2>
-	   <div id="promoName" class="small-12 medium-12 large-12 columns"><h2></h2></div><!--Chantel Oatman-->
-	   <div id="promoPosition" class="small-12 medium-12 large-12 columns"><p></p></div><!--Digital Services-->
+	   <div id="promoName" class="small-12 medium-12 large-12 columns"><h2>Chantel Oatman</h2></div>
+	   <div id="promoPosition" class="small-12 medium-12 large-12 columns"><p>Digital Visuals & Design</p></div>
    </section>
    
    <!--MENU MEDIUM/LARGE-->
@@ -77,13 +76,13 @@
 		  <img src="images/<?php echo $aboutHeadshotMedium ?>" id="aboutChantelImgM" class="hide-for-small-only medium-offset-1 medium-4 hide-for-large columns"><!--aboutimg-medium.jpg-->
 		   <img src="images/<?php echo $aboutHeadshotLarge ?>" id="aboutChantelImgL" class="hide-for-small-only hide-for-medium-only large-offset- large-4 columns"><!--aboutimg-large.jpg-->
 		<!--About Paragraphs-->
-		   <div id="aboutPara1" class="paraStyle"><?php echo "<p>{$aboutPara1}</p>"; ?></div><!--My name is Chantel Oatman, and I am a current second year student in the <a href="https://www.fanshawec.ca/programs-and-courses/program/idp3-interactive-media-design/next-year" id="programLink">Interactive Media Design</a> program at Fashawe College. -->
-		   <div id="aboutPara2" class="aboutPara paraStyle"><?php echo "<p>{$aboutPara2}</p>"; ?></div><!--I am involved in many areas of the Arts, including: Digital, Performing, and Fine Arts. I am always looking for ways to expand my knowlege and share my creativity.-->
-		   <div id="aboutPara3" class="aboutPara paraStyle hiddenPara hide-for-medium-only hide-for-large"><?php echo "<p>{$aboutPara3}</p>"; ?></div><!--I have 8 years of experience in the promotional photography, and 2 years experience in designing with the Adobe Creative Suite, including: Photoshop and Illustrator. -->
-		   <div id="aboutPara3L" class="aboutPara paraStyle hide-for-small-only"><?php echo "<p>{$aboutPara3}</p>"; ?></div><!--I have 8 years of experience in the promotional photography, and 2 years experience in designing with the Adobe Creative Suite, including: Photoshop and Illustrator.-->
-		   <div id="aboutPara4" class="aboutPara paraStyle hiddenPara hide-for-medium-only hide-for-large"><?php echo "<p>{$aboutPara5}</p>"; ?></div><!--Through my program at Fanshawe, I have gained many valuable communication, design, and software skills, as well as management experience in being Project Manager for some of our major team projects. -->
-		     <div id="aboutPara4L" class="aboutPara paraStyle hide-for-small-only"><?php echo "<p>{$aboutPara4}</p>"; ?></div><!--Through my program at Fanshawe, I have gained many valuable communication, design, and software skills, as well as management experience in being Project Manager for some of our major team projects.-->
-		   <div id="aboutPara5" class="aboutPara paraStyle hiddenPara hide-for-medium-only hide-for-large"></div><!--To learn more about my skills and experience, please check out my resume below.-->
+		   <div id="aboutPara1" class="paraStyle"><?php echo "<p>{$aboutPara1}</p>"; ?></div>
+		   <div id="aboutPara2" class="aboutPara paraStyle"><?php echo "<p>{$aboutPara2}</p>"; ?></div>
+		   <div id="aboutPara3" class="aboutPara paraStyle hiddenPara hide-for-medium-only hide-for-large"><?php echo "<p>{$aboutPara3}</p>"; ?></div>
+		   <div id="aboutPara3L" class="aboutPara paraStyle hide-for-small-only"><?php echo "<p>{$aboutPara3}</p>"; ?></div>
+		   <div id="aboutPara4" class="aboutPara paraStyle hiddenPara hide-for-medium-only hide-for-large"><?php echo "<p>{$aboutPara5}</p>"; ?></div>
+		     <div id="aboutPara4L" class="aboutPara paraStyle hide-for-small-only"><?php echo "<p>{$aboutPara4}</p>"; ?></div>
+		    <!-- <div id="aboutPara5" class="aboutPara paraStyle hiddenPara hide-for-medium-only hide-for-large"></div>-->
 	   </div>
 	   <!--Read More/Less Button-->
 	   <div id="readMoreLess" class="row">
@@ -135,12 +134,12 @@
   <section id="bottomBar" class="hide-for-small-only"><h2 class="hidden">Bottom Bar</h2></section>
    	
 
-   <!--JavaScript Links - Foundation-->
+   <!--Foundation-->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
-   <!-- <script src="js/app.js"></script>-->
-    <!--JavaScript Links-->
+    <script src="js/app.js"></script>
+   <!--js for about page functionality-->
     <script src="js/about.js"></script>
 
   </body>

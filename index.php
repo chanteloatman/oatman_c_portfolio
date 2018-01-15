@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-   <!--width is 12 columns therefore, small must add to 12 and large must also add to 12 per row, you can also use offset-NUMBER OF BLANK SPACE COLUMS to stand in for columns/invisible colums, still must add to 12 per row though -->
    
    <!--error reporting-->
    <?php 
@@ -301,7 +300,6 @@ $text = "error report";
 	  
    </section>
    
-   
    <!--CONTACT SECTION HOME-->
    <section class="row"><h2 class="hidden">Contact Section HomePage</h2>
    <!--Contact Content-->
@@ -315,23 +313,23 @@ $text = "error report";
 	   </section>
    </section>
 </section>
-   
+   <!--Footer Small-->
     <section id="footer" class="row hide-for-medium hide-for-large"><h2 class="hidden">Footer</h2>
    <div id="footerContent" class="row">
-	   <p id="nameBottom" class="columns small-6">chanteloatman.com</p><!--chanteloatman.com-->
+	   <p id="nameBottom" class="columns small-6">chanteloatman.com</p>
 	   <a href="https://www.linkedin.com/in/chantel-oatman-40b177156/"><div id="facebookFooter" class="small-3 small-push-1 columns socialIcon"><img src="images/<?php echo $socialLinkedinSmall ?>" id="likedin" alt="linkedin"></div></a><!--social-linkedin.png-->
 	   <a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><div id="linkedinFooter" class="small-3 columns socialIcon"><img src="images/<?php echo $socialFacebookSmall ?>" id="facebook" alt="facebook"></div></a><!--social-facebook.png-->
    </div>
    </section>
-   
+   <!--Footer M/L-->
      <section id="footerLarge" class="row hide-for-small-only"><h2 class="hidden">Footer</h2>
 	 <p class="hide-for-small-only medium-3 columns" id="nameBottomLarge">chanteloatman.com</p>
 	    <div id="socialIconsLarge" class=" hide-for-small-only">
-		
+		 <!--Medium Social-->
 		<div class="columns medium-2 medium-push-5 hide-for-large" id="linkedinDivM"><a href="https://www.linkedin.com/in/chantel-oatman-40b177156/"><img src="images/<?php echo $socialLinkedinMedium ?>" id="linkedinMedium" alt="linkedin"></a></div><!--social-linkedin-medium.png-->
 		<div class="columns medium-2 medium-push-5 hide-for-large" id="facebookDivM"><a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><img src="images/<?php echo $socialFacebookMedium ?>" id="facebookMedium" alt="facebook"></a></div><!--social-facebook-medium.png-->
 		
-		 <!--Large-->
+		 <!--Large Social-->
 		<div class="columns hide-for-medium-only large-push-6 large-2 columns" id="linkedinDivLarge"><a href="https://www.linkedin.com/in/chantel-oatman-40b177156/"><img src="images/<?php echo $socialLinkedinLarge ?>" id="linkedinLarge" alt="linkedin"></a></div><!--social-linkedin-large.png-->
 		<div class="columns hide-for-medium-only large-2 columns" id="facebookDivLarge"><a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><img src="images/<?php echo $socialFacebookLarge ?>" id="facebookLarge" alt="facebook"></a></div><!--social-facebook-large.png-->
 	  </div>
@@ -339,11 +337,12 @@ $text = "error report";
   	
   <section id="bottomBar" class="hide-for-small-only"><h2 class="hidden">Bottom Bar</h2></section>
    	
-
+    <!--foundation-->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
-   <!-- <script src="js/app.js"></script>-->
+    <script src="js/app.js"></script>
+    <!--js for index page functionality-->
     <script src="js/index.js"></script>
   </body>
 </html>

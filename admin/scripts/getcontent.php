@@ -221,6 +221,13 @@ while($row = mysqli_fetch_array($result)){
 	}
 }
 //..............GRAPHIC ICONS (the ones you click to show lightbox)..............
+//Exit
+$sql = "SELECT portfoliowork_img FROM tbl_portfoliowork WHERE portfoliowork_id=73";
+$result = mysqli_query($link, $sql); //the result: the Resume Info Paragraph
+while($row = mysqli_fetch_array($result)){
+	$exitButtonS = $row['portfoliowork_img'];
+}
+
 //...........Graphic Icons Small...........
 $sql = "SELECT * FROM tbl_portfoliowork WHERE portfoliowork_size=1 AND portfoliowork_type='graphic-icon'"; //here we want all the small graphic icons
 $result = mysqli_query($link, $sql); //the result: the graphic icons
@@ -308,8 +315,8 @@ while($row = mysqli_fetch_array($result)){
 		$graphicIconGearsLarge = $row['portfoliowork_img']; //get the large gears icon
     }
 }
-//...........GRAPHIC / LIGHTBOX IMAGES...........
-//Graphic Small Show Images
+//...........GRAPHIC / LIGHTBOX CONTENT...........
+//Graphic Small Show Titles, Images, Descriptions
 $sql = "SELECT * FROM tbl_portfoliowork WHERE portfoliowork_size=1 AND portfoliowork_type='graphic-image'"; //here we want all the small graphic titles, images, and descriptions for the lightbox
 $result = mysqli_query($link, $sql); //the result: the graphic icons
 while($row = mysqli_fetch_array($result)){ 
@@ -364,7 +371,7 @@ while($row = mysqli_fetch_array($result)){
 		$graphicNoteGearsSmall = $row['portfoliowork_note']; //graphic note
     }
 }
-//Graphic Medium Show Images
+//Graphic Medium Show Titles, Images, Descriptions
 $sql = "SELECT * FROM tbl_portfoliowork WHERE portfoliowork_size=2 AND portfoliowork_type='graphic-image'"; //here we want all the medium graphic titles, images, and descriptions for the lightbox
 $result = mysqli_query($link, $sql); //the result: the graphic icons
 while($row = mysqli_fetch_array($result)){ 
@@ -372,45 +379,53 @@ while($row = mysqli_fetch_array($result)){
 		$graphicTitleSitelogoMedium = $row['portfoliowork_title']; //graphic title
 		$graphicImgSitelogoMedium = $row['portfoliowork_img']; //graphic image
 		$graphicDescSitelogoMedium = $row['portfoliowork_desc']; //graphic description
+		$graphicNoteSitelogoMedium = $row['portfoliowork_note']; //graphic note
 		//variable to use in index.php img tag is in green, and the blue is the where getting the graphic or text from
 	}
 	elseif($row['portfoliowork_title'] == 'Chantel, Anything Arts - Logo Vector'){ 
 		$graphicTitleArtsMedium = $row['portfoliowork_title']; //graphic title
 		$graphicImgArtsMedium = $row['portfoliowork_img']; //graphic image
 		$graphicDescArtsMedium = $row['portfoliowork_desc']; //graphic description
+		$graphicNoteArtsMedium = $row['portfoliowork_note']; //graphic note
     }   
 	elseif($row['portfoliowork_title'] == 'Graffiti Wonderland - Custom'){ 
 		$graphicTitleGraffitiMedium = $row['portfoliowork_title']; //graphic title
 		$graphicImgGraffitiMedium = $row['portfoliowork_img']; //graphic image
 		$graphicDescGraffitiMedium = $row['portfoliowork_desc']; //graphic description
+		$graphicNoteGraffitiMedium = $row['portfoliowork_note']; //graphic note
     }
 	elseif($row['portfoliowork_title'] == '"Flashback - Movies" - Icon'){ 
 		$graphicTitleVhsMedium = $row['portfoliowork_title']; //graphic title
 		$graphicImgVhsMedium = $row['portfoliowork_img']; //graphic image
 		$graphicDescVhsMedium = $row['portfoliowork_desc']; //graphic description
+		$graphicNoteVhsMedium = $row['portfoliowork_note']; //graphic note
     }
 	elseif($row['portfoliowork_title'] == 'Dazzling Duck Tuxedos - Logo Vector'){ 
 		$graphicTitleDuckMedium = $row['portfoliowork_title']; //graphic title
 		$graphicImgDuckMedium = $row['portfoliowork_img']; //graphic image
 		$graphicDescDuckMedium = $row['portfoliowork_desc']; //graphic description
+		$graphicNoteDuckMedium = $row['portfoliowork_note']; //graphic note
     }
 	elseif($row['portfoliowork_title'] == 'Digital Tattoo - Custom'){ 
 		$graphicTitleTattooMedium = $row['portfoliowork_title']; //graphic title
 		$graphicImgTattooMedium = $row['portfoliowork_img']; //graphic image
 		$graphicDescTattooMedium = $row['portfoliowork_desc']; //graphic description
+		$graphicNoteTattooMedium = $row['portfoliowork_note']; //graphic note
     }
 	elseif($row['portfoliowork_title'] == 'Curious Cat - Logo'){ 
 		$graphicTitleCatMedium = $row['portfoliowork_title']; //graphic title
 		$graphicImgCatMedium= $row['portfoliowork_img']; //graphic image
 		$graphicDescCatMedium = $row['portfoliowork_desc']; //graphic description
+		$graphicNoteCatMedium = $row['portfoliowork_note']; //graphic note
     }
 	elseif($row['portfoliowork_title'] == 'Turning Gears on Creativity - Custom'){ 
 		$graphicTitleGearsMedium = $row['portfoliowork_title']; //graphic title
 		$graphicImgGearsMedium = $row['portfoliowork_img']; //graphic image
 		$graphicDescGearsMedium = $row['portfoliowork_desc']; //graphic description
+		$graphicNoteGearsMedium = $row['portfoliowork_note']; //graphic note
     }
 }
-//Graphic Large Show Images
+//Graphic Large Show Titles, Images, Descriptions
 $sql = "SELECT * FROM tbl_portfoliowork WHERE portfoliowork_size=3 AND portfoliowork_type='graphic-image'"; //here we want all the large graphic titles, images, and descriptions for the lightbox
 $result = mysqli_query($link, $sql); //the result: the graphic icons
 while($row = mysqli_fetch_array($result)){ 
@@ -418,42 +433,50 @@ while($row = mysqli_fetch_array($result)){
 		$graphicTitleSitelogoLarge = $row['portfoliowork_title']; //graphic title
 		$graphicImgSitelogoLarge = $row['portfoliowork_img']; //graphic image
 		$graphicDescSitelogoLarge = $row['portfoliowork_desc']; //graphic description
+		$graphicNoteSitelogoLarge = $row['portfoliowork_note']; //graphic note
 		//variable to use in index.php img tag is in green, and the blue is the where getting the graphic or text from
 	}
 	elseif($row['portfoliowork_title'] == 'Chantel, Anything Arts - Logo Vector'){ 
 		$graphicTitleArtsLarge = $row['portfoliowork_title']; //graphic title
 		$graphicImgArtsLarge= $row['portfoliowork_img']; //graphic image
 		$graphicDescArtsLarge = $row['portfoliowork_desc']; //graphic description
+		$graphicNoteArtsLarge = $row['portfoliowork_note']; //graphic note
     }   
 	elseif($row['portfoliowork_title'] == 'Graffiti Wonderland - Custom'){ 
 		$graphicTitleGraffitiLarge = $row['portfoliowork_title']; //graphic title
 		$graphicImgGraffitiLarge= $row['portfoliowork_img']; //graphic image
 		$graphicDescGraffitiLarge= $row['portfoliowork_desc']; //graphic description
+		$graphicNoteGraffitiLarge = $row['portfoliowork_note']; //graphic note
     }
 	elseif($row['portfoliowork_title'] == '"Flashback - Movies" - Icon'){ 
 		$graphicTitleVhsLarge = $row['portfoliowork_title']; //graphic title
 		$graphicImgVhsLarge = $row['portfoliowork_img']; //graphic image
 		$graphicDescVhsLarge = $row['portfoliowork_desc']; //graphic description
+		$graphicNoteVhsLarge = $row['portfoliowork_note']; //graphic note
     }
 	elseif($row['portfoliowork_title'] == 'Dazzling Duck Tuxedos - Logo Vector'){ 
 		$graphicTitleDuckLarge = $row['portfoliowork_title']; //graphic title
 		$graphicImgDuckLarge = $row['portfoliowork_img']; //graphic image
 		$graphicDescDuckLarge = $row['portfoliowork_desc']; //graphic description
+		$graphicNoteDuckLarge = $row['portfoliowork_note']; //graphic note
     }
 	elseif($row['portfoliowork_title'] == 'Digital Tattoo - Custom'){ 
 		$graphicTitleTattooLarge = $row['portfoliowork_title']; //graphic title
 		$graphicImgTattooLarge= $row['portfoliowork_img']; //graphic image
 		$graphicDescTattooLarge = $row['portfoliowork_desc']; //graphic description
+		$graphicNoteTattooLarge = $row['portfoliowork_note']; //graphic note
     }
 	elseif($row['portfoliowork_title'] == 'Curious Cat - Logo'){ 
 		$graphicTitleCatLarge = $row['portfoliowork_title']; //graphic title
 		$graphicImgCatLarge = $row['portfoliowork_img']; //graphic image
 		$graphicDescCatLarge= $row['portfoliowork_desc']; //graphic description
+		$graphicNoteCatLarge = $row['portfoliowork_note']; //graphic note
     }
 	elseif($row['portfoliowork_title'] == 'Turning Gears on Creativity - Custom'){ 
 		$graphicTitleGearsLarge = $row['portfoliowork_title']; //graphic title
 		$graphicImgGearsLarge= $row['portfoliowork_img']; //graphic image
 		$graphicDescGearsLarge = $row['portfoliowork_desc']; //graphic description
+		$graphicNoteGearsLarge = $row['portfoliowork_note']; //graphic note
     }
 }
 //Branding Style Guides
