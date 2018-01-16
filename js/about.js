@@ -1,5 +1,5 @@
 // JavaScript Document
-$(document).foundation();
+//$(document).foundation();
 (function(){
 	"use strict";
 	//console.log("SEAF Fired");
@@ -8,13 +8,14 @@ $(document).foundation();
 var readMore = document.querySelector("#readMore");
 //var readLess = document.querySelector("#readLess");
 var showHideParas = document.querySelectorAll(".hiddenPara");
-	//var showHideParas = document.getElementsByClassName("hiddenPara");
+//var showHideParas = document.getElementsByClassName("hiddenPara");
 var i;
 var showHide = document.querySelector(".hiddenPara");
+
 //Functions
 //Hide Show the About Text
 function hideShowAbout(){
-	console.log("hide show working");
+	//console.log("hide show working");
 	if(showHide.style.display === 'block'){
 	//if text is visiable, hide it
 	for (i = 0;i < showHideParas.length; i++){

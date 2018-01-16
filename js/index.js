@@ -17,7 +17,7 @@
 	//Functions
 	//Show/Hide Photo Services
 	function hideShowPhotoServ(){
-		console.log("hide show working");
+		//console.log("hide show working");
 		//display none
 		if(photoServ.style.display === 'block'){
 			photoServ.style.display = 'none';}

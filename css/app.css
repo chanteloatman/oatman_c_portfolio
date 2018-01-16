@@ -26,7 +26,7 @@ p {font-family: 'Poppins', sans-serif, Arial; font-size: 15px; text-align: cente
 
 /*body {background-image: url(../images/background-mobile.jpg); background-repeat: repeat;}*/
 
-body{background-color: #a858a5;}
+body{background-color: #a858a5; margin: 0 auto;}
 
 .textBG{background-color: #ffffff; color: #62367d;} /*border: double 3px #78599a;*/
 
@@ -81,7 +81,7 @@ body{background-color: #a858a5;}
 /*#footer{margin: 30px 0px 0px 0px; padding: 0px 0px 22px 0px;}*/
 #bottomBar{height: 19px; background: linear-gradient(#A858A5, #ffffff);}
 #socialIconsLarge{margin: 10px 0px 10px;}
-#nameBottomLarge{margin-top: 5%; color: #ffffff;}
+#nameBottomLarge{margin-top: 40px; color: #ffffff;}
 
 /*MEDIUM*/
 /*medium adjustments*/
@@ -111,9 +111,9 @@ body{background-color: #a858a5;}
 .servicesButton{background-color: #b073ba; padding: 5px 5px 5px 5px; text-align: center; font-family: 'Poppins', sans-serif, Arial; color: #ffffff; border: 3px double #ffffff;}
 #servicesInfo{padding: 0px 20px 0px 20px;}
 #photoServiceButton{margin-top: 15px;}
-#photoServicesDescS{margin-top: 18px;}
-#graphicServicesDescS{margin-top: 18px;}
-#brandServicesDescS{margin-top: 18px;}
+#photoServicesDescS{margin-top: 2px; margin-left: 15%;}
+#graphicServicesDescS{margin-top: 2px; margin-left: 15%;}
+#brandServicesDescS{margin-top: 2px; margin-left: 15%;}
 #photoServiceDescHome{padding-left: 35px;}
 #moreAboutButton{margin-top: 14px;}
 
@@ -123,10 +123,11 @@ body{background-color: #a858a5;}
 #aboutInfoHome p{color: #190C3D; margin-top: 10px; }
 #aboutInfoHome{text-align: center;}
 #aboutButtonHome{margin-top: 10px; background-color: #1a0d3c; border: solid 2px #78599a; border-radius: 10px 0px 10px 0px; clear: both;}
+#contactContentHome{margin-top: 2px;}
 
 /*PORTFOLIO SECTION HOMEPAGE*/
-#videoHome{height: 160px; border: double 3px #78599a;}
-#controlsHome{height: 41px; background-color: #1a0d3c;  border: double 3px #78599a;}
+/*#videoHome{height: 160px; border: double 3px #78599a;}*/
+/*#controlsHome{height: 41px; background-color: #1a0d3c;  border: double 3px #78599a;}*/
 #portfolioButtonHome{margin-top: 10px; background-color: #1a0d3c; border: solid 2px #78599a; border-radius: 10px 0px 10px 0px;}
 #viewPortfolioButton{margin-top: 22px;}
 #portfolioContentHome{margin-top: 2px;}
@@ -154,6 +155,7 @@ body{background-color: #a858a5;}
 #photoServicesDescM{display: inline;}
 
 /*Medium Adjustments*/
+.listTitleM p{text-align: left;}
 @media screen and (min-width: 40em){
 	#servicesContentHome{margin-top: 2px;}
 	#aboutTitleHome{margin-top: 38px;}
@@ -163,16 +165,28 @@ body{background-color: #a858a5;}
 	#portfolioTitleHome{margin-top: 38px;}
 	#contactTitleHome{margin-top: 38px;}
 	#contactButtonHome{height: 64px;}
-	#contactContentHome{margin-top: -35px;}
+	/*#contactContentHome{margin-top: -35px;}*/
+	#contactContentHome{margin-top: 2px;}
+	#contactTitle{margin-top: 2px;}
+	.bulletList{margin-left: 10%;}
 }
 
 /*LARGE*/	
+.bulletListGraphicL{margin-left: 20px;} /*20px*/
+.bulletListBrandL{margin-left: 20px;} /*20px*/
+	#webServicesLarge p{text-align: left; margin-top: 10px; margin-left: 2%;} /*38 left*/
+	#webServicesLarge{margin-left: 0px;} /*20px*/
+	#bulletListStyleL p{margin-left: 8%;}  /*40px*/
+.listTitleL p{text-align: left;}
+#moreAboutButtonL{margin-left: 45px;}
+
 @media screen and (min-width: 64em){
 	.servicesBoxLarge{height: 330px; background-color: #A858A5;}
-	#photoImgBox{}
 	.subHeading{color: #A858A5; font-size: 18px;}
 	.bulletList{color: #848484; font-size: 18px;}
 	.homePortfolioButtons{margin: 10px 0px 10px 0px;}
+	.bulletList{margin: 0 auto;}
+	
 }
 	
 /*......................ABOUT PAGE.......................*/
@@ -183,12 +197,15 @@ body{background-color: #a858a5;}
 .aboutPara{padding: 0px 15px 0px 20px; margin: -2px 10px 0px 10px;}
 #programLink{color: #A858A5; text-decoration: underline; font-weight: 500;}
 .aboutButton{background-color: #1a0d3c; border: solid 2px #78599a; color: #cac0d1;}
-#aboutChantelImg{border: solid 2px #78599a; padding: 0px 0px 0px 0px; margin: 0px 10px 15px 20px;}
+#aboutChantelImg{border: solid 2px #78599a; padding: 0px; margin: 0px 15px 15px 30px;}
 /*#aboutChantelImgM{border: solid 2px #78599a; padding: 0px 0px 0px 0px; margin: 0px 10px 15px 20px;}*/
 /*#aboutChantelImgL{border: solid 2px #78599a; padding: 0px 0px 0px 0px; margin: 0px 10px 15px 20px;}*/
-#aboutChantelInfo{height: 100%; padding: 15px 0px 5px 0px; margin-bottom: 15px;}
+#aboutChantelInfo{height: 100%; padding: 15px 0px 5px 0px;}
 #aboutChantelInfo p {text-align: left;}
 .aboutInfo p{ line-height: 18px; padding: 10px 10px 10px 10px;}
+#readMoreLess{margin-bottom: 5px;}
+
+
 
 .hiddenPara{display: none;}
 
@@ -205,6 +222,7 @@ body{background-color: #a858a5;}
 #resumeInfoSection{margin: 4px 0px 15px 0px;}
 #resumeInfo{text-align: center;}
 #resumeButton{margin-top: 8px;}
+#resumeButton a{color: #ffffff;}
 #myResume{text-align: center; background-color: #F1E3F0; margin-top: 15px;}
 
 /*MEDIUM*/
@@ -212,17 +230,20 @@ body{background-color: #a858a5;}
 #chantelPromoInfo{padding: 95px 0px 96px 0px;}
 /*#offerTitle{margin-top: 38px;}*/
 /*#resumeTitle{margin-top: 38px;}*/
+#aboutPara4L{padding-top: 35px;}
 
-/*Medium Adjustments*/
+#aboutChantelImgM{margin-bottom: 10px;}
 @media screen and (min-width: 40em){
 	/*#aboutTitle{margin-top: 38px;}*/
 /*	#aboutContainer{height: 168px;}*/
 	#aboutChantelInfo{height: 100%; margin-right: 20px;}
 	#aboutChantelImg{margin: 0px 25px 0px 40px;}
+	#aboutPara4L{margin-top: -38px;}
 }
 @media screen and (min-width: 60em){
 	#aboutChantelImg{margin-left: 35px;}
 	/*#aboutTitle{margin-top: 38px;}*/
+	#aboutChantelInfo{padding: 0px 40px 0px 40px;}
 	
 }
 
@@ -243,6 +264,11 @@ body{background-color: #a858a5;}
 .photoHidden{display: none;}
 .hiddenGalleryImgS{display:none;}
 #leftArrowS{margin-left: 25px;}
+#leftPhotoGalleryM{margin-left: 30px;}
+#leftArrowM{margin-top: -40px;}
+#rightArrowM{margin-top: -36px}
+#leftArrowL{margin-top: -155px;}
+#rightArrowL{margin: -155px 0px 0px -10px;}
 
 /*Graphic Work*/ 
 #graphicContent{margin-top: 2px; padding: 0px 15px 10px 15px;}
@@ -252,11 +278,19 @@ body{background-color: #a858a5;}
 .graphicButton:hover{opacity: 0.4; cursor: pointer;}
 .graphicButtonM{width: 12%; }
 .graphicButtonM:hover{width: 12%; opacity: 0.4; cursor: pointer; }
+.graphicButtonL:hover{opacity: 0.4; cursor: pointer; }
 #graphicButtonsRow2{margin-bottom: 20px;}
-#graphicButtonRowL{margin: 35px 0px 20px 0px; border-top: solid 1px #a858a5; padding-top: 20px;}
+#graphicButtonRowM{margin: 35px 0px 20px 0px; border-top: solid 1px #a858a5; padding-top: 35px;}
+#graphicButtonRowL{margin: 35px 0px 20px 0px; border-top: solid 1px #a858a5; padding-top: 35px;}
 #graphicWorkAreaDescM h3{text-align: left;}
 #graphicWorkAreaDescM p{text-align: left; line-height: 18px;}
 #graphicWorkAreaM{padding: 0px 15px 0px 15px;}
+#graphicWorkAreaDescL h3{text-align: left;}
+#graphicWorkAreaDescL p{text-align: left; line-height: 18px;}
+#graphicWorkAreaL{padding: 0px 15px 0px 15px;}
+#gearsIconM{margin-right: 26px;}
+.linkSites{color: #a858a5; text-decoration: underline;}
+.linkSites:hover{color: #c79cce; text-decoration: underline;}
 
 /*Branding Style Guides*/
 #brandContent{margin-top: 2px;}
@@ -268,7 +302,6 @@ body{background-color: #a858a5;}
 .brandChantel{background-color: #a858a5; text-align: center; color: #ffffff;}
 .brandFlash{background-color: #bf924a; text-align: center; color: #ffffff;}
 .brandJeff{background-color: #23327f; text-align: center; color: #ffffff;}
-#brandDescChantel{}
 #brandFlash{margin-top: 12px;}
 
 
@@ -278,16 +311,25 @@ body{background-color: #a858a5;}
 	top: 0; left: 0;
 	width: 100%; height: 100%;
 	display: none;
-	background-color: rgba(0, 0, 0, 0.7); /*background-color: #a858a5;*/ color: #494949;
+/*	background-color: rgba(168, 88, 165, 0.95);*/ /*background-color: #a858a5; color: #494949;*/
+	background-color: rgba(255, 255, 255, 0.97);
 	z-index: 500;
-	
+	padding-top: 10px;
+	border-top: solid 25px #a858a5;
+	border-bottom: solid 25px #a858a5;
 }
-.lightboxImg{
-	
-}
-.lightbox p{
-	
-}
+
+.lightbox p{color: #494949; padding: 0px 20px 0px 20px;}
+/*.lightboxDescS{margin-top: 10px;}*/
+.lightboxDesc {margin-top: -20px;}
+#pTitleS{padding: 25px 0px 25px 0px;}
+#pNoteS{padding: 5px 0px 25px 0px;}
+
+
+.lightboxClose{color: #a858a5; font-size: 30px; font-weight: 800;}
+
+#lightboxContentBG{background-color: rgba(255, 255, 255, 0.9);}
+
 
 
 /*Small Iphone 5 adjustments*/
@@ -336,17 +378,24 @@ body{background-color: #a858a5;}
 #contactForm{ margin: 0px 0px 0px 0px; padding: 15px 15px 15px 15px; border-top: solid 8px #c79cce; border-bottom: solid 8px #c79cce;}
 #contactFormInfo p{padding: 15px 10px 0px 10px;}
 
-label{font-family: 'Poppins', sans-serif, Arial; font-size: 15px; color: #62367d;}
+label{font-family: 'Poppins', sans-serif, Arial; font-size: 15px; color: #a858a5;}
 
 #comment{height: 70px;}
 /*input{font-family: 'Poppins', sans-serif, Arial; font-size: 15px; color: #62367d;}*/
-/*MEDIUM*/
+.formStyle{text-align: left; font-size: 18px;  color: #a858a5;}
+
+.thanks{text-align: center;}
+#thanksArea{margin: 0 auto; margin-top: 30%}
+#thanksArea p{color: #ffffff;}
+#thanksTitle{font-family: 'Poppins', sans-serif, Arial; font-size: 22px; color: #ffffff;}
 
 /*Medium Adjustments*/
 @media screen and (min-width: 40em){
 	#contactTitle{margin-top: 38px;}
 	.labelname{margin-left: 5%;}
 	.inputarea{width: 90%; margin-left: 5%;}
+	#submitButton{margin-left: 5%}
+	.formStyle{margin-left: 5%}
 }
 
 /*LARGE*/	
@@ -358,6 +407,9 @@ label{font-family: 'Poppins', sans-serif, Arial; font-size: 15px; color: #62367d
 	#email{width: 62%;}
 	.street{margin-left: 15%;}
 	#comment{width: 60%; height: 90px;}
+	#submitButton{margin-left: 15%}
+	#thanksArea{margin: 0 auto; margin-top: 20%}
+	.formStyle{margin-left: 15%}
 }
 
 	

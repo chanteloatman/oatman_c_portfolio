@@ -2,28 +2,26 @@
 <?php
 //includes all the admin script files that are listed in config file
    include_once("admin/scripts/config.php");
-   //include 'contact.html';
+   include 'contact.html';
 ?>
 
 <?php
-require_once('admin/scripts/config.php');
-if(isset($_POST['firstname'])){
-	//echo"working";
+require_once('admin/script/config.php');
+if(isset($_POST['name'])){
+	echo"working";
 	$direct = "thankyou.php";
-	$firstname = $_POST['firstname'];
-	$lastname = $_POST['lastname'];
+	$firstname = $_POST['fname'];
+	$lastname = $_POST['lname'];
 	$email = $_POST['email'];
 	$street = $_POST['street'];
-	$comment = $_POST['comment'];
+	$message = $_POST['comment'];
 	
 	if($street === ""){
-		//echo "send mail";
-		submitMessage($direct, $firstname, $lastname, $email, $comment); //$sendMail =
-		redirect_to($direct); //makes the thankyou page appear
+		echo "send mail";
+		$sendMail = submitMessage($direct, $firstname, $lastname, $email, $comment);
 	}
 }
 ?>
-
 
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
@@ -36,7 +34,7 @@ if(isset($_POST['firstname'])){
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-	  <h1 class="hidden">Chantel Oatman - Contact</h1>
+   <!--width is 12 columns therefore, small must add to 12 and large must also add to 12 per row, you can also use offset-NUMBER OF BLANK SPACE COLUMS to stand in for columns/invisible colums, still must add to 12 per row though -->
    
   <!--TOP BAR-->
    <section class="row"><h2 class="hidden">Top Bar</h2>
@@ -64,7 +62,7 @@ if(isset($_POST['firstname'])){
    <!--PROMO NAME SECTION-->
    <section class="row" id="promoSection"><h2 class="hidden">Promo Name Section</h2>
 	   <div id="promoName" class="small-12 medium-12 large-12 columns"><h2>Chantel Oatman</h2></div>
-	   <div id="promoPosition" class="small-12 medium-12 large-12 columns"><p>Digital Visuals & Design</p></div>
+	   <div id="promoPosition" class="small-12 medium-12 large-12 columns"><p>Digital Marketing & Design</p></div>
    </section>
    
       <!--MENU MEDIUM/LARGE-->
@@ -73,7 +71,7 @@ if(isset($_POST['firstname'])){
    	<img src="images/logo-large.png" alt="logo" class="hide-for-small-only hide-for-medium-only" id="logoLarge">
     </div></a>
    <div id="menuLarge" class="row hide-for-small-only">
-	   <nav id="largeNavigation" class=" medium-12 large-12 columns"><h2 class="hidden">Navigation</h2>
+   	<nav id="largeNavigation" class=" medium-12 large-12 columns">
    	   <ul>
    	      <li id="homeNavLarge"><a href="index.php">Home</a></li>
           <li id="aboutNavLarge"><a href="about.php">About</a></li>
@@ -91,11 +89,11 @@ if(isset($_POST['firstname'])){
    	   <div id="contactTitleBar" class="headStyle small-12 large-12 columns">Contact Me</div>
 	  <!-- <div id="contactTitleImg" class="titleImg small-3 large-2 columns boxHelper">IMG</div>-->
    </section>
-	   <div id="contactFormInfo" class="small-12 large-push-2 large-7 columns paraStyle">
+	   <div id="contactFormInfo" class="small-12 large-push-2 large-7 columns textBG">
 		   <p>To request a quote to hire me for your marketing and/or design needs, or if you would like to leave a comment about some of my work, please fill out the contact information form to get in touch with me.</p>
 	   </div>
-	   <div id="contactForm" class="small-12 large-12 columns textBG"><h2 class="formStyle">Contact Form</h2>
-	   <form method="post">
+	   <div id="contactForm" class="small-12 large-12 columns textBG">CONTACT FORM
+	   <form action="contact.php" method="post"><!--DO WE NEED METHOD POST THIS HERE???-->
 	   
 	   <label for="firstname" class="labelname">First Name</label>
 	   <input type="text" id="firstname" class="inputarea" name="firstname" placeholder="first name">
@@ -106,12 +104,12 @@ if(isset($_POST['firstname'])){
 	   <label for="email" class="labelname">Email</label>
 	   <input type="text" id="email" class="inputarea" name="email" placeholder="your email">
 	   
-		   <label class="labelname hidden">Street</label><input class="street hidden" name="street" type="text">
+		   <label for="street" class="labelname hidden">Street</label><input class="street hidden" name="street" >
 	   
-	   <label for="comment" class="labelname">Comment</label>
+		   <label for="comment" class="labelname">Comment</label>
 	   <input type="text" id="comment" class="inputarea" name="comment">
 	   
-	   <input id="submitButton" class=" small-3 medium-4 buttons" name="submit" type="submit" value="Submit"><!--formaction="thankyou.php"--> 
+	   <input id="submitButton" name="submit" class="small-3 medium-4 buttons" value="send">Submit</div>
 	   
 	   </form>
 	   
@@ -146,6 +144,6 @@ if(isset($_POST['firstname'])){
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
+   <!-- <script src="js/app.js"></script>-->
   </body>
 </html>
