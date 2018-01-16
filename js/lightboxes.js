@@ -28,9 +28,9 @@
 	//TITLES ARRAY S
 	var title = new Array("#graphicTitleSitelogoS p", "#graphicTitleArtsS p", "#graphicTitleGraffitiS p", "#graphicTitleVhsS p", "#graphicTitleDuckS p", "#graphicTitleTattooS p", "#graphicTitleCatS p", "#graphicTitleGearsS p");
 	//DESCRIPTIONS ARRAY S
-	var desc = new Array("#graphicDescSitelogoS p", "#graphicDescArtsS p", "#graphicDescGraffitilogoS p", "#graphicDescVhsS p", "#graphicDescDuckS p", "#graphicDescTattooS p", "#graphicDescCatS p", "#graphicDescGearsS p");
+	var desc = new Array("#graphicDescSitelogoS p", "#graphicDescArtsS p", "#graphicDescGraffitiS p", "#graphicDescVhsS p", "#graphicDescDuckS p", "#graphicDescTattooS p", "#graphicDescCatS p", "#graphicDescGearsS p");
 	//NOTES ARRAY S
-	var note = new Array("#graphicNoteSitelogoS p", "#graphicNoteArtsS p", "#graphicNoteGraffitilogoS p", "#graphicNoteVhsS p", "#graphicNoteDuckS p", "#graphicNoteTattooS p", "#graphicNoteCatS p", "#graphicNoteGearsS p");
+	var note = new Array("#graphicNoteSitelogoS p", "#graphicNoteArtsS p", "#graphicNoteGraffitiS p", "#graphicNoteVhsS p", "#graphicNoteDuckS p", "#graphicNoteTattooS p", "#graphicNoteCatS p", "#graphicNoteGearsS p");
   
 	
 	//Turn on the Lightbox

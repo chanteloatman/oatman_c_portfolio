@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-   <!--width is 12 columns therefore, small must add to 12 and large must also add to 12 per row, you can also use offset-NUMBER OF BLANK SPACE COLUMNS to stand in for columns/invisible colums, still must add to 12 per row though -->
+    <h1 class="hidden">Chantel Oatman - PortfolioWork</h1>
    
     <!--TOP BAR-->
    <section class="row"><h2 class="hidden">Top Bar</h2>
@@ -26,12 +26,12 @@
          <div class="title-bar small-12" data-responsive-toggle="menuNav" data-hide-for="large">
 		<button class="menu-icon float-right" type="button" data-toggle></button>
 	    </div>
-   <div id="menuNav" class="small-12 hide-for-medium"><h2 class="hidden">Menu</h2>
+		  <div id="menuNav" class="small-12 hide-for-medium"><h2 class="hidden">Menu</h2>
 	  <ul>
 		  <li id="homeNav"><a href="index.php">Home</a></li>
           <li id="aboutNav"><a href="about.php">About</a></li>
           <li id="portfolioNav"><a href="#">Portfolio</a></li>
-          <li id="contactNav"><a href="contact.html">Contact Me</a></li>
+          <li id="contactNav"><a href="contact.php">Contact Me</a></li>
       </ul>
    </div>
     </nav>
@@ -50,12 +50,12 @@
    	<img src="images/<?php echo $sitelogoLarge ?>" alt="logo" class="hide-for-small-only hide-for-medium-only" id="logoLarge">
    </div></a>
    <div id="menuLarge" class="row hide-for-small-only">
-   	<nav id="largeNavigation" class=" medium-12 large-12 columns">
+   	<nav id="largeNavigation" class=" medium-12 large-12 columns"><h2 class="hidden">Navigation</h2>
    	   <ul>
    	      <li id="homeNavLarge"><a href="index.php">Home</a></li>
           <li id="aboutNavLarge"><a href="about.php">About</a></li>
           <li id="portfolioNavLarge"><a href="#">Portfolio</a></li>
-          <li id="contactNavLarge"><a href="contact.html">Contact Me</a></li>
+          <li id="contactNavLarge"><a href="contact.php">Contact Me</a></li>
        </ul>
     </nav>
    </div>
@@ -82,34 +82,34 @@
 	   <!--......photos small......-->
 	   <div id="rosePhotoAreaS" class="small-12 hide-for-medium-only hide-for-large columns">
 	   	<img src="images/<?php echo $galleryRoseSmallImg ?>" alt="love_of_the_shadows_photo" id="photoRoseS">
-	   	<img src="images/<?php echo $galleryLogsSmallImg ?>" alt="love_of_the_shadows_photo" id="photoLogsS" class="photoHidden">
-	   	<img src="images/<?php echo $galleryNatureSmallImg ?>" alt="love_of_the_shadows_photo" id="photoNatureS" class="photoHidden">
-	   	<img src="images/<?php echo $galleryDuckSmallImg ?>" alt="love_of_the_shadows_photo" id="photoDuckS" class="photoHidden">
-	   	<img src="images/<?php echo $gallerySquirrelSmallImg ?>" alt="love_of_the_shadows_photo" id="photoSquirrelS" class="hiddenGalleryImgS">
-	   	<img src="images/<?php echo $galleryMakeupSmallImg ?>" alt="love_of_the_shadows_photo" id="photoGearsS" class="photoHidden">
+	   	<img src="images/<?php echo $galleryLogsSmallImg ?>" alt="logs_of_time_photo" id="photoLogsS" class="photoHidden">
+	   	<img src="images/<?php echo $galleryNatureSmallImg ?>" alt="heart_of_nature_photo" id="photoNatureS" class="photoHidden">
+	   	<img src="images/<?php echo $galleryDuckSmallImg ?>" alt="the_smiling_duck_photo" id="photoDuckS" class="photoHidden">
+	   	<img src="images/<?php echo $gallerySquirrelSmallImg ?>" alt="squirrel_photo" id="photoSquirrelS" class="hiddenGalleryImgS">
+	   	<img src="images/<?php echo $galleryMakeupSmallImg ?>" alt="makeup_photo" id="photoGearsS" class="photoHidden">
 	   	<!--......photos medium......-->
 	   </div>
 	   <div id="rosePhotoAreaM" class="hide-for-small-only medium-10 medium-pull-1 hide-for-large columns">
 	   	<img src="images/<?php echo $galleryRoseMediumImg ?>" alt="love_of_the_shadows_photo" id="photoRoseM">
-	   	<img src="images/<?php echo $galleryLogsMediumImg ?>" alt="love_of_the_shadows_photo" id="photoLogsM" class="photoHidden">
-	   	<img src="images/<?php echo $galleryNatureMediumImg ?>" alt="love_of_the_shadows_photo" id="photoNatureM" class="photoHidden">
-	   	<img src="images/<?php echo $galleryDuckMediumImg ?>" alt="love_of_the_shadows_photo" id="photoDuckM" class="photoHidden">
-	   	<img src="images/<?php echo $gallerySquirrelMediumImg ?>" alt="love_of_the_shadows_photo" id="photoSquirrelM" class="photoHidden">
-	   	<img src="images/<?php echo $galleryMakeupMediumImg ?>" alt="love_of_the_shadows_photo" id="photoGearsM" class="photoHidden">
-	   	<!--......photos large......-->
+	   	<img src="images/<?php echo $galleryLogsMediumImg ?>" alt="logs_of_time_photo" id="photoLogsM" class="photoHidden">
+	   	<img src="images/<?php echo $galleryNatureMediumImg ?>" alt="heart_of_nature_photo" id="photoNatureM" class="photoHidden">
+	   	<img src="images/<?php echo $galleryDuckMediumImg ?>" alt="the_smiling_duck_photo" id="photoDuckM" class="photoHidden">
+	   	<img src="images/<?php echo $gallerySquirrelMediumImg ?>" alt="squirrel_photo" id="photoSquirrelM" class="photoHidden">
+	   	<img src="images/<?php echo $galleryMakeupMediumImg ?>" alt="makeup_photo" id="photoGearsM" class="photoHidden">
 	    </div>
 	    </div>
+	    <!--......photos large......-->
 	    <div id="rosePhotoAreaL" class="hide-for-small-only hide-for-medium-only large-8 large-offset-2 columns">
 	   	<img src="images/<?php echo $galleryRoseLargeImg ?>" alt="love_of_the_shadows_photo" id="photoRoseL">
-	   	<img src="images/<?php echo $galleryLogsLargeImg ?>" alt="love_of_the_shadows_photo" id="photoLogsL" class="photoHidden">
-	   	<img src="images/<?php echo $galleryNatureLargeImg ?>" alt="love_of_the_shadows_photo" id="photoNatureL" class="photoHidden">
-	   	<img src="images/<?php echo $galleryDuckLargeImg ?>" alt="love_of_the_shadows_photo" id="photoDuckL" class="photoHidden">
-	   	<img src="images/<?php echo $gallerySquirrelLargeImg ?>" alt="love_of_the_shadows_photo" id="photoSquirrelL" class="photoHidden">
-	   	<img src="images/<?php echo $galleryMakeupLargeImg ?>" alt="love_of_the_shadows_photo" id="photoGearsL" class="photoHidden">
+	   	<img src="images/<?php echo $galleryLogsLargeImg ?>" alt="logs_of_time_photo" id="photoLogsL" class="photoHidden">
+	   	<img src="images/<?php echo $galleryNatureLargeImg ?>" alt="heart_of_nature_photo" id="photoNatureL" class="photoHidden">
+	   	<img src="images/<?php echo $galleryDuckLargeImg ?>" alt="the_smiling_duck_photo" id="photoDuckL" class="photoHidden">
+	   	<img src="images/<?php echo $gallerySquirrelLargeImg ?>" alt="squirrel_photo" id="photoSquirrelL" class="photoHidden">
+	   	<img src="images/<?php echo $galleryMakeupLargeImg ?>" alt="makeup_photo" id="photoGearsL" class="photoHidden">
 	   </div>
 <!--GALLERY DESCRIPTIONS-->
 	 <!--Gallery Descriptions Small-->
-    </div>
+
 	    <div id="photoDescriptionS" class="small-12 hide-for-medium-only hide-for-large columns">
 			<div id="roseSubHeadingS" class="subHeading gallerySubHead sgsubheading"><?php echo "<p>{$galleryRoseSmallTitle}</p>"; ?></div>
 			<div id="roseDescS" class="paraStyle galleryDesc sgDesc"><?php echo "<p>{$galleryRoseSmallDesc}</p>"; ?></div>
@@ -195,7 +195,7 @@
    
    
    <!--.........LIGHTBOX.........-->
-   <section class="lightbox row hide-for-medium-only hide-for-large" id="lightbox">
+	<section class="lightbox row hide-for-medium-only hide-for-large" id="lightbox"><h2 class="hidden">Lightbox</h2>
 	   <div id="lightboxContentBG">
 	   <div class="small-2 small-offset-10 columns"><i class="lightboxClose">X</i></div> <!--close graphicLightbox--> 
 	   <!--the image-->
@@ -339,13 +339,13 @@
    </section>
    <!--LARGE GRAPHICS-->
    <!--large graphics Image and Description Area-->
-   <section class="row hide-for-small-only" id="graphicWorkAreaM"><h2 class="hidden">Graphics Show Work Area</h2>
+   <section class="row hide-for-small-only" id="graphicWorkAreaL"><h2 class="hidden">Graphics Show Work Area</h2>
    <!--large graphics Images-->
       <div id="graphicWorkAreaImgL" class="hide-for-small-only large-4 large-offset-2 hide-for-medium-only columns">
        <!--sitelogoL--><img src="images/<?php echo $graphicImgSitelogoLarge ?>" alt="site_logo" id="graphicImgSitelogoL" class="graphicImgL sitelogoShowL"> 
        <!--artsL--><img src="images/<?php echo $graphicImgArtsLarge ?>" alt="chantel_arts_logo_vector" id="graphicImgArtsL" class="photoHidden graphicImgL artsShowL"> 
        <!--graffitiL--><img src="images/<?php echo $graphicImgGraffitiLarge ?>" alt="chantel_arts_logo_vector" id="graphicImgGraffitiL" class="photoHidden graphicImgL graffitiShowL"> 
-       <!--vhsL--><img src="images/<?php echo $graphicImgVhsLarge ?>" alt="graffiti_custom" id="graphicImgVhsM" class="photoHidden graphicImgL vhsShowL"> 
+       <!--vhsL--><img src="images/<?php echo $graphicImgVhsLarge ?>" alt="graffiti_custom" id="graphicImgVhsL" class="photoHidden graphicImgL vhsShowL"> 
        <!--duckL--><img src="images/<?php echo $graphicImgDuckLarge ?>" alt="duck_vector" id="graphicImgDuckL" class="photoHidden graphicImgL duckShowL"> 
        <!--tattooL--><img src="images/<?php echo $graphicImgTattooLarge ?>" alt="tattoo_custom" id="graphicImgTattooL" class="photoHidden graphicImgL tattooShowL"> 
        <!--catL--><img src="images/<?php echo $graphicImgCatLarge ?>" alt="curious_cat_logo" id="graphicImgCatL" class="photoHidden graphicImgL catShowL"> 
@@ -395,23 +395,23 @@
 	   <div class="graphicButtonM medium-1 columns">
 	   	<img src="images/<?php echo $graphicIconSitelogoMedium ?>" alt="site_logo" id="sitelogoIconM">
 	   </div>
-	   <div class="graphicButtonM medium-1 columns" id="artsIconM"><img src="images/<?php echo $graphicIconArtsMedium ?>"></div>
-	   <div class="graphicButtonM medium-1 columns" id="graffitiIconM"><img src="images/<?php echo $graphicIconGraffitiMedium ?>"></div>
-	   <div class="graphicButtonM medium-1 columns" id="vhsIconM"><img src="images/<?php echo $graphicIconVhsMedium ?>"></div>
-	   <div class="graphicButtonM medium-1 columns" id="duckIconM"><img src="images/<?php echo $graphicIconDuckMedium ?>"></div>
+	   <div class="graphicButtonM medium-1 columns" id="artsIconM"><img src="images/<?php echo $graphicIconArtsMedium ?>" alt="chantel_arts_graphic_vector"></div>
+	   <div class="graphicButtonM medium-1 columns" id="graffitiIconM"><img src="images/<?php echo $graphicIconGraffitiMedium ?>" alt="graffiti_custom_graphic"></div>
+	   <div class="graphicButtonM medium-1 columns" id="vhsIconM"><img src="images/<?php echo $graphicIconVhsMedium ?>" alt="flashback_movies_icon"></div>
+	   <div class="graphicButtonM medium-1 columns" id="duckIconM"><img src="images/<?php echo $graphicIconDuckMedium ?>" alt="duck_vector_graphic"></div>
 	   <div class="graphicButtonM medium-1  columns" id="tattooIconM"><img src="images/<?php echo $graphicIconTattooMedium ?>" alt="tatto_custom_graphic"></div>
-	   <div class="graphicButtonM medium-1 columns" id="catIconM"><img src="images/<?php echo $graphicIconCatMedium ?>" alt="curious_cat_logo"></div>
+	   <div class="graphicButtonM medium-1 columns" id="catIconM"><img src="images/<?php echo $graphicIconCatMedium ?>" alt="curious_cat_logo" ></div>
 	   <div class="graphicButtonM medium-1 columns" id="gearsIconM"><img src="images/<?php echo $graphicIconGearsMedium ?>" alt="gears_custom_graphic"></div>
 	   </div>
 	  <!--Large Graphics Icons--> 
 	   <div class="hide-for-small-only hide-for-medium-only large-12 columns" id="graphicButtonRowL">
 	   <div class="graphicButtonL large-1 large-offset-2 columns">
-	   <img src="images/<?php echo $graphicIconSitelogoLarge ?>" alt="site_logo" id="sitelogoIconL">
+	   <img src="images/<?php echo $graphicIconSitelogoLarge ?>" alt="site_logo_icon" id="sitelogoIconL">
 	   </div>
-	   <div class="graphicButtonL large-1 columns" id="artsIconL"><img src="images/<?php echo $graphicIconArtsLarge ?>"></div>
-	   <div class="graphicButtonL large-1 columns" id="graffitiIconL"><img src="images/<?php echo $graphicIconGraffitiLarge ?>"></div>
-	   <div class="graphicButtonL large-1 columns" id="vhsIconL"><img src="images/<?php echo $graphicIconVhsLarge ?>"></div>
-	   <div class="graphicButtonL large-1   columns" id="duckIconL"><img src="images/<?php echo $graphicIconDuckLarge ?>"></div>
+	   <div class="graphicButtonL large-1 columns" id="artsIconL"><img src="images/<?php echo $graphicIconArtsLarge ?>" alt="arts_icon"></div>
+	   <div class="graphicButtonL large-1 columns" id="graffitiIconL"><img src="images/<?php echo $graphicIconGraffitiLarge ?>" alt="graffiti_icon"></div>
+	   <div class="graphicButtonL large-1 columns" id="vhsIconL"><img src="images/<?php echo $graphicIconVhsLarge ?>" alt="flashback_movies_icon"></div>
+	   <div class="graphicButtonL large-1   columns" id="duckIconL"><img src="images/<?php echo $graphicIconDuckLarge ?>" alt="duck_icon"></div>
 	   <div class="graphicButtonL large-1  columns" id="tattooIconL"><img src="images/<?php echo $graphicIconTattooLarge ?>" alt="tatto_custom_graphic"></div>
 	   <div class="graphicButtonL large-1 columns" id="catIconL"><img src="images/<?php echo $graphicIconCatLarge ?>" alt="curious_cat_logo"></div>
 	   <div class="graphicButtonL large-1 large-pull-2 columns" id="gearsIconL"><img src="images/<?php echo $graphicIconGearsLarge ?>" alt="gears_custom_graphic"></div>
@@ -429,7 +429,7 @@
    <!--Chantel Branding Small-->
    <section class="row"><h2 class="hidden">Graphic Buttons</h2>
 	 <div class="columns small-12" id="brandChantel"> 
-		 <a href="images/styleguide-chantel.pdf" alt="style_guide_for_current_site"><div id="brandViewButtonChantel" class="small-2 small-push-1 hide-for-medium columns brandViewButton brandChantel">View</div></a>
+		 <a href="images/styleguide-chantel.pdf"><div id="brandViewButtonChantel" class="small-2 small-push-1 hide-for-medium columns brandViewButton brandChantel">View</div></a>
 	   <div id="brandDescChantel" class="small-9 hide-for-medium columns brandDesc">
 	   	   <h3 class="subHeading">Chantel - StyleGuide</h3>
 		   <p class="paraStyle">For my site you are currently on.</p>
@@ -437,7 +437,7 @@
      </div>
      <!--Flash Branding Small-->
      <div class="columns small-12" id="brandFlash">
-		 <a href="images/styleguide-flashback.pdf" alt="styleguide_flashback"> <div id="brandViewButtonFlash" class="small-2 small-push-1  hide-for-medium columns brandViewButton brandFlash">View</div></a>
+		 <a href="images/styleguide-flashback.pdf"> <div id="brandViewButtonFlash" class="small-2 small-push-1  hide-for-medium columns brandViewButton brandFlash">View</div></a>
 	   <div id="brandDescFlash" class="small-9 hide-for-medium columns brandDesc">
 		   <h3 class="subHeading">Flashback - StyleGuide</h3>
 		   <p class="paraStyle">For a flashback, child-friendly multi-media site.</p>
@@ -445,29 +445,30 @@
 	 </div>
     <!--Jeff Branding Small-->
      <div class="columns small-12" id="brandJeff">
-		 <a href="images/styleguide-jeffdesigns.pdf" alt="styleguide_jeff_designs"><div id="brandViewButtonJeff" class="small-2 small-push-1 hide-for-medium columns brandViewButton brandJeff">View</div></a>
+		 <a href="images/styleguide-jeffdesigns.pdf"><div id="brandViewButtonJeff" class="small-2 small-push-1 hide-for-medium columns brandViewButton brandJeff">View</div></a>
 	   <div id="brandDescJeff" class="small-9 hide-for-medium columns brandDesc">
 	   	  <h3 class="subHeading">Jeff Designs - StyleGuide</h3>
 		  <p class="paraStyle">Created around a person's style & hobbies.</p>
 	   </div>
 	 </div>
+	<!--BRANDING M/L-->
    <!--Chantel Branding M/L-->
 	   <section class="row hide-for-small-only"><h2 class="hidden">View Branding Section</h2>
-  <a href="images/styleguide-chantel.pdf" alt="style_guide_for_current_site"><div id="viewbrandButtonsM" class="medium-10 medium-offset-1 large-offset-0 large-pull-1 columns"></a>
+  <div id="viewbrandButtonsM" class="medium-10 medium-offset-1 large-offset-0 large-pull-1 columns">
 	   <div id="brandDescChantelM" class="medium-3 large-4 columns brandDesc">
-   	   <div class="brandViewButton brandChantel">View</div>
+	      <a href="images/styleguide-chantel.pdf"> <div class="brandViewButton brandChantel">View</div></a>
 	   	  <h3 class="subHeading">Chantel - StyleGuide</h3>
 		  <p class="paraStyle">For my site you are currently on.</p>
 	   </div>
 	<!--Flash Branding M/L-->   
-	    <a href="images/styleguide-flashback.pdf" alt="styleguide_flashback"><div id="brandDescFlashM" class="medium-3 large-4 columns brandDesc"></a>
-   	   <div class="brandViewButton brandFlash">View</div>
+	    <div id="brandDescFlashM" class="medium-3 large-4 columns brandDesc">
+   	   <a href="images/styleguide-flashback.pdf"><div class="brandViewButton brandFlash">View</div></a>
 	   	  <h3 class="subHeading">Flashback - StyleGuide</h3>
 		  <p class="paraStyle">For a flashback, child-friendly multi-media site.</p>
 	   </div>
     <!--Jeff Branding M/L--> 
-	    <a href="images/styleguide-jeffdesigns.pdf" alt="styleguide_jeff_designs"><div id="brandDescJeffM" class="medium-3 medium-pull-3 large-4 large-pull-0 columns brandDesc"></a>
-   	      <div class="brandViewButton brandJeff">View</div>
+	    <div id="brandDescJeffM" class="medium-3 medium-pull-3 large-4 large-pull-0 columns brandDesc">
+   	      <a href="images/styleguide-jeffdesigns.pdf"><div class="brandViewButton brandJeff">View</div></a>
 	   	  <h3 class="subHeading">Jeff Designs - StyleGuide</h3>
 		  <p class="paraStyle">Created around a person's style & hobbies.</p>
 	  </div>
@@ -485,13 +486,13 @@
    <section id="contactContent" class="sectionBackground row"><h2 class="hidden">Contact Content</h2>
   	   <!--Contact Title-->
    	   <div id="contactTitleBarPortfolio" class="headStyle small-12 columns">Contact</div>
-	   <div id=" medium-12 colums"> 
+	   <div id="medium-12" class="columns"> 
 	   <div id="contactInfoPortfolio" class="hide-for-small-only medium-offset-2 medium-8 columns paraStyle">
 		   <p>Like What You See?</p>
 	   </div>
 	   </div>
 	   <div class=" medium-12 columns">
-		   <a href="contact.html"><div id="contactButtonPortfolio" class="hide-for-small-only small-6 medium-2 medium-offset-5 columns buttons">Contact Me</div></a>
+		   <a href="contact.php"><div id="contactButtonPortfolio" class="hide-for-small-only small-6 medium-2 medium-offset-5 columns buttons">Contact Me</div></a>
 	   </div>
    </section>
    </section>

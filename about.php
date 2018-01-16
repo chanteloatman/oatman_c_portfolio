@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
+	  <h1 class="hidden">Chantel Oatman - About</h1>
    
    <!--TOP BAR-->
    <section class="row"><h2 class="hidden">Top Bar</h2>
@@ -31,7 +32,7 @@
 		  <li id="homeNav"><a href="index.php">Home</a></li>
           <li id="aboutNav"><a href="#">About</a></li>
           <li id="portfolioNav"><a href="portfolio.php">Portfolio</a></li>
-          <li id="contactNav"><a href="contact.html">Contact Me</a></li>
+          <li id="contactNav"><a href="contact.php">Contact Me</a></li>
       </ul>
    </div>
     </nav>
@@ -50,7 +51,7 @@
    	<img src="images/<?php echo $sitelogoLarge ?>" alt="logo" class="hide-for-small-only hide-for-medium-only" id="logoLarge"><!--logo-large.png-->
     </div></a>
    <div id="menuLarge" class="row hide-for-small-only">
-   	<nav id="largeNavigation" class=" medium-12 large-12 columns">
+	<nav id="largeNavigation" class=" medium-12 large-12 columns"><h2 class="hidden">Navigation</h2>
    	   <ul>
    	      <li id="homeNavLarge"><a href="index.php">Home</a></li>
           <li id="aboutNavLarge"><a href="#">About</a></li>
@@ -72,9 +73,9 @@
 	  <div id="aboutContainer">
 	   <div id="aboutChantelInfo" class="small-12 medium-12 columns aboutInfo textBG">
 	   <!--About Image-->
-		 <img src="images/<?php echo $aboutHeadshotSmall ?>" id="aboutChantelImg" class="small-6 hide-for-medium-only hide-for-large columns"><!--aboutImg-small.jpg-->
-		  <img src="images/<?php echo $aboutHeadshotMedium ?>" id="aboutChantelImgM" class="hide-for-small-only medium-offset-1 medium-4 hide-for-large columns"><!--aboutimg-medium.jpg-->
-		   <img src="images/<?php echo $aboutHeadshotLarge ?>" id="aboutChantelImgL" class="hide-for-small-only hide-for-medium-only large-offset- large-4 columns"><!--aboutimg-large.jpg-->
+		 <img src="images/<?php echo $aboutHeadshotSmall ?>" id="aboutChantelImg" class="small-6 hide-for-medium-only hide-for-large columns" alt="chantel_headshot"><!--aboutImg-small.jpg-->
+		  <img src="images/<?php echo $aboutHeadshotMedium ?>" id="aboutChantelImgM" class="hide-for-small-only medium-offset-1 medium-4 hide-for-large columns" alt="chantel_headshot"><!--aboutimg-medium.jpg-->
+		   <img src="images/<?php echo $aboutHeadshotLarge ?>" id="aboutChantelImgL" class="hide-for-small-only hide-for-medium-only large-offset- large-4 columns" alt="chantel_headshot"><!--aboutimg-large.jpg-->
 		<!--About Paragraphs-->
 		   <div id="aboutPara1" class="paraStyle"><?php echo "<p>{$aboutPara1}</p>"; ?></div>
 		   <div id="aboutPara2" class="aboutPara paraStyle"><?php echo "<p>{$aboutPara2}</p>"; ?></div>
@@ -90,7 +91,7 @@
 	      <div id="readLess" class="small-4 small-offset-4 buttons hideReadButton hide-for-medium hide-for-large columns">Read Less</div>
 	  </div>
     </div>
-	   </div>
+	  
    </section>
  </section>
   
@@ -108,6 +109,7 @@
 
    
 </section>
+    <!--Small Footer-->
     <section id="footer" class="row hide-for-medium hide-for-large"><h2 class="hidden">Footer</h2>
    <div id="footerContent" class="row">
 	   <p id="nameBottom" class="columns small-6">chanteloatman.com</p><!--chanteloatman.com-->
@@ -116,14 +118,13 @@
    </div>
    </section>
     
-    
+     <!--Medium/Large Footer-->
      <section id="footerLarge" class="row hide-for-small-only"><h2 class="hidden">Footer</h2>
 	 <p class="hide-for-small-only medium-3 columns" id="nameBottomLarge">chanteloatman.com</p>
 	    <div id="socialIconsLarge" class=" hide-for-small-only">
-		
+		 <!--Medium-->
 		<div class="columns medium-2 medium-push-5 hide-for-large" id="linkedinDivM"><a href="https://www.linkedin.com/in/chantel-oatman-40b177156/"><img src="images/<?php echo $socialLinkedinMedium ?>" id="linkedinMedium" alt="linkedin"></a></div><!--social-linkedin-medium.png-->
 		<div class="columns medium-2 medium-push-5 hide-for-large" id="facebookDivM"><a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><img src="images/<?php echo $socialFacebookMedium ?>" id="facebookMedium" alt="facebook"></a></div><!--social-facebook-medium.png-->
-		
 		 <!--Large-->
 		<div class="columns hide-for-medium-only large-push-6 large-2 columns" id="linkedinDivLarge"><a href="https://www.linkedin.com/in/chantel-oatman-40b177156/"><img src="images/<?php echo $socialLinkedinLarge ?>" id="linkedinLarge" alt="linkedin"></a></div><!--social-linkedin-large.png-->
 		<div class="columns hide-for-medium-only large-2 columns" id="facebookDivLarge"><a href="https://www.facebook.com/Chantel-Oatman-Digital-Services-139315516756341/"><img src="images/<?php echo $socialFacebookLarge ?>" id="facebookLarge" alt="facebook"></a></div><!--social-facebook-large.png-->

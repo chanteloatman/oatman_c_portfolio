@@ -8,9 +8,10 @@
 var readMore = document.querySelector("#readMore");
 //var readLess = document.querySelector("#readLess");
 var showHideParas = document.querySelectorAll(".hiddenPara");
-	//var showHideParas = document.getElementsByClassName("hiddenPara");
+//var showHideParas = document.getElementsByClassName("hiddenPara");
 var i;
 var showHide = document.querySelector(".hiddenPara");
+
 //Functions
 //Hide Show the About Text
 function hideShowAbout(){

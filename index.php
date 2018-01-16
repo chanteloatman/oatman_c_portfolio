@@ -24,7 +24,8 @@
 
 $text = "error report";
      ?>
-   
+    <h1 class="hidden">Chantel Oatman - Index</h1>
+    
     <!--TOP BAR-->
    <section class="row"><h2 class="hidden">Top Bar</h2>
    <div id="topBar" class="small-12 hide-for-medium hide-for-large columns"></div>
@@ -42,7 +43,7 @@ $text = "error report";
 		  <li id="homeNav"><a href="#">Home</a></li>
           <li id="aboutNav"><a href="about.php">About</a></li>
           <li id="portfolioNav"><a href="portfolio.php">Portfolio</a></li>
-          <li id="contactNav"><a href="contact.html">Contact Me</a></li>
+          <li id="contactNav"><a href="contact.php">Contact Me</a></li>
       </ul>
    </div>
     </nav>
@@ -61,12 +62,12 @@ $text = "error report";
    	<img src="images/<?php echo $sitelogoLarge ?>" alt="logo" class="hide-for-small-only hide-for-medium-only" id="logoLarge"><!--logo-large.png-->
    </div>
    <div id="menuLarge" class="row hide-for-small-only">
-   	<nav id="largeNavigation" class=" medium-12 large-12 columns">
+	<nav id="largeNavigation" class=" medium-12 large-12 columns"><h2 class="hidden">Navigation</h2>
    	   <ul>
    	      <li id="homeNavLarge"><a href="#">Home</a></li>
           <li id="aboutNavLarge"><a href="about.php">About</a></li>
           <li id="portfolioNavLarge"><a href="portfolio.php">Portfolio</a></li>
-          <li id="contactNavLarge"><a href="contact.html">Contact Me</a></li>
+          <li id="contactNavLarge"><a href="contact.php">Contact Me</a></li>
        </ul>
     </nav>
    </div>
@@ -78,8 +79,8 @@ $text = "error report";
 	<section id="servicesContent" class="row sectionBackground hide-for-large hide-for-medium-only"><h2 class="hidden">Services Content</h2>
     <!--Services Info-->
 		<section id="servicesTitle" class="row"><h2 class="headStyle">My Services</h2></section>
-	<div id="servicesInfo" class="small-12 columns"><div class="paraStyle"><?php echo "<p>{$aboutServicesInfo}</p>"; ?></p></div><!--tbl_paragraphs, paragraph_id=1, paragraph_text="Within my work, I offer a vast range of services within each of my specialty areas, check out what I have to offer below:"-->
-	   <!--Services Buttons-->
+	<div id="servicesInfo" class="small-12 columns"><div class="paraStyle"><?php echo "<p>{$aboutServicesInfo}</p>"; ?></p></div><!--tbl_paragraphs, paragraph_id=1, paragraph_text="Within my work, I offer a vast range of services within each of my specialty areas, check out what I have to offer below:"--> </div>
+	   <!--Photo Service Button-->
 	   <div id="photoServiceButton" class="small-offset-2 small-8 hide-for-medium large-pull-1 large-10 columns servicesButton">Photography Services</div>
 	    <div id="photoServicesDescS" class="columns small-8 small-offset-3 .servicesDescS hidden">
 		   	<div class="bulletList">
@@ -166,7 +167,7 @@ $text = "error report";
 			   <a href="portfolio.php#portfolioPhotography"><img src="images/<?php echo $photoViewPhotoMedium ?>" alt="view_photography"></a><!--viewphotography-medium.png-->
 		   </div>
 		   <div id="photoServicesDescM" class="columns medium-6 medium-pull-1 ">
-		   	<div class="subHeading"><?php echo "<p>{$servicePhotoSubtitleML}</p>"; ?></div><!--My Photography Services Include:-->
+		   	<div class="subHeading listTitleM"><?php echo "<p>{$servicePhotoSubtitleML}</p>"; ?></div><!--My Photography Services Include:-->
 		   		<div class="bulletList">
 		   	    <?php echo "<p>{$servicePhotoInfoML}</p>"; ?>
 		   	<!--tbl_paragraph, paragraph_id=2
@@ -185,7 +186,7 @@ $text = "error report";
 			   <a href="portfolio.php#portfolioGraphics"><img src="images/<?php echo $photoViewGraphicsMedium ?>" alt="view_graphics"></a><!--viewgraphics-medium.png-->
 		   </div>
 		   <div id="graphicServicesDescM" class="columns medium-6 medium-pull-1 ">
-		   	<div class="subHeading"><?php echo "<p>{$serviceGraphicsSubtitleML}</p>"; ?></div><!--My Graphic Services Include:-->
+		   	<div class="subHeading listTitleM"><?php echo "<p>{$serviceGraphicsSubtitleML}</p>"; ?></div><!--My Graphic Services Include:-->
 		   	<div class="bulletList">
 		   	<?php echo "<p>{$serviceGraphicsInfoML}</p>"; ?>
 		   	<!--tbl_paragraph, paragraph_id=3
@@ -204,7 +205,7 @@ $text = "error report";
 			   <a href="portfolio.php#portfolioBranding"><img src="images/<?php echo $photoViewBrandMedium ?>" alt="view_branding"></a><!--viewbrand-medium.png-->
 		   </div>
 		   <div id="brandServicesDescM" class="columns medium-6 medium-pull-1 ">
-		   	<div class="subHeading"><?php echo "<p>{$serviceBrandSubtitleML}</p>"; ?></div><!--My Branding Services Include:-->
+		   	<div class="subHeading listTitleM"><?php echo "<p>{$serviceBrandSubtitleML}</p>"; ?></div><!--My Branding Services Include:-->
 		   	<div class="bulletList">
 		   	<?php echo "<p>{$serviceBrandInfoML}</p>"; ?>
 		   	<!--tbl_paragraph, paragraph_id=4
@@ -224,7 +225,7 @@ $text = "error report";
 		  </div>
 		  </div>
 		  <div id="aboutButtonM" class="row">
-		<a href="about.php"><div id="moreAboutButton" class="hide-for-small-only medium-2 medium-offset-5 buttons hide-for-large">About Chantel</div></a>
+		<a href="about.php"><div id="moreAboutButtonM" class="hide-for-small-only medium-2 medium-offset-5 buttons hide-for-large">About Chantel</div></a>
 	</div>
 	   </section>
 	   
@@ -248,8 +249,8 @@ $text = "error report";
 	   <!--services large info-->
 	   <section class="row hide-for-small-only hide-for-medium-only sectionBackground"><h2 class="hidden">My Services Descriptions</h2>
 	   <div id="photoServiceDescHome" class="columns large-4">
-		   <div class="subHeading"><?php echo "<p>{$servicePhotoSubtitleML}</p>"; ?></div><!--My Photography Services Include:-->
-		   <div class="bulletList bulletListStyleL">
+		   <div class="subHeading listTitleL"><?php echo "<p>{$servicePhotoSubtitleML}</p>"; ?></div><!--My Photography Services Include:-->
+		   <div class="bulletList bulletListStyleL bulletListPhotoL">
 		   <?php echo "<p>{$servicePhotoInfoML}</p>"; ?>
 		   	<!--tbl_paragraph, paragraph_id=3
 		   	<ul>
@@ -261,7 +262,7 @@ $text = "error report";
 		   </div>
 	   </div>
 	   <div id="graphicServiceDescHome" class="columns large-4">
-	    <div class="subHeading"><?php echo "<p>{$serviceGraphicsSubtitleML}</p>"; ?></div><!--My Graphic Services Include:-->
+	    <div class="subHeading listTitleL"><?php echo "<p>{$serviceGraphicsSubtitleML}</p>"; ?></div><!--My Graphic Services Include:-->
 		   <div class="bulletList bulletListStyleL bulletListGraphicL">
 		   <?php echo "<p>{$serviceGraphicsInfoML}</p>"; ?>
 		   	<!--tbl_paragraph, paragraph_id=3
@@ -274,7 +275,7 @@ $text = "error report";
 		   </div>
 	   </div>
 	   <div id="brandServiceDescHome" class="columns large-4">
-	    <div class="subHeading"><?php echo "<p>{$serviceBrandSubtitleML}</p>"; ?></div><!--My Branding Services Include:-->
+	    <div class="subHeading listTitleL"><?php echo "<p>{$serviceBrandSubtitleML}</p>"; ?></div><!--My Branding Services Include:-->
 	   <div class="bulletList bulletListStyleL bulletListBrandL">
 		   <?php echo "<p>{$serviceBrandInfoML}</p>"; ?>
 	   	  <!--tbl_paragraph, paragraph_id=4
@@ -293,7 +294,7 @@ $text = "error report";
 		  </div>
 		  </div>
 		  <div id="aboutButtonL" class="row">
-		 <a href="about.php"><div id="moreAboutButton" class="hide-for-small-only hide-for-medium-only large-2 large-offset-1 buttons">About Chantel</div></a>
+		 <a href="about.php"><div id="moreAboutButtonL" class="hide-for-small-only hide-for-medium-only large-2 buttons">About Chantel</div></a>
 	     </div>
 	   </section>
 	   </section>
@@ -308,11 +309,11 @@ $text = "error report";
 	   <div id="contactInfoHome" class="small-12 medium-offset-2 medium-8 columns ">
 		   <div class="paraStyle"><?php echo "<p>{$contactInfo}</p>"; ?></div><!--If you would like to hire me for your photography, graphic, branding, or site design needs, please fill out the contact information form to get in touch with me:-->
 	   </div>
-	   <a href="contact.html"> <div id="contactButton" class="small-6 small-offset-3 medium-2 medium-offset-5 columns buttons">Contact Form</div></a>
+	   <a href="contact.php"> <div id="contactButton" class="small-6 small-offset-3 medium-2 medium-offset-5 columns buttons">Contact Form</div></a>
 	  
 	   </section>
    </section>
-</section>
+<!--</section>-->
    <!--Footer Small-->
     <section id="footer" class="row hide-for-medium hide-for-large"><h2 class="hidden">Footer</h2>
    <div id="footerContent" class="row">
